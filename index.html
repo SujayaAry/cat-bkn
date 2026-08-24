@@ -128,6 +128,23 @@
   .s-row span{width:20px;color:#333}
   .s-row b{font-weight:700}
   @media (max-width:760px){.exam-main{flex-direction:column}.grid-panel{width:100%;max-height:220px}}
+
+  /* ============ TAMBAHAN CSS SUPPORT & CONTACT ============ */
+  .divider { 
+    border: 0; 
+    border-top: 2px dashed #d8dde6; 
+    margin: 30px 0 20px; 
+  }
+  .link-row a { 
+    color: var(--blue); 
+    text-decoration: none; 
+    font-weight: 700; 
+    transition: .2s; 
+  }
+  .link-row a:hover { 
+    color: var(--orange); 
+    text-decoration: underline; 
+  }
 </style>
 </head>
 <body>
@@ -198,7 +215,7 @@
   <div class="exam-top">
     <div class="photo-small">Foto Peserta</div>
     <div class="exam-head">
-      <div class="exam-title">Nama Ujian</div>
+      <div class="exam-title">Seleksi Kompetensi Dasar</div>
       <div class="progress"><div id="progressBar"></div><span id="progressText">0%</span></div>
     </div>
     <div class="exam-right">
@@ -259,6 +276,21 @@
     <div class="s-row"><label>TIU</label><span>:</span><b id="sTiu"></b></div>
     <div class="s-row"><label>TKP</label><span>:</span><b id="sTkp"></b></div>
     <div class="s-row"><label>TOTAL</label><span>:</span><b id="sTotal"></b></div>
+
+    <!-- Tambahan Support & Contact -->
+    <hr class="divider">
+    <div class="s-row link-row">
+      <label>Support</label><span>:</span>
+      <a href="https://saweria.co/SujayaAry" target="_blank" rel="noopener noreferrer">
+        >>> saweria.co/SujayaAry &lt;&lt;&lt;
+      </a>
+    </div>
+    <div class="s-row link-row">
+      <label>Contact</label><span>:</span>
+      <a href="https://t.me/ary_0248" target="_blank" rel="noopener noreferrer">
+        >>> t.me/ary_0248 &lt;&lt;&lt;
+      </a>
+    </div>
   </div>
 </section>
 
