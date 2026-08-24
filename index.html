@@ -11,16 +11,16 @@
     --orange:#f59f1d; --purple:#5a5fd6;
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#eef4fb;color:#222}
+  body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#eef4fb;color:#222;overflow-x:hidden}
   .page{display:none;min-height:100vh}
   .page.active{display:block}
   .hidden{display:none!important}
   button{cursor:pointer;font-family:inherit}
 
   /* ============ PANEL 1 : LOGIN ============ */
-  #page-login{background:linear-gradient(180deg,#4d94ff,#2f7bf0);display:none;place-items:center;padding:90px 16px 50px}
-  #page-login.active{display:grid}
-  .login-card{width:430px;max-width:95vw;background:linear-gradient(180deg,#a97b1e,#f7c65a);
+  #page-login{background:linear-gradient(180deg,#4d94ff,#2f7bf0);display:none;padding:90px 16px 50px}
+  #page-login.active{display:flex;justify-content:center;align-items:center}
+  .login-card{width:430px;max-width:95vw;margin:0 auto;background:linear-gradient(180deg,#a97b1e,#f7c65a);
     border-radius:14px;padding:100px 34px 34px;position:relative;box-shadow:0 18px 40px rgba(0,0,0,.28)}
   .logo-wrap{position:absolute;top:-78px;left:50%;transform:translateX(-50%);width:160px;height:160px;
     filter:drop-shadow(0 6px 14px rgba(0,0,0,.35))}
