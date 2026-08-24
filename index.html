@@ -94,7 +94,11 @@
   input:checked + .slider { background-color: var(--green); border-color: var(--green); }
   input:checked + .slider:before { transform: translateX(18px); }
 
-  .q-text{font-size:17px;font-weight:700;background:#101418;color:#fff;display:inline-block;padding:8px 18px;border-radius:4px;margin-bottom:22px}
+  /* Kotak hitam diubah menjadi display: block agar memanjang menyesuaikan layar */
+  .q-text {font-size:17px;font-weight:700;background:#101418;color:#fff;display:block;padding:8px 18px;border-radius:4px;margin-bottom:12px}
+  
+  /* CSS baru untuk teks bunyi soal di bawah kotak hitam */
+  .q-content {font-size: 16px; color: #222; margin-bottom: 24px; line-height: 1.6;}
   
   /* REVISI: Opsi Jawaban Vertikal & Horizontal */
   #options { display: flex; flex-direction: column; gap: 10px; }
@@ -248,6 +252,7 @@
       </div>
       
       <div class="q-text" id="qText">1. Uraian Soal......</div>
+      <div class="q-content" id="qContent"></div> <!-- Ini adalah area untuk bunyi soal -->
       <div id="options"></div>
       <div class="q-actions">
         <button id="btnSimpan" class="btn-simpan">
@@ -372,7 +377,11 @@
   }
 
   function renderQuestion(){
-    $('qText').textContent = (current + 1) + '. Uraian Soal......';
+  // Kotak hitam hanya diisi teks statis nomor soal
+  $('qText').textContent = (current + 1) + '. Uraian Soal......'; 
+  
+  // Teks soal dari bankSoal diletakkan di container baru di bawahnya
+  $('qContent').innerHTML = data.soal;
     
     // REVISI: Penamaan Section sesuai format 110 soal (30 TWK, 35 TIU, 45 TKP)
     $('sectionName').textContent = current < 30 ? 'TWK - Tes Wawasan Kebangsaan' 
