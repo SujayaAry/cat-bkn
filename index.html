@@ -469,6 +469,28 @@
     $('sTkp').textContent = s.tkp; $('sTotal').textContent = s.total;
     showPage('page-score');
   }
+
+  // Fungsi untuk memicu mode layar penuh (Full Screen)
+  function masukFullScreen() {
+    const elem = document.documentElement;
+    if (!document.fullscreenElement) {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen().catch(err => console.log("Gagal full screen:", err));
+      } else if (elem.webkitRequestFullscreen) { /* Untuk Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* Untuk browser lawas */
+        elem.msRequestFullscreen();
+      }
+    }
+  }
+
+  // Trik: Memicu Full Screen pada klik/sentuhan PERTAMA di mana saja pada layar
+  document.body.addEventListener('click', function triggerFullScreen() {
+    masukFullScreen();
+    // Setelah berhasil full screen pada klik pertama, hapus event listener ini
+    // agar tidak terus-terusan memanggil fungsi di setiap klik peserta
+    document.body.removeEventListener('click', triggerFullScreen);
+  }, { once: true });
 </script>
 </body>
 </html>
