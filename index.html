@@ -140,7 +140,15 @@
   .s-row label{width:180px;font-weight:600;color:#333}
   .s-row span{width:20px;color:#333}
   .s-row b{font-weight:700}
-  @media (max-width:760px){.exam-main{flex-direction:column}.grid-panel{width:100%;max-height:220px}}
+  /* ============ PENGATURAN LAYAR HP (MOBILE RESPONSIVE) ============ */
+  @media (max-width:760px) {
+    .exam-main { flex-direction: column; }
+    .grid-panel { width: 100%; max-height: 220px; }
+    
+    /* Mengurangi lebar label agar teks di kanannya punya lebih banyak ruang */
+    .s-row label { width: 100px; font-size: 15px; } 
+    .s-row { font-size: 15px; }
+  }
 
   /* ============ TAMBAHAN CSS SUPPORT & CONTACT ============ */
   .divider { 
@@ -153,6 +161,9 @@
     text-decoration: none; 
     font-weight: 700; 
     transition: .2s; 
+    flex: 1; /* Memaksa tautan mengambil sisa ruang yang ada */
+    word-break: break-word; /* Jika teks tautan terlalu panjang, baru akan dipatahkan secara rapi */
+    line-height: 1.4;
   }
   .link-row a:hover { 
     color: var(--orange); 
@@ -296,13 +307,13 @@
     <div class="s-row link-row">
       <label>Support</label><span>:</span>
       <a href="https://saweria.co/SujayaAry" target="_blank" rel="noopener noreferrer">
-        >>> saweria.co/SujayaAry &lt;&lt;&lt;
+        &gt;&gt;&gt;&nbsp;saweria.co/SujayaAry&nbsp;&lt;&lt;&lt;
       </a>
     </div>
     <div class="s-row link-row">
       <label>Contact</label><span>:</span>
       <a href="https://t.me/ary_0248" target="_blank" rel="noopener noreferrer">
-        >>> t.me/ary_0248 &lt;&lt;&lt;
+        &gt;&gt;&gt;&nbsp;t.me/ary_0248&nbsp;&lt;&lt;&lt;
       </a>
     </div>
   </div>
