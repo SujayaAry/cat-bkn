@@ -322,6 +322,42 @@
 <script>
   // Menggabungkan ketiga array soal dari file terpisah menjadi satu urutan
   const bankSoal = [...soalTWK, ...soalTIU, ...soalTKP];
+
+  // ================= FUNGSI ACAK OPSI JAWABAN =================
+  function acakOpsiJawaban() {
+    bankSoal.forEach(q => {
+      // Buat urutan indeks awal [0, 1, 2, 3, 4]
+      let urutan = [0, 1, 2, 3, 4];
+      
+      // Mengacak urutan indeks menggunakan algoritma Fisher-Yates
+      for (let i = urutan.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [urutan[i], urutan[j]] = [urutan[j], urutan[i]];
+      }
+      
+      // Menyusun ulang teks opsi berdasarkan indeks yang sudah diacak
+      let opsiBaru = [];
+      urutan.forEach(idx => opsiBaru.push(q.opsi[idx]));
+      
+      // Mencocokkan kembali kunci jawaban / bobot nilai agar tidak tertukar
+      if (q.kunci !== undefined) {
+        // Untuk TWK & TIU: Cari posisi kunci yang baru
+        q.kunci = urutan.indexOf(q.kunci);
+      } else if (q.bobot !== undefined) {
+        // Untuk TKP: Susun ulang susunan bobot nilainya
+        let bobotBaru = [];
+        urutan.forEach(idx => bobotBaru.push(q.bobot[idx]));
+        q.bobot = bobotBaru;
+      }
+      
+      // Terapkan opsi yang sudah diacak ke bankSoal utama
+      q.opsi = opsiBaru;
+    });
+  }
+
+  // Panggil fungsi ini agar opsi langsung diacak saat halaman pertama kali dimuat
+  acakOpsiJawaban();
+  // ============================================================
   
   // Sistem otomatis menghitung total soal berdasarkan isi file (seharusnya 110)
   const TOTAL = bankSoal.length; 
