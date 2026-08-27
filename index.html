@@ -391,8 +391,10 @@
   }
 
   function renderQuestion(){
-  // Menampilkan nomor soal bergabung langsung dengan teks soal
-  $('qContent').innerHTML = "<b>" + (current + 1) + ".</b> " + "Ini adalah area untuk menampilkan teks panjang atau gambar soal yang sebenarnya.";
+  $('qContent').innerHTML = data.soal; 
+  
+  // (atau sesuaikan dengan nama variabel Anda, misalnya:)
+  // $('qContent').innerHTML = bankSoal[current].soal;
     
     // REVISI: Penamaan Section sesuai format 110 soal (30 TWK, 35 TIU, 45 TKP)
     $('sectionName').textContent = current < 30 ? 'TWK - Tes Wawasan Kebangsaan' 
