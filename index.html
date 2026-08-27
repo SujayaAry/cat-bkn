@@ -93,11 +93,7 @@
   .slider:before { position: absolute; content: ""; height: 12px; width: 12px; left: 2px; bottom: 2px; background-color: #fff; transition: .3s; border-radius: 50%; }
   input:checked + .slider { background-color: var(--green); border-color: var(--green); }
   input:checked + .slider:before { transform: translateX(18px); }
-
-  /* Kotak hitam diubah menjadi display: block agar memanjang menyesuaikan layar */
-  .q-text {font-size:17px;font-weight:700;background:#101418;color:#fff;display:block;padding:8px 18px;border-radius:4px;margin-bottom:12px}
   
-  /* CSS baru untuk teks bunyi soal di bawah kotak hitam */
   .q-content {font-size: 16px; color: #222; margin-bottom: 24px; line-height: 1.6;}
   
   /* REVISI: Opsi Jawaban Vertikal & Horizontal */
@@ -262,7 +258,6 @@
         </label>
       </div>
       
-      <div class="q-text" id="qText">1. Uraian Soal......</div>
       <div class="q-content" id="qContent"></div> <!-- Ini adalah area untuk bunyi soal -->
       <div id="options"></div>
       <div class="q-actions">
@@ -388,11 +383,8 @@
   }
 
   function renderQuestion(){
-  // Kotak hitam hanya diisi teks statis nomor soal
-  $('qText').textContent = (current + 1) + '. Uraian Soal......'; 
-  
-  // Teks soal dari bankSoal diletakkan di container baru di bawahnya
-  $('qContent').innerHTML = "Ini adalah area untuk menampilkan teks panjang atau gambar soal yang sebenarnya.";
+  // Menampilkan nomor soal bergabung langsung dengan teks soal
+  $('qContent').innerHTML = "<b>" + (current + 1) + ".</b> " + "Ini adalah area untuk menampilkan teks panjang atau gambar soal yang sebenarnya.";
     
     // REVISI: Penamaan Section sesuai format 110 soal (30 TWK, 35 TIU, 45 TKP)
     $('sectionName').textContent = current < 30 ? 'TWK - Tes Wawasan Kebangsaan' 
