@@ -4,14 +4,14 @@ const soalTKP = [
     opsi: [
       "Menyambut warga tersebut dengan ramah, kemudian langsung memeriksa kelengkapan berkas dan memprosesnya karena jam operasional resmi instansi belum berakhir",
       "Menjelaskan secara santun bahwa waktu pelayanan sudah hampir habis, sehingga meminta warga tersebut untuk datang kembali esok pagi agar berkas dapat diperiksa dengan lebih teliti",
-      "Menerima dan memverifikasi berkas permohonan tersebut hari ini, namun menginformasikan warga untuk datang mengambil hasil pemeriksaannya esok hari mengingat banyaknya berkas yang harus diproses",
+      "Menerima dan memverifikasi berkas permohonan tersebut hari ini, tetapi menginformasikan warga untuk datang mengambil hasil pemeriksaannya esok hari mengingat banyaknya berkas yang harus diproses",
       "Menanyakan rincian keperluannya terlebih dahulu guna menimbang secara logis apakah tumpukan berkas tersebut sanggup saya selesaikan dalam sisa waktu yang ada",
       "Meminta petunjuk kepada koordinator loket pelayanan terlebih dahulu mengenai bisa atau tidaknya warga tersebut dilayani, mengingat rekan-rekan lain sudah mulai berkemas"
     ],
     bobot: [5, 1, 4, 3, 2]
   },
   {
-    soal: "Seorang warga datang ke loket Anda dengan wajah kebingungan. Ia bermaksud menanyakan solusi atas permasalahannya, namun ternyata ia salah sasaran dan tidak mengetahui di mana unit yang tepat untuk menyampaikan pengaduan tersebut. Anda mengetahui secara umum letak unit yang berwenang menangani masalah itu, tetapi Anda sama sekali tidak menguasai substansi teknis dari keluhannya. Bagaimana sikap Anda?",
+    soal: "Seorang warga datang ke loket Anda dengan wajah kebingungan. Ia bermaksud menanyakan solusi atas permasalahannya, tetapi ternyata ia salah sasaran dan tidak mengetahui di mana unit yang tepat untuk menyampaikan pengaduan tersebut. Anda mengetahui secara umum letak unit yang berwenang menangani masalah itu, tetapi Anda sama sekali tidak menguasai substansi teknis dari keluhannya. Bagaimana sikap Anda?",
     opsi: [
       "Menjelaskan secara tegas bahwa keluhan tersebut berada di luar kewenangan loket saya, lalu sekadar menunjuk arah lokasi unit yang berwenang menanganinya",
       "Mendengarkan pokok keluhannya dengan saksama untuk memastikan arahnya, lalu mengarahkan warga tersebut kepada kanal atau petugas yang tepat secara santun",
@@ -44,7 +44,7 @@ const soalTKP = [
     bobot: [3, 4, 5, 1, 2]
   },
   {
-    soal: "Dalam rangka memeriahkan HUT RI, instansi Anda mengadakan program pembagian bendera Merah Putih secara gratis kepada masyarakat. Sepekan kemudian, seorang warga datang ke kantor untuk meminta bendera tersebut, namun persediaan telah habis. Warga tersebut meluapkan kekecewaannya karena merasa informasi mengenai keterbatasan jumlah bendera tidak disosialisasikan dengan jelas, padahal keterangan kuota tersebut sebenarnya sudah tercantum di sudut poster pengumuman. Menghadapi keluhan warga tersebut, sikap Anda adalah ....",
+    soal: "Dalam rangka memeriahkan HUT RI, instansi Anda mengadakan program pembagian bendera Merah Putih secara gratis kepada masyarakat. Sepekan kemudian, seorang warga datang ke kantor untuk meminta bendera tersebut, tetapi persediaan telah habis. Warga tersebut meluapkan kekecewaannya karena merasa informasi mengenai keterbatasan jumlah bendera tidak disosialisasikan dengan jelas, padahal keterangan kuota tersebut sebenarnya sudah tercantum di sudut poster pengumuman. Menghadapi keluhan warga tersebut, sikap Anda adalah ....",
     opsi: [
       "Menunjukkan langsung tulisan pada poster kepada warga tersebut untuk membuktikan bahwa pembagian telah dilakukan sesuai dengan informasi resmi yang diumumkan",
       "Meminta warga tersebut untuk memaklumi situasi bahwa program pembagian bendera gratis dari instansi memang mustahil dapat memenuhi permintaan seluruh masyarakat",
@@ -99,9 +99,9 @@ const soalTKP = [
     bobot: [5, 2, 1, 4, 3]
   },
   {
-    soal: "Dalam sebuah proyek kerja sama lintas instansi, salah satu mitra kerja terbiasa menghubungi Anda secara pribadi melalui pesan singkat setiap kali ia membutuhkan data atau informasi pekerjaan. Di sisi lain, Anda menyadari bahwa informasi tersebut sebenarnya berkaitan erat dengan progres seluruh tim. Agar komunikasi dengan mitra tetap terjalin baik namun koordinasi dan transparansi di dalam tim Anda tetap terjaga, sikap Anda adalah ....",
+    soal: "Dalam sebuah proyek kerja sama lintas instansi, salah satu mitra kerja terbiasa menghubungi Anda secara pribadi melalui pesan singkat setiap kali ia membutuhkan data atau informasi pekerjaan. Di sisi lain, Anda menyadari bahwa informasi tersebut sebenarnya berkaitan erat dengan progres seluruh tim. Agar komunikasi dengan mitra tetap terjalin baik, tetapi koordinasi dan transparansi di dalam tim Anda tetap terjaga, sikap Anda adalah ....",
     opsi: [
-      "Menjawab keperluannya secara personal, namun senantiasa melibatkan atau meng-CC (tembusan) anggota tim terkait ke dalam alur komunikasi agar transparansi tetap terjaga",
+      "Menjawab keperluannya secara personal, tetapi senantiasa melibatkan atau meng-CC (tembusan) anggota tim terkait ke dalam alur komunikasi agar transparansi tetap terjaga",
       "Menunjuk anggota tim lain untuk merespons pesan pribadinya agar ketergantungan mitra tersebut terhadap saya dapat segera berkurang",
       "Tetap melayaninya secara pribadi dan bertindak sebagai penghubung tunggal agar komunikasi dengan mitra tersebut tidak terganggu oleh birokrasi grup",
       "Menanggapi pesannya dengan ramah, lalu secara persuasif mengarahkan mitra tersebut agar ke depannya komunikasi dan permintaan data disampaikan melalui grup koordinasi bersama",
@@ -114,7 +114,7 @@ const soalTKP = [
     opsi: [
       "Tetap memanfaatkannya sebagai bahan paparan awal saat rapat dengan memberikan catatan tegas (disclaimer) bahwa angka tersebut masih bersifat sementara dan dapat berubah.",
       "Menjadikan draf tersebut sekadar referensi awal untuk memetakan kerangka analisis rapat, dan baru akan memasukkan angka pastinya setelah rilis data secara formal.",
-      "Mengapresiasi bantuan rekan tersebut, namun memutuskan untuk tidak menggunakan draf itu ke dalam rapat dan teguh menunggu data sah yang dikirimkan melalui mekanisme birokrasi resmi.",
+      "Mengapresiasi bantuan rekan tersebut, tetapi memutuskan untuk tidak menggunakan draf itu ke dalam rapat dan teguh menunggu data sah yang dikirimkan melalui mekanisme birokrasi resmi.",
       "Mengonfirmasi ulang kepada pihak instansi mitra mengenai sejauh mana draf ini valid dan keandalannya boleh dimanfaatkan untuk keperluan rapat internal mendesak.",
       "Mengolah angka dari draf tersebut sebagai estimasi kasar ke dalam laporan dan menambahkan persentase tingkat keyakinan secara sepihak agar terlihat meyakinkan di hadapan pimpinan rapat."
     ],
@@ -124,7 +124,7 @@ const soalTKP = [
     soal: "Atasan menegur Anda karena laporan kinerja pada sistem informasi instansi masih berstatus \"belum terkirim\", padahal atasan sedang membutuhkannya segera. Anda merasa heran karena seingat Anda seluruh dokumen pendukung sudah selesai diunggah sejak kemarin. Namun, setelah dicek kembali, ternyata Anda memang melakukan kelalaian kecil, yakni lupa menekan tombol \"Kirim/Submit\" di akhir halaman sehingga status laporan tersebut menggantung. Menghadapi teguran atasan tersebut, sikap Anda adalah ....",
     opsi: [
       "Berargumen secara halus bahwa ini hanyalah masalah teknis tahapan pengiriman yang terlewat, bukan karena saya belum menyelesaikan laporan tersebut",
-      "Meminta maaf, namun tetap memberikan penjelasan bahwa sebenarnya dokumen sudah saya kerjakan dan unggah sejak kemarin agar atasan tahu saya tidak menunda-nunda pekerjaan",
+      "Meminta maaf, tetapi tetap memberikan penjelasan bahwa sebenarnya dokumen sudah saya kerjakan dan unggah sejak kemarin agar atasan tahu saya tidak menunda-nunda pekerjaan",
       "Meminta maaf kepada atasan, lalu menyempatkan diri memeriksa kembali kelengkapan isi dokumen yang diunggah secara menyeluruh sebelum akhirnya menekan tombol kirim",
       "Segera menekan tombol kirim untuk menuntaskan proses pengiriman laporan pada sistem, kemudian melaporkan kembali kepada atasan bahwa masalahnya sudah saya bereskan",
       "Secara ksatria meminta maaf kepada atasan atas kelalaian tersebut, lalu segera menekan tombol kirim saat itu juga dan memastikan status laporan di sistem telah tuntas"
@@ -143,7 +143,7 @@ const soalTKP = [
     bobot: [2, 1, 3, 4, 5]
   },
   {
-    soal: "Panitia penyelenggara perlombaan HUT RI di instansi Anda kekurangan beberapa jenis perlengkapan penting yang belum tersedia. Anda mengetahui secara tidak resmi bahwa unit kerja lain memiliki perlengkapan serupa, namun Anda belum mengetahui secara pasti spesifikasi maupun ketentuan peminjamannya. Menghadapi situasi tersebut, sikap Anda adalah ....",
+    soal: "Panitia penyelenggara perlombaan HUT RI di instansi Anda kekurangan beberapa jenis perlengkapan penting yang belum tersedia. Anda mengetahui secara tidak resmi bahwa unit kerja lain memiliki perlengkapan serupa, tetapi Anda belum mengetahui secara pasti spesifikasi maupun ketentuan peminjamannya. Menghadapi situasi tersebut, sikap Anda adalah ....",
     opsi: [
       "Menghubungi kenalan di unit tersebut untuk menanyakan informasi awal, lalu meminta rujukan pihak yang berwenang agar proses peminjaman berjalan secara resmi",
       "Langsung menghubungi kenalan di unit tersebut untuk membicarakan kemungkinan peminjaman perlengkapan secara informal demi mempercepat persiapan panitia",
@@ -156,7 +156,7 @@ const soalTKP = [
   {
     soal: "Pada kegiatan perlombaan antarunit dalam rangka memeriahkan peringatan HUT RI di akhir pekan, tim dari unit kerja Anda harus menerima kekalahan di babak penyisihan awal. Mengetahui hal tersebut, beberapa rekan satu tim merasa kecewa dan berencana untuk langsung pulang karena kehilangan semangat. Padahal, rangkaian acara dan pertandingan dari unit lain masih berlangsung panjang. Menghadapi situasi tersebut, sikap Anda adalah ....",
     opsi: [
-      "Membiarkan rekan-rekan yang ingin pulang karena kekecewaan mereka wajar, namun saya secara pribadi tetap tinggal untuk mengikuti sisa rangkaian acara hingga selesai",
+      "Membiarkan rekan-rekan yang ingin pulang karena kekecewaan mereka wajar, tetapi saya secara pribadi tetap tinggal untuk mengikuti sisa rangkaian acara hingga selesai",
       "Mengusulkan kepada panitia penyelenggara agar memberikan imbauan resmi melalui pengeras suara supaya seluruh tim tidak membubarkan diri lebih awal sebelum acara ditutup",
       "Menghargai keputusan rekan-rekan untuk pulang dan ikut meninggalkan acara, mengingat kewajiban utama unit kami sebagai peserta lomba memang sudah gugur",
       "Mengajak rekan-rekan tim secara persuasif untuk tetap tinggal dan memberikan dukungan kepada unit lain, karena memeriahkan dan menyukseskan acara instansi adalah tanggung jawab bersama",
@@ -167,11 +167,11 @@ const soalTKP = [
   {
     soal: "Sebagai panitia perlombaan HUT RI di sebuah lingkungan masyarakat, Anda mendapati bahwa warga setempat memiliki tradisi dan kebiasaan untuk meminta tokoh yang lebih tua menerima hadiah terlebih dahulu sebagai bentuk penghormatan. Padahal, tim panitia Anda sudah menyusun daftar urutan pemanggilan pemenang secara resmi di atas kertas. Menghadapi situasi yang berbenturan antara susunan acara panitia dan tradisi warga tersebut, sikap Anda adalah ....",
     opsi: [
-      "Meminta pembawa acara (MC) untuk memberikan sapaan penghormatan khusus kepada tokoh tersebut, namun bersikukuh bahwa penyerahan hadiah harus sesuai dengan susunan acara panitia",
+      "Meminta pembawa acara (MC) untuk memberikan sapaan penghormatan khusus kepada tokoh tersebut, tetapi bersikukuh bahwa penyerahan hadiah harus sesuai dengan susunan acara panitia",
       "Menolak permintaan warga secara tegas dengan alasan panitia harus bertindak tertib dan taat pada susunan acara resmi yang telah disepakati sejak awal demi kelancaran",
       "Menampung aspirasi warga dan berdiskusi sejenak dengan panitia lain untuk menyesuaikan urutan pemanggilan, sebagai wujud penghormatan terhadap adat setempat karena tidak merugikan hasil lomba",
       "Langsung mengakomodasi kebiasaan warga tersebut dengan mengubah urutan penyerahan hadiah, mengingat hal itu sebatas teknis acara dan tidak melanggar aturan inti perlombaan",
-      "Mengusulkan jalan tengah dengan tetap menjalankan urutan pemanggilan resmi, namun menambahkan sesi penyerahan apresiasi simbolis khusus bagi tokoh yang lebih tua"
+      "Mengusulkan jalan tengah dengan tetap menjalankan urutan pemanggilan resmi, tetapi menambahkan sesi penyerahan apresiasi simbolis khusus bagi tokoh yang lebih tua"
     ],
     bobot: [2, 1, 5, 4, 3]
   },
@@ -222,7 +222,7 @@ const soalTKP = [
   {
     soal: "Selesai melaksanakan kegiatan penyuluhan, masyarakat setempat mengadakan jamuan adat sebagai bentuk penghormatan. Makanan disajikan di atas hamparan daun pisang yang disusun memanjang untuk dinikmati secara komunal (makan bersama). Namun, Anda melihat Andien, rekan kerja Anda, enggan ikut serta. Ia lebih memilih mengambil porsi makanannya sendiri menggunakan piring terpisah karena merasa penyajian komunal tersebut kurang higienis. Mengingat tindakan tersebut berpotensi menyinggung perasaan tuan rumah, sikap Anda adalah ....",
     opsi: [
-      "Membiarkan keputusannya karena itu adalah hak personal, namun mengingatkannya agar tidak mengucapkan alasan \"kurang higienis\" tersebut di hadapan warga",
+      "Membiarkan keputusannya karena itu adalah hak personal, tetapi mengingatkannya agar tidak mengucapkan alasan \"kurang higienis\" tersebut di hadapan warga",
       "Memaklumi dan mendukung tindakannya karena menjaga kebersihan serta kesehatan diri memang harus selalu diutamakan, lalu membiarkannya makan secara terpisah",
       "Mendekati Andien secara personal dan memberinya pengertian secara halus agar ia bersedia ikut makan bersama demi menghargai tradisi dan perasaan warga setempat",
       "Mengajaknya untuk bergabung ke barisan makan bersama dan memintanya mengesampingkan sejenak standar kebiasaan pribadinya sebagai bentuk adaptasi",
@@ -299,7 +299,7 @@ const soalTKP = [
   {
     soal: "Tim panitia HUT RI ke-81 menggunakan layanan formulir daring untuk mendata pendaftaran peserta lomba. Mengingat antusiasme yang tinggi, salah satu anggota panitia mengusulkan agar tautan spreadsheet yang menampung seluruh basis data pendaftaran tersebut dibagikan langsung ke grup komunikasi warga. Tujuannya agar setiap orang bisa memeriksa sendiri apakah namanya sudah terdaftar atau belum secara real-time. Menanggapi usulan tersebut, sikap Anda adalah ....",
     opsi: [
-      "Membagikan tautan spreadsheet utama tersebut namun mengaturnya dalam mode read-only (hanya baca) agar peserta bisa melihat data tanpa bisa mengubah atau menghapusnya",
+      "Membagikan tautan spreadsheet utama tersebut tetapi mengaturnya dalam mode read-only (hanya baca) agar peserta bisa melihat data tanpa bisa mengubah atau menghapusnya",
       "Menyetujui usulan tersebut dan langsung membagikan tautan spreadsheet apa adanya, toh seluruh pendaftar lomba adalah warga satu lingkungan yang sudah saling mengenal",
       "Membagikan informasi status pendaftaran secara manual dengan cara mengirimkan tangkapan layar (screenshot) khusus bagian daftar nama secara berkala ke dalam grup",
       "Menyembunyikan (hide) atau menghapus sementara kolom data sensitif seperti nomor telepon, lalu membagikan tautan spreadsheet tersebut agar warga tetap bisa mengeceknya",
@@ -347,7 +347,7 @@ const soalTKP = [
       "Menolaknya secara halus dengan alasan bukan kompetensi saya, demi menghindari risiko kesalahan hasil kerja yang pada akhirnya dapat merugikan instansi",
       "Menerima penugasan tersebut dengan loyal dan sekadar berupaya menyelesaikannya semaksimal mungkin sesuai dengan batas pengetahuan yang saya miliki saat ini",
       "Menerima tanggung jawab tersebut dengan sigap, sembari proaktif mempelajari referensi terkait dan berkonsultasi dengan ahlinya saat menemui kendala teknis",
-      "Menerima tugas tersebut, namun meminta kelonggaran tenggat waktu penyelesaian kepada atasan karena saya harus memulainya dengan belajar dari nol terlebih dahulu"
+      "Menerima tugas tersebut, tetapi meminta kelonggaran tenggat waktu penyelesaian kepada atasan karena saya harus memulainya dengan belajar dari nol terlebih dahulu"
     ],
     bobot: [2, 1, 3, 5, 4]
   },
@@ -367,7 +367,7 @@ const soalTKP = [
     opsi: [
       "Meminta izin kepada pimpinan sidang untuk diberikan waktu sejenak guna membaca draf teknis kebijakan tersebut sebelum saya berani menyampaikan pendapat di depan forum",
       "Tetap berusaha memberikan pendapat teknis sebisa mungkin berdasarkan logika dan pengetahuan umum yang saya miliki agar jalannya diskusi forum tidak terhambat",
-      "Memberikan pandangan sebatas pemahaman umum yang saya ketahui, namun dengan memberikan disclaimer yang jelas di awal bahwa hal tersebut bukanlah analisis teknis dari kacamata seorang ahli",
+      "Memberikan pandangan sebatas pemahaman umum yang saya ketahui, tetapi dengan memberikan disclaimer yang jelas di awal bahwa hal tersebut bukanlah analisis teknis dari kacamata seorang ahli",
       "Menolak permintaan tersebut secara halus dan meminta maaf, sambil menegaskan bahwa hal teknis itu sama sekali bukan area keahlian maupun ruang lingkup tanggung jawab saya",
       "Menyampaikan secara transparan mengenai batasan kompetensi teknis saya pada topik tersebut, lalu merekomendasikan forum untuk mendengarkan pandangan dari pihak yang memang benar-benar ahli di bidangnya"
     ],
@@ -389,7 +389,7 @@ const soalTKP = [
     opsi: [
       "Memberikan penilaian yang sangat tinggi dan mengabaikan kekurangan teknis tersebut agar hubungan pertemanan di tempat kerja tetap terjalin harmonis",
       "Memberikan penilaian secara objektif dan tegas sesuai dengan standar kinerja instansi, agar ia menyadari kesalahannya dan terpacu untuk bekerja lebih teliti ke depannya",
-      "Memberikan penilaian rata-rata (standar) secara umum yang mencerminkan realita kerjanya, sehingga saya tidak menyinggung perasaannya namun juga tidak sepenuhnya berbohong",
+      "Memberikan penilaian rata-rata (standar) secara umum yang mencerminkan realita kerjanya, sehingga saya tidak menyinggung perasaannya tetapi juga tidak sepenuhnya berbohong",
       "Meminta izin kepada pimpinan agar pihak lain saja yang memberikan penilaian tersebut kepadanya, demi menghindari potensi konflik pribadi atau rasa canggung di dalam tim",
       "Memberikan penilaian secara objektif dan proporsional sesuai fakta, serta melampirkan catatan evaluasi yang konstruktif terkait kekurangan teknis tersebut sebagai bahan perbaikannya"
     ],
@@ -400,14 +400,14 @@ const soalTKP = [
     opsi: [
       "Mengirimkan seluruh draf foto, termasuk foto yang kurang sempurna tersebut, dan membiarkan pimpinan sendiri yang menyortir serta menentukan dokumentasi untuk laporan",
       "Melakukan pemotongan (cropping) secara presisi pada area barisan peserta yang terlihat kurang sempurna tersebut agar foto yang berkualitas baik itu tetap bisa digunakan",
-      "Mengesampingkan foto tersebut dan memilih foto dokumentasi lain yang kualitasnya cukup baik namun lebih representatif dalam memotret kekhidmatan jalannya upacara secara utuh",
+      "Mengesampingkan foto tersebut dan memilih foto dokumentasi lain yang kualitasnya cukup baik, tetapi lebih representatif dalam memotret kekhidmatan jalannya upacara secara utuh",
       "Tetap menggunakan foto tersebut sebagai lampiran utama karena kualitas visualnya paling tajam dan estetis dalam menggambarkan kemeriahan suasana upacara",
       "Memanipulasi postur tangan para peserta tersebut menggunakan aplikasi penyuntingan foto tingkat lanjut agar mereka terlihat sedang hormat dengan sempurna demi menjaga citra instansi"
     ],
     bobot: [2, 4, 5, 3, 1]
   },
   {
-    soal: "Sebagai anggota panitia peringatan HUT ke-81 RI di instansi, Anda ditugaskan untuk mengoordinasikan pengumpulan dana kegiatan \"sukarela\" dari seluruh pegawai. Namun, panitia inti sebelumnya telah menetapkan nominal target per orang agar anggaran cepat terkumpul. Anda diam-diam mengetahui bahwa beberapa rekan kerja berpenghasilan lebih rendah merasa sangat terbebani dengan nominal baku tersebut, namun mereka sungkan untuk melayangkan protes. Menghadapi situasi yang menyangkut kesejahteraan emosional rekan kerja ini, sikap Anda adalah ....",
+    soal: "Sebagai anggota panitia peringatan HUT ke-81 RI di instansi, Anda ditugaskan untuk mengoordinasikan pengumpulan dana kegiatan \"sukarela\" dari seluruh pegawai. Namun, panitia inti sebelumnya telah menetapkan nominal target per orang agar anggaran cepat terkumpul. Anda diam-diam mengetahui bahwa beberapa rekan kerja berpenghasilan lebih rendah merasa sangat terbebani dengan nominal baku tersebut, tetapi mereka sungkan untuk melayangkan protes. Menghadapi situasi yang menyangkut kesejahteraan emosional rekan kerja ini, sikap Anda adalah ....",
     opsi: [
       "Merancang sistem pengumpulan donasi secara tertutup (anonim) agar seluruh pegawai dapat menyumbang sesuai kemampuan tanpa merasa tertekan oleh pandangan sosial",
       "Mengusulkan agar pegawai dengan rentang golongan gaji atau level jabatan tertentu dibebaskan sepenuhnya dari kewajiban menyumbang agar tidak membebani mereka",
@@ -429,7 +429,7 @@ const soalTKP = [
     bobot: [1, 4, 2, 5, 3]
   },
   {
-    soal: "Beredar sebuah potongan video amatir di media sosial yang diklaim memperlihatkan seorang pejabat negara sedang melakukan perbuatan tidak senonoh. Kebenaran video tersebut sama sekali belum terkonfirmasi oleh pihak berwenang, namun seorang rekan kerja Anda dengan terburu-buru langsung membagikannya ke beberapa grup obrolan kantor disertai narasi kecaman yang sangat provokatif. Menghadapi rekan yang rentan menyebarkan disinformasi (hoaks) tersebut, sikap Anda adalah ....",
+    soal: "Beredar sebuah potongan video amatir di media sosial yang diklaim memperlihatkan seorang pejabat negara sedang melakukan perbuatan tidak senonoh. Kebenaran video tersebut sama sekali belum terkonfirmasi oleh pihak berwenang, tetapi seorang rekan kerja Anda dengan terburu-buru langsung membagikannya ke beberapa grup obrolan kantor disertai narasi kecaman yang sangat provokatif. Menghadapi rekan yang rentan menyebarkan disinformasi (hoaks) tersebut, sikap Anda adalah ....",
     opsi: [
       "Membiarkan tindakannya, karena sebagai masyarakat sipil kita memang berhak untuk mengawal moralitas dan mengetahui seluk-beluk perilaku para pejabat publik",
       "Memperingatkannya untuk berhati-hati dalam menyebarkan konten yang belum jelas kebenarannya, karena tindakan tersebut sangat rentan menjeratnya pada ranah pidana UU ITE",
@@ -443,7 +443,7 @@ const soalTKP = [
     soal: "Belakangan ini marak terjadi fenomena di mana sebuah kasus dugaan pelanggaran yang sudah lama dikeluhkan oleh masyarakat melalui jalur resmi justru jalan di tempat. Kasus tersebut baru ditangani secara serius dan cepat oleh aparat terkait setelah rekamannya diviralkan di media sosial dan mendapat sorotan tajam (pressure) dari warganet. Sebagai seorang calon aparatur sipil negara, pandangan Anda terhadap fenomena tersebut adalah ....",
     opsi: [
       "Membuktikan bahwa kekuatan media sosial saat ini mutlak jauh lebih efektif dan tepercaya daripada jalur pengaduan resmi instansi dalam memperoleh keadilan",
-      "Memandang viralnya kasus sebagai bentuk pengawasan sosial masyarakat di era digital, namun penyelesaian perkaranya harus tetap tunduk pada mekanisme hukum formal yang berlaku",
+      "Memandang viralnya kasus sebagai bentuk pengawasan sosial masyarakat di era digital, tetapi penyelesaian perkaranya harus tetap tunduk pada mekanisme hukum formal yang berlaku",
       "Menjadikan fenomena ini sebagai bukti bobroknya penegakan hukum negara dan mendukung warganet untuk terus melakukan tekanan massa secara besar-besaran pada setiap kasus",
       "Menjadikan fenomena tersebut sebagai autokritik bagi instansi pemerintah untuk mengevaluasi kecepatan respons pengaduan, tanpa membenarkan tekanan massa sebagai prosedur utama penyelesaian masalah",
       "Memaklumi fenomena tersebut karena masyarakat saat ini memang sudah terbiasa menggunakan media sosial sebagai sarana utama untuk berkeluh kesah ketika menghadapi suatu persoalan"
@@ -453,7 +453,7 @@ const soalTKP = [
   {
     soal: "Di tengah eskalasi aksi demonstrasi yang memprotes dugaan korupsi dan ketidakadilan hukum, sebagian massa aksi yang tersulut emosi meluapkan kekesalannya dengan merusak dan menginjak-injak lambang negara, Garuda Pancasila. Kelompok tersebut berdalih bahwa tindakan itu hanyalah bentuk ekspresi kekecewaan yang telah lama terpendam terhadap kinerja pemerintah. Sebagai calon aparatur sipil negara, pandangan Anda terhadap peristiwa tersebut adalah...",
     opsi: [
-      "Menegaskan bahwa hak mengkritik pemerintah memang dijamin undang-undang, namun merendahkan lambang negara adalah bentuk pelecehan konstitusi yang sama sekali tidak bisa dibenarkan",
+      "Menegaskan bahwa hak mengkritik pemerintah memang dijamin undang-undang, tetapi merendahkan lambang negara adalah bentuk pelecehan konstitusi yang sama sekali tidak bisa dibenarkan",
       "Berpendapat bahwa kesalahan atau kekurangan oknum pemerintah tidak boleh dijadikan dalih pembenaran oleh pihak mana pun untuk menistakan simbol kehormatan negara",
       "Menilai bahwa pemerintah seharusnya lebih berfokus pada introspeksi dan mendalami substansi kekecewaan masyarakat agar aksi-aksi penolakan seperti itu tidak perlu terjadi",
       "Memaklumi insiden tersebut sebatas sebagai luapan emosi sesaat dan tindakan simbolis dari rakyat yang merasa aspirasinya tidak lagi didengar oleh para pemimpinnya",
@@ -466,7 +466,7 @@ const soalTKP = [
     opsi: [
       "Kebiasaan tersebut sebaiknya mulai dikurangi atau dihindari karena lambat laun hanya akan menciptakan suasana kerja yang penuh tekanan dan merusak keharmonisan kantor",
       "Setiap pegawai harus berjiwa besar menerima perlakuan tersebut sebagai sebuah risiko dan konsekuensi logis atas kelalaiannya dalam menjalankan tugas",
-      "Penegakan disiplin dan pemberian sanksi memang mutlak diperlukan, namun mekanismenya harus dieksekusi dengan cara yang tetap menjunjung tinggi martabat dan harga diri pegawai",
+      "Penegakan disiplin dan pemberian sanksi memang mutlak diperlukan, tetapi mekanismenya harus dieksekusi dengan cara yang tetap menjunjung tinggi martabat dan harga diri pegawai",
       "Metode tersebut memang terbukti paling ampuh dan patut dipertahankan karena bisa menjadi shock therapy sekaligus pembelajaran langsung bagi pegawai lainnya",
       "Pendekatan tersebut masih bisa diterima sebagai bentuk ketegasan pimpinan, asalkan kesalahan yang dituduhkan kepada pegawai memang sudah terbukti secara objektif"
     ],
