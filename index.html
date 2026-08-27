@@ -314,9 +314,17 @@
   </div>
 </section>
 
+<!-- Memanggil file soal terpisah -->
+<script src="soal-twk.js"></script>
+<script src="soal-tiu.js"></script>
+<script src="soal-tkp.js"></script>
+  
 <script>
-  // REVISI: Jumlah soal diubah menjadi 110
-  const TOTAL = 110; 
+  // Menggabungkan ketiga array soal dari file terpisah menjadi satu urutan
+  const bankSoal = [...soalTWK, ...soalTIU, ...soalTKP];
+  
+  // Sistem otomatis menghitung total soal berdasarkan isi file (seharusnya 110)
+  const TOTAL = bankSoal.length; 
   const answers = Array(TOTAL).fill(null);
   const KEY = Array.from({length: TOTAL}, (_, i) => (i * 7) % 5); // demo answer key
   
