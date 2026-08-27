@@ -391,30 +391,34 @@
   }
 
   function renderQuestion(){
-  $('qContent').innerHTML = data.soal; 
-  
-  // (atau sesuaikan dengan nama variabel Anda, misalnya:)
-  // $('qContent').innerHTML = bankSoal[current].soal;
-    
-    // REVISI: Penamaan Section sesuai format 110 soal (30 TWK, 35 TIU, 45 TKP)
+    // 1. Menampilkan soal dari file JS (Ini akan otomatis menghapus nomor soal manual)
+    $('qContent').innerHTML = bankSoal[current].soal; 
+      
+    // 2. Menyesuaikan judul atas sesuai kategori soal
     $('sectionName').textContent = current < 30 ? 'TWK - Tes Wawasan Kebangsaan' 
                          : current < 65 ? 'TIU - Tes Intelegensia Umum' 
                          : 'TKP - Tes Karakteristik Pribadi';
                          
     const box = $('options'); box.innerHTML = '';
+    
+    // 3. Merender 5 opsi jawaban (A, B, C, D, E)
     for (let i = 0; i < 5; i++){
       const lab = document.createElement('div');
       lab.className = 'option' + (tempAnswer === i ? ' selected' : '');
       const letter = document.createElement('span'); letter.className = 'letter'; letter.textContent = 'ABCDE'[i] + '.';
       const radio = document.createElement('span'); radio.className = 'radio';
       if (tempAnswer === i){ const d = document.createElement('span'); d.className = 'dot'; radio.appendChild(d); }
-      const txt = document.createElement('span'); txt.className = 'opt-text'; txt.textContent = 'Jawaban ' + 'ABCDE'[i];
+      
+      const txt = document.createElement('span'); 
+      txt.className = 'opt-text';
+      // Mengambil teks atau gambar opsi jawaban langsung dari file JS
+      txt.innerHTML = bankSoal[current].opsi[i]; 
+      
       lab.append(letter, radio, txt);
       
-      // REVISI: Klik opsi hanya merubah tempAnswer, tidak menyimpan ke answers[]
       lab.onclick = () => { 
         tempAnswer = i; 
-        renderQuestion(); // Render ulang opsi tanpa mengubah status grid di kiri
+        renderQuestion(); 
       };
       box.appendChild(lab);
     }
@@ -473,10 +477,17 @@
     let twk = 0, tiu = 0, tkp = 0;
     answers.forEach((a, i) => {
       if (a === null) return;
-      // REVISI: Menghitung skor dari 110 soal
-      if (i < 30) twk += (a === KEY[i] ? 5 : 0); // 30 Soal TWK
-      else if (i < 65) tiu += (a === KEY[i] ? 5 : 0); // 35 Soal TIU
-      else tkp += [5,4,3,2,1][a]; // 45 Soal TKP (Asumsi skor TKP 1-5)
+      
+      if (i < 30) {
+        // 30 Soal TWK: Bernilai 5 jika jawaban (a) sama dengan kunci
+        twk += (a === bankSoal[i].kunci ? 5 : 0); 
+      } else if (i < 65) {
+        // 35 Soal TIU: Bernilai 5 jika jawaban (a) sama dengan kunci
+        tiu += (a === bankSoal[i].kunci ? 5 : 0); 
+      } else {
+        // 45 Soal TKP: Mengambil nilai bobot berjenjang dari array di file JS
+        tkp += bankSoal[i].bobot[a]; 
+      }
     });
     return { twk, tiu, tkp, total: twk + tiu + tkp };
   }
