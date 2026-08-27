@@ -22,7 +22,7 @@ const soalTWK = [
     kunci: 2
   },
   {
-    soal: "Utang tidur merupakan akumulasi kekurangan waktu dari kebutuhan tidur ideal harian seseorang. Sebagai contoh, pria dewasa yang disarankan tidur minimal tujuh jam namun hanya tertidur lima jam akan menanggung utang tidur sebanyak dua jam. Jika ingin melunasi utang tidur tersebut, seseorang harus memerhatikan caranya dengan tepat. Pastikan untuk tidak melunasi utang tidur dengan cara tidur berlebihan pada hari selanjutnya. Pasalnya, durasi tidur yang berlebihan justru berisiko memicu penurunan fungsi kognitif hingga ancaman penyakit kronis, seperti obesitas, diabetes, dan masalah jantung.<br><br>Kesimpulan yang paling tepat dari bacaan tersebut adalah ....",
+    soal: "Utang tidur merupakan akumulasi kekurangan waktu dari kebutuhan tidur ideal harian seseorang. Sebagai contoh, pria dewasa yang disarankan tidur minimal tujuh jam, tetapi hanya tertidur lima jam akan menanggung utang tidur sebanyak dua jam. Jika ingin melunasi utang tidur tersebut, seseorang harus memerhatikan caranya dengan tepat. Pastikan untuk tidak melunasi utang tidur dengan cara tidur berlebihan pada hari selanjutnya. Pasalnya, durasi tidur yang berlebihan justru berisiko memicu penurunan fungsi kognitif hingga ancaman penyakit kronis, seperti obesitas, diabetes, dan masalah jantung.<br><br>Kesimpulan yang paling tepat dari bacaan tersebut adalah ....",
     opsi: [
       "Utang tidur adalah akumulasi kekurangan waktu tidur yang tidak boleh dilunasi secara berlebihan karena memicu penyakit kronis",
       "Semua orang yang memiliki kebiasaan tidur berlebihan dipastikan akan menderita gangguan kognitif dan masalah jantung",
@@ -66,7 +66,7 @@ const soalTWK = [
     kunci: 2
   },
   {
-    soal: "Pasca-amandemen UUD 1945, kekuasaan kehakiman di Indonesia diselenggarakan oleh Mahkamah Agung (MA) dan Mahkamah Konstitusi (MK). Kedua lembaga ini sama-sama memiliki hak uji materi (judicial review), namun beroperasi pada yurisdiksi yang berbeda. Apabila sebuah Peraturan Daerah (Perda) tentang pajak dinilai merugikan masyarakat karena bertentangan dengan Undang-Undang (UU), serta di saat yang bersamaan sebuah Undang-Undang (UU) Cipta Kerja dinilai melanggar hak konstitusional warga negara, maka pembagian kewenangan yang tepat untuk menyelesaikan kedua sengketa tersebut adalah ....",
+    soal: "Pasca-amandemen UUD 1945, kekuasaan kehakiman di Indonesia diselenggarakan oleh Mahkamah Agung (MA) dan Mahkamah Konstitusi (MK). Kedua lembaga ini sama-sama memiliki hak uji materi (judicial review), tetapi beroperasi pada yurisdiksi yang berbeda. Apabila sebuah Peraturan Daerah (Perda) tentang pajak dinilai merugikan masyarakat karena bertentangan dengan Undang-Undang (UU), serta di saat yang bersamaan sebuah Undang-Undang (UU) Cipta Kerja dinilai melanggar hak konstitusional warga negara, maka pembagian kewenangan yang tepat untuk menyelesaikan kedua sengketa tersebut adalah ....",
     opsi: [
       "MA berwenang membatalkan UU Cipta Kerja tersebut, sedangkan MK berwenang merevisi Perda agar sejalan dengan UUD 1945",
       "MA dan MK secara bersama-sama menggelar sidang gabungan karena kedua sengketa tersebut menyangkut hajat hidup orang banyak",
@@ -165,7 +165,7 @@ const soalTWK = [
     kunci: 3
   },
   {
-    soal: "Dalam rutinitas pelayanan publik, seorang Aparatur Sipil Negara (ASN) kerap berinteraksi dengan masyarakat dari stratifikasi sosial yang sangat heterogen. Suatu hari, Anda mendapati fenomena di mana seorang oknum petugas memberikan perlakuan istimewa dan tutur kata yang sangat ramah kepada warga dari kalangan pejabat, namun bersikap sinis, acuh tak acuh, dan menggunakan nada tinggi saat melayani warga berpakaian lusuh dari kelompok marjinal. Sikap oknum petugas tersebut jelas mencederai nilai-nilai luhur Pancasila. Apabila Anda ingin mengedepankan pengamalan esensial dari Sila Kemanusiaan yang Adil dan Beradab dalam interaksi sosial tersebut, sikap yang paling merepresentasikan sila tersebut adalah ....",
+    soal: "Dalam rutinitas pelayanan publik, seorang Aparatur Sipil Negara (ASN) kerap berinteraksi dengan masyarakat dari stratifikasi sosial yang sangat heterogen. Suatu hari, Anda mendapati fenomena di mana seorang oknum petugas memberikan perlakuan istimewa dan tutur kata yang sangat ramah kepada warga dari kalangan pejabat, tetapi bersikap sinis, acuh tak acuh, dan menggunakan nada tinggi saat melayani warga berpakaian lusuh dari kelompok marjinal. Sikap oknum petugas tersebut jelas mencederai nilai-nilai luhur Pancasila. Apabila Anda ingin mengedepankan pengamalan esensial dari Sila Kemanusiaan yang Adil dan Beradab dalam interaksi sosial tersebut, sikap yang paling merepresentasikan sila tersebut adalah ....",
     opsi: [
       "Mengedepankan penyelesaian masalah teguran melalui musyawarah mufakat secara kekeluargaan agar tidak terjadi keributan di ruang publik",
       "Memperlakukan setiap manusia secara bermartabat dan menjunjung tinggi pengakuan persamaan derajat tanpa mendiskriminasi kedudukan sosial",
