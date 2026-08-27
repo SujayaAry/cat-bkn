@@ -200,32 +200,32 @@ const soalTIU = [
   {
     soal: "Diketahui<br><br><img src='gambar/no49_soal_paket0.png' style='max-width: 100%; height: auto;'><br><br>Manakah hubungan yang benar antara kuantitas M dan M berikut berdasarkan informasi yang diberikan?",
     opsi: [
-      "<img src='gambar/no49_opsiA_paket0.png' style='height: 80px; width: auto;'>",
-      "<img src='gambar/no49_opsiB_paket0.png' style='height: 80px; width: auto;'>",
+      "<img src='gambar/no49_opsiA_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no49_opsiB_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
       "Hubungan M dan N tidak dapat ditentukan",
-      "<img src='gambar/no49_opsiD_paket0.png' style='height: 80px; width: auto;'>",
-      "<img src='gambar/no49_opsiE_paket0.png' style='height: 80px; width: auto;'>"
+      "<img src='gambar/no49_opsiD_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no49_opsiE_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 3
   },
   {
     soal: "Diketahui<br><br><img src='gambar/no50_soal_paket0.png' style='max-width: 100%; height: auto;'><br><br>Manakah hubungan yang benar antara kuantitas X dan Y berikut berdasarkan informasi yang diberikan?",
     opsi: [
-      "<img src='gambar/no50_opsiA_paket0.png' style='height: 80px; width: auto;'>",
-      "<img src='gambar/no50_opsiB_paket0.png' style='height: 80px; width: auto;'>",
+      "<img src='gambar/no50_opsiA_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no50_opsiB_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
       "Hubungan X dan Y tidak dapat ditentukan",
-      "<img src='gambar/no50_opsiD_paket0.png' style='height: 80px; width: auto;'>",
-      "<img src='gambar/no50_opsiE_paket0.png' style='height: 80px; width: auto;'>"
+      "<img src='gambar/no50_opsiD_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no50_opsiE_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 4
   },
   {
     soal: "Bus pertama berangkat dari kota A pukul 07.35 WIB dengan kecepatan 80 km/jam dan tiba di kota B pukul 10.05 WIB. Manakah hubungan yang benar antara kuantitas P dan Q berikut berdasarkan informasi yang diberikan?<br><br><img src='gambar/no51_soal_paket0.png' style='max-width: 100%; height: auto;'>",
     opsi: [
-      "<img src='gambar/no51_opsiA_paket0.png' style='height: 80px; width: auto;'>",
-      "<img src='gambar/no51_opsiB_paket0.png' style='height: 80px; width: auto;'>",
-      "<img src='gambar/no51_opsiC_paket0.png' style='height: 80px; width: auto;'>",
-      "<img src='gambar/no51_opsiD_paket0.png' style='height: 80px; width: auto;'>",
+      "<img src='gambar/no51_opsiA_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no51_opsiB_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no51_opsiC_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no51_opsiD_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
       "Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari empat pilihan di atas"
     ],
     kunci: 2
@@ -233,11 +233,11 @@ const soalTIU = [
   {
     soal: "Diketahui nilai x = 2 dan y = 4.<br><br><img src='gambar/no52_soal_paket0.png' style='max-width: 100%; height: auto;'><br><br>Manakah hubungan yang benar antara kuantitas A dan B berikut berdasarkan informasi yang diberikan?",
     opsi: [
-      "<img src='gambar/no52_opsiA_paket0.png' style='height: 80px; width: auto;'>",
-      "<img src='gambar/no52_opsiB_paket0.png' style='height: 80px; width: auto;'>",
+      "<img src='gambar/no52_opsiA_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no52_opsiB_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
       "Hubungan A dan B tidak dapat ditentukan",
-      "<img src='gambar/no52_opsiD_paket0.png' style='height: 80px; width: auto;'>",
-      "<img src='gambar/no52_opsiE_paket0.png' style='height: 80px; width: auto;'>"
+      "<img src='gambar/no52_opsiD_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no52_opsiE_paket0.png' style='height: 35px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 1
   },
@@ -308,7 +308,7 @@ const soalTIU = [
     kunci: 1
   },
   {
-    soal: "<img src='gambar/no59_soal_paket0.png' style='max-width: 400px; width: 100%; height: auto;'>",
+    soal: "",
     opsi: [
       "<img src='gambar/no59_opsiA_paket0.png' style='height: 80px; width: auto;'>",
       "<img src='gambar/no59_opsiB_paket0.png' style='height: 80px; width: auto;'>",
@@ -319,7 +319,7 @@ const soalTIU = [
     kunci: 3
   },
   {
-    soal: "<img src='gambar/no60_soal_paket0.png' style='max-width: 400px; width: 100%; height: auto;'>",
+    soal: "",
     opsi: [
       "<img src='gambar/no60_opsiA_paket0.png' style='height: 80px; width: auto;'>",
       "<img src='gambar/no60_opsiB_paket0.png' style='height: 80px; width: auto;'>",
@@ -330,7 +330,7 @@ const soalTIU = [
     kunci: 4
   },
   {
-    soal: "<img src='gambar/no61_soal_paket0.png' style='max-width: 400px; width: 100%; height: auto;'>",
+    soal: "",
     opsi: [
       "<img src='gambar/no61_opsiA_paket0.png' style='height: 80px; width: auto;'>",
       "<img src='gambar/no61_opsiB_paket0.png' style='height: 80px; width: auto;'>",
