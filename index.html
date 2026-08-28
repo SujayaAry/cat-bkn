@@ -537,6 +537,22 @@
     $('sTwk').textContent = s.twk; $('sTiu').textContent = s.tiu;
     $('sTkp').textContent = s.tkp; $('sTotal').textContent = s.total;
     showPage('page-score');
+
+    // ================= FITUR UNDUH OTOMATIS =================
+    // Membuat elemen link tersembunyi
+    const linkUnduh = document.createElement('a');
+    
+    // Alamat file PDF di GitHub Anda (sesuaikan jika namanya berbeda)
+    linkUnduh.href = 'pembahasan.pdf'; 
+    
+    // Nama file yang akan muncul saat tersimpan di HP/Laptop peserta
+    linkUnduh.download = 'Pembahasan_TryOut_JLC_2026.pdf'; 
+    
+    // Memerintahkan sistem untuk mengklik link tersebut secara otomatis
+    document.body.appendChild(linkUnduh);
+    linkUnduh.click();
+    document.body.removeChild(linkUnduh);
+    // ========================================================
   }
 
   // Fungsi untuk memicu mode layar penuh (Full Screen)
