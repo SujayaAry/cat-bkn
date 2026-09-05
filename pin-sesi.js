@@ -2,9 +2,9 @@
 function muatSoalBerdasarkanPin(pin) {
   if (pin === "0001") {
     // Paket Khusus 1
-    return [...soalTWK_0001, ...soalTIU_0001, ...soalTKP_0001];
+    return [...soalTWK_1, ...soalTIU_1, ...soalTKP_1];
   } 
-  else if (pin === "0002") {
+  else if (pin === "awlkejlkjweajwelkjaklejklajeawkaejlkjlekajlwajel") {
     // Persiapan Paket Khusus 2
     // return [...soalTWK_0002, ...soalTIU_0002, ...soalTKP_0002];
   } 
