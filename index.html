@@ -314,72 +314,86 @@
   </div>
 </section>
 
-<!-- Memanggil file soal terpisah -->
+<!-- Paket Utama (Untuk Publik / PIN Bebas) -->
 <script src="soal-twk.js"></script>
 <script src="soal-tiu.js"></script>
 <script src="soal-tkp.js"></script>
+
+<!-- Paket Khusus 1 (Hanya aktif jika PIN: 0001) -->
+<script src="soal-twk-0001.js"></script>
+<script src="soal-tiu-0001.js"></script>
+<script src="soal-tkp-0001.js"></script>
   
 <script>
-  // Menggabungkan ketiga array soal dari file terpisah menjadi satu urutan
-  const bankSoal = [...soalTWK, ...soalTIU, ...soalTKP];
+// 1. Deklarasi Variabel Dinamis (Keranjang Kosong)
+  let bankSoal = [];
+  let TOTAL = 0;
+  let answers = [];
 
-  // ================= FUNGSI ACAK OPSI JAWABAN =================
+  // 2. Fungsi Acak Opsi & Kunci Jawaban
   function acakOpsiJawaban() {
     bankSoal.forEach(q => {
-      // Buat urutan indeks awal [0, 1, 2, 3, 4]
       let urutan = [0, 1, 2, 3, 4];
       
-      // Mengacak urutan indeks menggunakan algoritma Fisher-Yates
+      // Algoritma pengacak urutan
       for (let i = urutan.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [urutan[i], urutan[j]] = [urutan[j], urutan[i]];
       }
       
-      // Menyusun ulang teks opsi berdasarkan indeks yang sudah diacak
+      // Menyusun ulang teks/gambar opsi
       let opsiBaru = [];
       urutan.forEach(idx => opsiBaru.push(q.opsi[idx]));
       
-      // Mencocokkan kembali kunci jawaban / bobot nilai agar tidak tertukar
+      // Menyesuaikan posisi kunci jawaban (TWK/TIU) atau bobot nilai (TKP)
       if (q.kunci !== undefined) {
-        // Untuk TWK & TIU: Cari posisi kunci yang baru
         q.kunci = urutan.indexOf(q.kunci);
       } else if (q.bobot !== undefined) {
-        // Untuk TKP: Susun ulang susunan bobot nilainya
         let bobotBaru = [];
         urutan.forEach(idx => bobotBaru.push(q.bobot[idx]));
         q.bobot = bobotBaru;
       }
       
-      // Terapkan opsi yang sudah diacak ke bankSoal utama
       q.opsi = opsiBaru;
     });
   }
 
-  // Panggil fungsi ini agar opsi langsung diacak saat halaman pertama kali dimuat
-  acakOpsiJawaban();
-  // ============================================================
-  
-  // Sistem otomatis menghitung total soal berdasarkan isi file (seharusnya 110)
-  const TOTAL = bankSoal.length; 
-  const answers = Array(TOTAL).fill(null);
-  const KEY = Array.from({length: TOTAL}, (_, i) => (i * 7) % 5); // demo answer key
-  
-  let current = 0;
-  let tempAnswer = null; // REVISI: Menyimpan pilihan sementera sebelum klik simpan
-  let timeLeft = 100 * 60;
-  let timerId = null;
-  const $ = id => document.getElementById(id);
-
-  function showPage(id){
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    $(id).classList.add('active'); window.scrollTo(0,0);
-  }
-
-  /* Login -> Profile */
+  // 3. Pusat Kendali: Tombol Login
   $('loginForm').addEventListener('submit', e => {
     e.preventDefault();
+    
+    // Menangkap input PIN Sesi
+    const pinSesi = $('inSesi').value.trim();
+    
+    // PENENTUAN PAKET SOAL:
+    if (pinSesi === "0001") {
+      // Jika PIN 0001, muat Paket Khusus 1
+      bankSoal = [...soalTWK_0001, ...soalTIU_0001, ...soalTKP_0001];
+    } 
+    else if (pinSesi === "0002") {
+      // Disiapkan untuk Paket Khusus 2 di masa depan
+      // bankSoal = [...soalTWK_0002, ...soalTIU_0002, ...soalTKP_0002];
+    } 
+    else {
+      // DEFAULT / PUBLIK: Jika PIN bebas (apapun selain di atas), muat Paket Utama
+      bankSoal = [...soalTWK, ...soalTIU, ...soalTKP];
+    }
+
+    // Inisialisasi kapasitas ujian setelah soal dirakit
+    TOTAL = bankSoal.length;
+    answers = Array(TOTAL).fill(null);
+    
+    // Eksekusi pengacakan opsi khusus untuk paket yang terpilih
+    acakOpsiJawaban(); 
+
+    // Fitur layar penuh (Full Screen)
+    masukFullScreen(); 
+    
+    // Menampilkan data peserta ke halaman Profil
     $('pNik').textContent = $('inNik').value.trim() || '1234567890123456';
     $('pPeserta').textContent = $('inPeserta').value.trim() || 'P-1234567';
+    
+    // Transisi ke layar berikutnya
     showPage('page-profile');
   });
 
