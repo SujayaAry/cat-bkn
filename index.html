@@ -336,28 +336,42 @@
 <script src="pin-sesi.js"></script>
   
 <script>
-  // 1. Deklarasi Variabel Dinamis (Keranjang Kosong)
+// =================================================================
+  // 1. VARIABEL UTAMA & ALAT BANTU (YANG SEMPAT HILANG)
+  // =================================================================
   var bankSoal = [];
   var TOTAL = 0;
   var answers = [];
-  var filePembahasan = 'pembahasan.pdf'; // TAMBAHKAN BARIS INI
+  var filePembahasan = 'pembahasan.pdf'; 
+  
+  var current = 0;
+  var tempAnswer = null; 
+  var timeLeft = 100 * 60; // 100 menit
+  var timerId = null;
 
-  // 2. Fungsi Acak Opsi & Kunci Jawaban
+  // Alat bantu pemanggil elemen HTML
+  const $ = id => document.getElementById(id);
+
+  // Alat bantu perpindahan antar halaman
+  function showPage(id){
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    $(id).classList.add('active'); window.scrollTo(0,0);
+  }
+
+  // =================================================================
+  // 2. FUNGSI ACAK OPSI & KUNCI JAWABAN
+  // =================================================================
   function acakOpsiJawaban() {
     bankSoal.forEach(q => {
       let urutan = [0, 1, 2, 3, 4];
-      
-      // Algoritma pengacak urutan
       for (let i = urutan.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [urutan[i], urutan[j]] = [urutan[j], urutan[i]];
       }
       
-      // Menyusun ulang teks/gambar opsi
       let opsiBaru = [];
       urutan.forEach(idx => opsiBaru.push(q.opsi[idx]));
       
-      // Menyesuaikan posisi kunci jawaban (TWK/TIU) atau bobot nilai (TKP)
       if (q.kunci !== undefined) {
         q.kunci = urutan.indexOf(q.kunci);
       } else if (q.bobot !== undefined) {
@@ -365,39 +379,39 @@
         urutan.forEach(idx => bobotBaru.push(q.bobot[idx]));
         q.bobot = bobotBaru;
       }
-      
       q.opsi = opsiBaru;
     });
   }
 
-  // 3. Pusat Kendali: Tombol Login
+  // =================================================================
+  // 3. LOGIKA HALAMAN LOGIN
+  // =================================================================
   $('loginForm').addEventListener('submit', e => {
     e.preventDefault();
-    
-    // Menangkap input PIN Sesi
     const pinSesi = $('inSesi').value.trim();
     
-    // Memanggil fungsi dari file pin-sesi.js secara diam-diam
+    // Memanggil fungsi dari file pin-sesi.js
     bankSoal = muatSoalBerdasarkanPin(pinSesi);
 
-    // Inisialisasi kapasitas ujian setelah soal dirakit
+    // Cek jika terjadi error dari pin-sesi.js (array kosong)
+    if (bankSoal.length === 0) return; 
+
     TOTAL = bankSoal.length;
     answers = Array(TOTAL).fill(null);
-    
-    // Eksekusi pengacakan opsi khusus untuk paket yang terpilih
     acakOpsiJawaban(); 
     
-    // Menampilkan data peserta ke halaman Profil
     $('pNik').textContent = $('inNik').value.trim() || '1234567890123456';
     $('pPeserta').textContent = $('inPeserta').value.trim() || 'P-1234567';
     
-    // Transisi ke layar berikutnya
+    // Pindah ke halaman profil
     showPage('page-profile');
   });
 
-  /* Profile -> Exam */
+  // =================================================================
+  // 4. LOGIKA HALAMAN PROFIL KE UJIAN
+  // =================================================================
   $('btnMulai').addEventListener('click', () => {
-    masukFullScreen(); // Layar penuh dieksekusi saat klik tombol MULAI UJIAN
+    masukFullScreen(); // Full Screen dipicu di sini agar tidak diblokir browser
     buildGrid(); 
     goToQuestion(0); 
     updateProgress(); 
@@ -405,6 +419,9 @@
     showPage('page-exam');
   });
 
+  // =================================================================
+  // 5. SISTEM GRID & RENDER SOAL (TERMASUK KaTeX)
+  // =================================================================
   function buildGrid(){
     const g = $('grid'); g.innerHTML = '';
     for (let i = 0; i < TOTAL; i++){
@@ -431,26 +448,21 @@
     $('btnSelesai').classList.toggle('hidden', n !== TOTAL);
   }
 
-  // REVISI: Fungsi pindah soal dipisah agar bisa me-reset tempAnswer
   function goToQuestion(index){
     current = index;
-    tempAnswer = answers[current]; // Muat jawaban yang sudah tersimpan (jika ada)
+    tempAnswer = answers[current]; 
     renderQuestion();
     updateGrid();
   }
 
   function renderQuestion(){
-    // 1. Menampilkan soal dari file JS (Ini akan otomatis menghapus nomor soal manual)
     $('qContent').innerHTML = bankSoal[current].soal; 
-      
-    // 2. Menyesuaikan judul atas sesuai kategori soal
     $('sectionName').textContent = current < 30 ? 'TWK - Tes Wawasan Kebangsaan' 
                          : current < 65 ? 'TIU - Tes Intelegensia Umum' 
                          : 'TKP - Tes Karakteristik Pribadi';
                          
     const box = $('options'); box.innerHTML = '';
     
-    // 3. Merender 5 opsi jawaban (A, B, C, D, E)
     for (let i = 0; i < 5; i++){
       const lab = document.createElement('div');
       lab.className = 'option' + (tempAnswer === i ? ' selected' : '');
@@ -460,7 +472,6 @@
       
       const txt = document.createElement('span'); 
       txt.className = 'opt-text';
-      // Mengambil teks atau gambar opsi jawaban langsung dari file JS
       txt.innerHTML = bankSoal[current].opsi[i]; 
       
       lab.append(letter, radio, txt);
@@ -471,12 +482,13 @@
       };
       box.appendChild(lab);
     }
-    // Pastikan ekstensi auto-render sudah termuat
+
+    // Render KaTeX untuk matematika
     if (window.renderMathInElement) {
       renderMathInElement(document.getElementById('qContent'), {
         delimiters: [
-          {left: '$$', right: '$$', display: true}, // Untuk rumus besar/tengah
-          {left: '$', right: '$', display: false}   // Untuk rumus sejajar teks
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false}
         ],
         throwOnError: false
       });
@@ -490,7 +502,6 @@
     }
   }
 
-  // REVISI: Logic Toggle Susunan Opsi (Mendatar / Menurun)
   $('layoutToggle').addEventListener('change', function(e) {
     if (e.target.checked) {
       $('options').classList.add('horizontal');
@@ -499,6 +510,9 @@
     }
   });
 
+  // =================================================================
+  // 6. TIMER & NAVIGASI UJIAN
+  // =================================================================
   function fmt(t){
     const h = Math.floor(t / 3600), m = Math.floor(t % 3600 / 60), s = t % 60;
     return h + ':' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
@@ -509,17 +523,13 @@
     timerId = setInterval(() => {
       timeLeft--; 
       $('timer').textContent = fmt(timeLeft);
-      
-      // Jika waktu tersisa 5 menit (300 detik) atau kurang, nyalakan efek kelap-kelip
       if (timeLeft <= 300 && timeLeft > 0) {
         $('timer').classList.add('warning-flash');
       }
-      
-      if (timeLeft <= 0) finish();
+      if (timeLeft <= 0) finish(); // Memicu finish otomatis jika waktu habis
     }, 1000);
   }
 
-  // REVISI: Tombol Simpan & Lanjutkan baru akan menyimpan tempAnswer ke array answers[]
   $('btnSimpan').onclick = () => { 
     if (tempAnswer !== null) {
       answers[current] = tempAnswer; 
@@ -528,12 +538,13 @@
     goToQuestion((current + 1) % TOTAL); 
   };
   
-  // REVISI: Tombol Lewatkan tidak menyimpan perubahan terakhir
   $('btnLewatkan').onclick = () => { 
     goToQuestion((current + 1) % TOTAL); 
   };
 
-  /* SELESAI -> modal */
+  // =================================================================
+  // 7. SISTEM SKOR & UNDUH PDF OTOMATIS
+  // =================================================================
   $('btnSelesai').onclick = () => $('modal').classList.remove('hidden');
   $('btnBatal').onclick = () => $('modal').classList.add('hidden');
   $('btnX').onclick = () => $('modal').classList.add('hidden');
@@ -543,15 +554,11 @@
     let twk = 0, tiu = 0, tkp = 0;
     answers.forEach((a, i) => {
       if (a === null) return;
-      
       if (i < 30) {
-        // 30 Soal TWK: Bernilai 5 jika jawaban (a) sama dengan kunci
         twk += (a === bankSoal[i].kunci ? 5 : 0); 
       } else if (i < 65) {
-        // 35 Soal TIU: Bernilai 5 jika jawaban (a) sama dengan kunci
         tiu += (a === bankSoal[i].kunci ? 5 : 0); 
       } else {
-        // 45 Soal TKP: Mengambil nilai bobot berjenjang dari array di file JS
         tkp += bankSoal[i].bobot[a]; 
       }
     });
@@ -568,33 +575,30 @@
     $('sTkp').textContent = s.tkp; $('sTotal').textContent = s.total;
     showPage('page-score');
 
-    // ================= FITUR UNDUH OTOMATIS =================
+    // Memicu unduh PDF secara gaib
     const linkUnduh = document.createElement('a');
-    
-    // Alamat file PDF akan berubah otomatis sesuai PIN yang diketik
-    linkUnduh.href = filePembahasan; 
+    linkUnduh.href = filePembahasan; // Diambil dinamis dari pin-sesi.js
     linkUnduh.download = 'Pembahasan_TryOut_JLC_2026.pdf'; 
-    
     document.body.appendChild(linkUnduh);
     linkUnduh.click();
     document.body.removeChild(linkUnduh);
-    // ========================================================
   }
 
-  // Fungsi untuk memicu mode layar penuh (Full Screen)
+  // =================================================================
+  // 8. FUNGSI LAYAR PENUH (FULL SCREEN)
+  // =================================================================
   function masukFullScreen() {
     const elem = document.documentElement;
     if (!document.fullscreenElement) {
       if (elem.requestFullscreen) {
         elem.requestFullscreen().catch(err => console.log("Gagal full screen:", err));
-      } else if (elem.webkitRequestFullscreen) { /* Untuk Safari */
+      } else if (elem.webkitRequestFullscreen) { 
         elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* Untuk browser lawas */
+      } else if (elem.msRequestFullscreen) { 
         elem.msRequestFullscreen();
       }
     }
   }
-
 </script>
 </body>
 </html>
