@@ -275,7 +275,7 @@ const soalTIU_1 = [
     kunci: 3
   },
   {
-    soal: "<img src='gambar/no56_soal_paket1.png' style='max-width: 550px; width: 100%; height: auto;'>",
+    soal: "<img src='gambar/no56_soal_paket1.png' style='max-width: 400px; width: 100%; height: auto;'>",
     opsi: [
       "<img src='gambar/no56_opsiA_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
       "<img src='gambar/no56_opsiB_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
