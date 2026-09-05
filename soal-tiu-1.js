@@ -198,7 +198,7 @@ const soalTIU_1 = [
     kunci: 1
   },
   {
-    soal: "Diketahui tabel berikut.<br><br><table border='1' cellpadding='8' cellspacing='0' style='border-collapse: collapse; text-align: center; margin: 10px 0; background: #fff;'><tr><th style='min-width: 150px;'>$x$</th><th style='min-width: 150px;'>$y$</th></tr><tr><td>$14 \\times 56 - 14 \\times 35$</td><td>$14 - 56 \\times 35$</td></tr></table><br>Manakah hubungan $x$ dan $y$ berikut yang benar?",
+    soal: "Diketahui tabel berikut.<br><br><table border='1' cellpadding='8' cellspacing='0' style='border-collapse: collapse; text-align: center; margin: 10px 0; background: #fff;'><tr><th style='min-width: 150px;'>$x$</th><th style='min-width: 150px;'>$y$</th></tr><tr><td>$\\frac{1}{4} \\times \\frac{5}{6} - \\frac{1}{4} \\times \\frac{3}{5}$</td><td>$\\frac{1}{4} - \\left( \\frac{5}{6} \\times \\frac{3}{5} \\right)$</td></tr></table><br>Manakah hubungan $x$ dan $y$ berikut yang benar?",
     opsi: [
       "$x < y$",
       "$x > y$",
