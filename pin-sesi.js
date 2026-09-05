@@ -1,27 +1,27 @@
+/* pin-sesi.js — VERSI AMAN */
+var filePembahasan = 'pembahasan.pdf'; // deklarasikan eksplisit
+
 function sandikanPin(pin) {
-  return btoa(pin).split('').reverse().join('');
+  return btoa(String(pin)).split('').reverse().join('');
 }
 
 function muatSoalBerdasarkanPin(pin) {
-  const pinRahasia = sandikanPin(pin);
+  var pinRahasia = sandikanPin(pin);
 
-  if (pinRahasia === "==QMwADM") {
-    // Pengecekan agar layar tidak membeku jika ada salah penamaan
-    if (typeof soalTWK_1 === 'undefined') {
-      alert("Sistem Macet: Variabel 'soalTWK_1' tidak ditemukan! Pastikan Anda sudah mengubah nama variabel di DALAM file soal-twk-1.js");
-      return [];
+  if (pinRahasia === "==QMwADM") { // PIN 0001
+    if (typeof soalTWK_1 !== 'undefined' &&
+        typeof soalTIU_1 !== 'undefined' &&
+        typeof soalTKP_1 !== 'undefined') {
+      filePembahasan = 'pembahasan-1.pdf';
+      return [].concat(soalTWK_1, soalTIU_1, soalTKP_1);
     }
-    
-    filePembahasan = 'pembahasan-1.pdf'; 
-    return [...soalTWK_1, ...soalTIU_1, ...soalTKP_1]; 
-  } 
-  else {
-    if (typeof soalTWK === 'undefined') {
-      alert("Sistem Macet: File paket utama (soal-twk.js dkk) tidak terbaca.");
-      return [];
-    }
-    
-    filePembahasan = 'pembahasan.pdf'; 
-    return [...soalTWK, ...soalTIU, ...soalTKP];
+    console.warn('[CAT] Paket soal-1 belum dimuat, pakai paket default.');
   }
+
+  filePembahasan = 'pembahasan.pdf';
+  return [].concat(
+    typeof soalTWK !== 'undefined' ? soalTWK : [],
+    typeof soalTIU !== 'undefined' ? soalTIU : [],
+    typeof soalTKP !== 'undefined' ? soalTKP : []
+  );
 }
