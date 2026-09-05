@@ -1,4 +1,4 @@
-const soalTWK_0001 = [
+const soalTWK_1 = [
   {
     soal: "Bacalah paragraf berikut dengan saksama!<br><br>Berbagai penelitian mutakhir membuktikan bahwa tingkat stres dan kelelahan kronis berdampak destruktif terhadap produktivitas. Merespons hal tersebut, banyak perusahaan kini memfasilitasi program konseling bagi karyawannya. Kesadaran personal masyarakat untuk berkonsultasi dengan psikolog juga meningkat tajam. Pada akhirnya, kesehatan mental kini telah menjadi prioritas krusial bagi masyarakat modern.<br><br>Kalimat utama yang mendasari keseluruhan gagasan paragraf tersebut adalah ....",
     opsi: [
