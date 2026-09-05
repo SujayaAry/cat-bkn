@@ -6,15 +6,21 @@ function muatSoalBerdasarkanPin(pin) {
   const pinRahasia = sandikanPin(pin);
 
   if (pinRahasia === "==QMwADM") {
-    // Jika PIN 0001 diketik:
-    filePembahasan = 'pembahasan-1.pdf'; 
+    // Pengecekan agar layar tidak membeku jika ada salah penamaan
+    if (typeof soalTWK_1 === 'undefined') {
+      alert("Sistem Macet: Variabel 'soalTWK_1' tidak ditemukan! Pastikan Anda sudah mengubah nama variabel di DALAM file soal-twk-1.js");
+      return [];
+    }
     
-    // PASTIKAN: Nama variabel di bawah ini harus sama PERSIS 
-    // dengan nama variabel di dalam file soal-twk-1.js, soal-tiu-1.js, dst.
+    filePembahasan = 'pembahasan-1.pdf'; 
     return [...soalTWK_1, ...soalTIU_1, ...soalTKP_1]; 
   } 
   else {
-    // Jika PIN Sembarang / Default diketik:
+    if (typeof soalTWK === 'undefined') {
+      alert("Sistem Macet: File paket utama (soal-twk.js dkk) tidak terbaca.");
+      return [];
+    }
+    
     filePembahasan = 'pembahasan.pdf'; 
     return [...soalTWK, ...soalTIU, ...soalTKP];
   }
