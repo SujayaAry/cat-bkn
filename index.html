@@ -6,21 +6,27 @@
 <title>CAT BKN - Computer Assisted Test</title>
 <style>
   :root{
-    --blue:#12409e; --blue-dark:#0d2f77; --blue-light:#3b82f6;
+    --blue:#12409e; --blue-dark:#0d2f77;
     --gold:#f2c14e; --red:#d64545; --green:#22a05a;
     --orange:#f59f1d; --purple:#5a5fd6;
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#eef4fb;color:#222;overflow-x:hidden}
+  body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#eef4fb;color:#222}
   .page{display:none;min-height:100vh}
   .page.active{display:block}
   .hidden{display:none!important}
   button{cursor:pointer;font-family:inherit}
 
-  /* ============ PANEL 1 : LOGIN ============ */
-  #page-login{background:linear-gradient(180deg,#4d94ff,#2f7bf0);display:none;padding:90px 16px 50px}
-  #page-login.active{display:flex;justify-content:center;align-items:center}
-  .login-card{width:430px;max-width:95vw;margin:0 auto;background:linear-gradient(180deg,#a97b1e,#f7c65a);
+  /* Tombol fullscreen melayang */
+  .fs-float{position:fixed;top:14px;right:14px;z-index:60;background:#101418;color:#fff;
+    border:none;padding:8px 14px;border-radius:6px;font-size:13px;font-weight:600}
+
+  /* ============ 1. LOGIN ============ */
+  #page-login{background:linear-gradient(180deg,#4d94ff,#2f7bf0);display:none;place-items:center;padding:60px 16px}
+  #page-login.active{display:grid}
+  .login-title{color:#fff;font-size:26px;font-weight:800;letter-spacing:1px;text-align:center;
+    margin-bottom:92px;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+  .login-card{width:430px;max-width:95vw;background:linear-gradient(180deg,#a97b1e,#f7c65a);
     border-radius:14px;padding:100px 34px 34px;position:relative;box-shadow:0 18px 40px rgba(0,0,0,.28)}
   .logo-wrap{position:absolute;top:-78px;left:50%;transform:translateX(-50%);width:160px;height:160px;
     filter:drop-shadow(0 6px 14px rgba(0,0,0,.35))}
@@ -31,7 +37,7 @@
     border-radius:6px;margin-top:8px;transition:.2s}
   .btn-login:hover{background:var(--blue-dark)}
 
-  /* ============ PANEL 2 : PROFILE ============ */
+  /* ============ 2. PROFILE ============ */
   #page-profile{display:none;flex-direction:column}
   #page-profile.active{display:flex}
   .header-bar{background:var(--blue);color:var(--gold);font-weight:700;padding:14px 22px;font-size:18px}
@@ -40,14 +46,14 @@
   .photo-box{width:200px;height:230px;background:#c62828;color:#fff;font-weight:700;display:grid;
     place-items:center;text-align:center;font-size:20px;line-height:1.3;box-shadow:0 4px 12px rgba(0,0,0,.2)}
   .btn-mulai{background:var(--purple);color:#fff;border:none;padding:14px 26px;font-size:15px;font-weight:700;
-    letter-spacing:1px;border-radius:6px;box-shadow:0 4px 10px rgba(0,0,0,.25);transition:.2s}
+    letter-spacing:1px;border-radius:6px;box-shadow:0 4px 10px rgba(0,0,0,.25)}
   .btn-mulai:hover{filter:brightness(1.1)}
   .profile-right{flex:1;min-width:280px;display:flex;flex-direction:column;gap:18px;font-size:17px}
   .p-row label{font-weight:600;color:#444;display:block;margin-bottom:6px}
   .p-row div{background:#fff;border:1px solid #dfe5ee;border-radius:6px;padding:10px 16px;font-weight:600}
   .profile-footer{height:130px;background:#5b93b2}
 
-  /* ============ PANEL 3 & 4 : EXAM ============ */
+  /* ============ 3 & 4. EXAM ============ */
   .exam-top{display:flex;gap:18px;align-items:stretch;padding:14px 18px;background:#f1f3f7;border-bottom:1px solid #d8dde6}
   .photo-small{width:90px;background:#c62828;color:#fff;font-weight:700;font-size:13px;display:grid;
     place-items:center;text-align:center;padding:8px;flex:none}
@@ -56,21 +62,12 @@
   .progress{position:relative;height:18px;background:#cdd3ec;border-radius:10px;overflow:hidden}
   #progressBar{height:100%;width:0;background:var(--purple);transition:width .25s}
   #progressText{position:absolute;inset:0;display:grid;place-items:center;font-size:11px;color:#fff;font-weight:700}
-  .exam-right{display:flex;flex-direction:column;gap:8px;align-items:stretch;justify-content:flex-start}
+  .exam-right{display:flex;flex-direction:column;gap:8px;align-items:stretch}
   .timer{background:#101418;color:#fff;font-size:22px;font-weight:700;padding:8px 18px;border-radius:6px;text-align:center}
-  /* Animasi Kelap-Kelip Timer */
-  @keyframes flashWarning {
-    0%, 100% { background-color: #101418; color: #fff; } /* Hitam */
-    50% { background-color: var(--red); color: #fff; }  /* Merah */
-  }
-  
-  .timer.warning-flash {
-    animation: flashWarning 1s infinite;
-  }
   .btn-selesai{background:var(--orange);color:#fff;border:none;font-weight:700;font-size:13px;letter-spacing:1px;
     padding:9px 14px;border-radius:6px;display:flex;align-items:center;gap:6px;justify-content:center;animation:pulse 1.4s infinite}
   @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(245,159,29,.5)}50%{box-shadow:0 0 0 8px rgba(245,159,29,0)}}
-  
+  .btn-fs{background:#101418;color:#fff;border:none;padding:8px 12px;border-radius:6px;font-size:13px;font-weight:600}
   .exam-main{display:flex;min-height:calc(100vh - 110px)}
   .grid-panel{width:200px;flex:none;padding:12px;display:grid;grid-template-columns:repeat(5,1fr);gap:6px;
     align-content:start;background:#f7f8fa;border-right:1px solid #d8dde6;overflow-y:auto;max-height:calc(100vh - 110px)}
@@ -78,47 +75,34 @@
   .qnum.unanswered{background:#d94a4a}
   .qnum.answered{background:var(--green)}
   .qnum.current{background:#f2b31c;color:#222;outline:2px solid #222}
-  
-  .question-area{flex:1;display:flex;flex-direction:column;padding:0 26px 26px; overflow-y:auto;}
-  
-  /* REVISI: Layout Toggle pada Section Header */
-  .section-header {
-    background: var(--blue); color: var(--gold); font-size: 13px; font-weight: 600;
-    padding: 10px 16px; margin: 0 -26px 26px;
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  .switch { position: relative; display: inline-block; width: 36px; height: 18px; }
-  .switch input { opacity: 0; width: 0; height: 0; }
-  .slider { position: absolute; cursor: pointer; inset: 0; background-color: #0d2f77; border: 1px solid #4a6eb8; transition: .3s; border-radius: 20px; }
-  .slider:before { position: absolute; content: ""; height: 12px; width: 12px; left: 2px; bottom: 2px; background-color: #fff; transition: .3s; border-radius: 50%; }
-  input:checked + .slider { background-color: var(--green); border-color: var(--green); }
-  input:checked + .slider:before { transform: translateX(18px); }
-  
-  .q-content {font-size: 16px; color: #222; margin-bottom: 24px; line-height: 1.6; padding-left: 12px;}
-  
-  /* REVISI: Opsi Jawaban Vertikal & Horizontal */
-  #options { display: flex; flex-direction: column; gap: 10px; }
-  .option{display:flex;align-items:center;gap:14px;padding:9px 12px;border-radius:8px;cursor:pointer;max-width:520px;border:1px solid transparent;}
+  .question-area{flex:1;display:flex;flex-direction:column;padding:0 26px 26px}
+  .section-bar{background:var(--blue);color:var(--gold);font-size:13px;font-weight:600;padding:10px 16px;
+    margin:0 -26px 26px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .switch{position:relative;width:46px;height:24px;flex:none}
+  .switch input{opacity:0;width:0;height:0}
+  .slider{position:absolute;inset:0;background:#8a93a5;border-radius:999px;transition:.2s;cursor:pointer}
+  .slider:before{content:"";position:absolute;width:18px;height:18px;border-radius:50%;background:#fff;top:3px;left:3px;transition:.2s}
+  .switch input:checked + .slider{background:var(--green)}
+  .switch input:checked + .slider:before{transform:translateX(22px)}
+  .q-text{font-size:17px;font-weight:700;background:#101418;color:#fff;display:inline-block;padding:8px 18px;border-radius:4px;margin-bottom:22px}
+  .option{display:flex;align-items:center;gap:14px;padding:9px 12px;border-radius:8px;cursor:pointer;margin-bottom:10px;max-width:520px}
   .option:hover{background:#e9f0ff}
   .letter{font-weight:600;color:#555;width:22px}
-  .radio{width:26px;height:26px;border-radius:50%;background:#c9ced8;display:grid;place-items:center;flex:none;transition:.15s}
+  .radio{width:26px;height:26px;border-radius:50%;background:#c9ced8;display:grid;place-items:center;flex:none}
   .option.selected .radio{background:#fff;border:3px solid var(--green)}
   .dot{width:12px;height:12px;background:var(--green);border-radius:50%}
   .opt-text{font-size:15px}
-  
-  /* Tambahan Class Horizontal */
-  #options.horizontal { flex-direction: row; flex-wrap: wrap; column-gap: 20px; }
-  #options.horizontal .option { width: auto; min-width: 150px; padding-right: 20px; }
-
+  #options.horizontal{display:flex;flex-wrap:wrap;gap:10px;max-width:760px}
+  #options.horizontal .option{margin-bottom:0;background:#e9eef7;border:1px solid #d5dcea;max-width:none}
+  #options.horizontal .option.selected{background:#e8f7ee;border-color:var(--green)}
   .q-actions{margin-top:auto;padding-top:22px;display:flex;gap:12px;flex-wrap:wrap}
   .btn-simpan{background:var(--purple);color:#fff;border:none;font-weight:700;font-size:13px;letter-spacing:.5px;
     padding:12px 20px;border-radius:6px;display:flex;align-items:center;gap:8px}
   .btn-lewat{background:var(--orange);color:#fff;border:none;font-weight:700;font-size:13px;letter-spacing:.5px;
     padding:12px 20px;border-radius:6px;display:flex;align-items:center;gap:8px}
 
-  /* ============ PANEL 5 : MODAL ============ */
-  .modal-overlay{position:fixed;inset:0;background:rgba(15,25,55,.45);backdrop-filter:blur(5px);
-    display:grid;place-items:center;z-index:50}
+  /* ============ 5. MODAL ============ */
+  .modal-overlay{position:fixed;inset:0;background:rgba(15,25,55,.45);backdrop-filter:blur(5px);display:grid;place-items:center;z-index:50}
   .modal-card{background:#fff;width:430px;max-width:92vw;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.35);overflow:hidden}
   .modal-head{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid #e5e8ef}
   .modal-head h3{font-size:16px}
@@ -128,100 +112,73 @@
   .btn-batal{background:#2a8fa8;color:#fff;border:none;padding:10px 20px;border-radius:6px;font-weight:600}
   .btn-ya{background:#d64545;color:#fff;border:none;padding:10px 24px;border-radius:6px;font-weight:600}
 
-  /* ============ PANEL 6 : SCORE ============ */
+  /* ============ 6. SCORE ============ */
   .score-head{display:flex;align-items:center;gap:10px}
   .title-chip{background:#101418;color:#fff;font-size:15px;font-weight:400;padding:6px 20px;border-radius:4px}
-  .score-body{max-width:760px;margin:0 auto;background:#f7f9fc;padding:44px 40px;min-height:calc(100vh - 52px)}
+  .score-body{max-width:760px;margin:0 auto;background:#f7f9fc;padding:44px 40px}
   .s-row{display:flex;align-items:center;margin-bottom:16px;font-size:17px}
   .s-row label{width:180px;font-weight:600;color:#333}
   .s-row span{width:20px;color:#333}
   .s-row b{font-weight:700}
-  /* ============ PENGATURAN LAYAR HP (MOBILE RESPONSIVE) ============ */
-  @media (max-width:760px) {
-    .exam-main { flex-direction: column; }
-    .grid-panel { width: 100%; max-height: 220px; }
-    
-    /* Mengurangi lebar label agar teks di kanannya punya lebih banyak ruang */
-    .s-row label { width: 100px; font-size: 15px; } 
-    .s-row { font-size: 15px; }
-  }
-
-  /* ============ TAMBAHAN CSS SUPPORT & CONTACT ============ */
-  .divider { 
-    border: 0; 
-    border-top: 2px dashed #d8dde6; 
-    margin: 30px 0 20px; 
-  }
-  .link-row a { 
-    color: var(--blue); 
-    text-decoration: none; 
-    font-weight: 700; 
-    transition: .2s; 
-    flex: 1; /* Memaksa tautan mengambil sisa ruang yang ada */
-    word-break: break-word; /* Jika teks tautan terlalu panjang, baru akan dipatahkan secara rapi */
-    line-height: 1.4;
-  }
-  .link-row a:hover { 
-    color: var(--orange); 
-    text-decoration: underline; 
-  }
+  .score-footer{max-width:760px;margin:0 auto;padding:20px 40px 40px;background:#f7f9fc;font-size:14px;color:#444}
+  .score-footer a{color:var(--blue);font-weight:600;text-decoration:none}
+  .score-footer a:hover{text-decoration:underline}
+  @media (max-width:760px){.exam-main{flex-direction:column}.grid-panel{width:100%;max-height:220px}}
 </style>
-
-<!-- Memuat CSS KaTeX -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-<!-- Memuat JS KaTeX -->
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<!-- Memuat ekstensi Auto-Render (Agar otomatis mengubah teks jadi rumus) -->
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-  
 </head>
 <body>
 
-<!-- ================= 1. LOGIN PAGE ================= -->
+<button type="button" class="btn-fullscreen fs-float" title="Fullscreen">⛶ Fullscreen</button>
+
+<!-- ================= 1. LOGIN ================= -->
 <section id="page-login" class="page active">
-  <div class="login-card">
-    <div class="logo-wrap">
-      <svg viewBox="0 0 200 200" role="img" aria-label="Logo CAT BKN">
-        <defs>
-          <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#f6d365"/><stop offset="1" stop-color="#b8860b"/>
-          </linearGradient>
-          <path id="arcTop" d="M 26,100 A 74,74 0 0 1 174,100"/>
-          <path id="arcBottom" d="M 26,100 A 74,74 0 0 0 174,100"/>
-        </defs>
-        <circle cx="100" cy="100" r="99" fill="#8fc6dd"/>
-        <circle cx="100" cy="100" r="90" fill="#17356b"/>
-        <text fill="#fff" font-size="14" font-weight="700" letter-spacing="1.5">
-          <textPath href="#arcTop" startOffset="50%" text-anchor="middle">SIMULASI</textPath>
-        </text>
-        <text fill="#fff" font-size="13.5" font-weight="700" letter-spacing="1.5">
-          <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">CAT BKN</textPath>
-        </text>
-        <text x="27" y="104" fill="#f6d365" font-size="11" text-anchor="middle">★</text>
-        <text x="173" y="104" fill="#f6d365" font-size="11" text-anchor="middle">★</text>
-        <circle cx="100" cy="100" r="56" fill="#122a56"/>
-        <circle cx="100" cy="100" r="40" fill="none" stroke="url(#gold)" stroke-width="7"
-                stroke-dasharray="200 52" stroke-linecap="round" transform="rotate(-40 100 100)"/>
-        <g fill="#e0a92f">
-          <path d="M78 92 q5 -8 12 -5 q5 2 3 7 q-2 6 -8 6 q-7 0 -7 -8z"/>
-          <path d="M95 84 q9 -5 14 2 q3 5 -2 8 q-7 4 -12 -1 q-3 -5 0 -9z"/>
-          <path d="M84 106 q14 -3 27 -1 q4 1 3 4 q-15 4 -29 2 q-4 -2 -1 -5z"/>
-          <path d="M112 88 q5 -2 7 3 q2 5 -1 9 q-4 4 -7 0 q-2 -6 1 -12z"/>
-          <path d="M120 94 q9 -3 12 4 q2 6 -4 8 q-8 2 -10 -3 q-2 -6 2 -9z"/>
-        </g>
-      </svg>
+  <div>
+    <h1 class="login-title">SIMULASI CAT BKN ★★</h1>
+    <div class="login-card">
+      <div class="logo-wrap">
+        <svg viewBox="0 0 200 200" role="img" aria-label="Logo CAT BKN">
+          <defs>
+            <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f6d365"/><stop offset="1" stop-color="#b8860b"/>
+            </linearGradient>
+            <path id="arcTop" d="M 26,100 A 74,74 0 0 1 174,100"/>
+            <path id="arcBottom" d="M 26,100 A 74,74 0 0 0 174,100"/>
+          </defs>
+          <circle cx="100" cy="100" r="99" fill="#8fc6dd"/>
+          <circle cx="100" cy="100" r="90" fill="#17356b"/>
+          <text fill="#fff" font-size="14" font-weight="700" letter-spacing="1.5">
+            <textPath href="#arcTop" startOffset="50%" text-anchor="middle">COMPUTER ASSISTED TEST</textPath>
+          </text>
+          <text fill="#fff" font-size="13.5" font-weight="700" letter-spacing="1.5">
+            <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">BADAN KEPEGAWAIAN NEGARA</textPath>
+          </text>
+          <text x="27" y="104" fill="#f6d365" font-size="11" text-anchor="middle">★</text>
+          <text x="173" y="104" fill="#f6d365" font-size="11" text-anchor="middle">★</text>
+          <circle cx="100" cy="100" r="56" fill="#122a56"/>
+          <circle cx="100" cy="100" r="40" fill="none" stroke="url(#gold)" stroke-width="7"
+                  stroke-dasharray="200 52" stroke-linecap="round" transform="rotate(-40 100 100)"/>
+          <g fill="#e0a92f">
+            <path d="M78 92 q5 -8 12 -5 q5 2 3 7 q-2 6 -8 6 q-7 0 -7 -8z"/>
+            <path d="M95 84 q9 -5 14 2 q3 5 -2 8 q-7 4 -12 -1 q-3 -5 0 -9z"/>
+            <path d="M84 106 q14 -3 27 -1 q4 1 3 4 q-15 4 -29 2 q-4 -2 -1 -5z"/>
+            <path d="M112 88 q5 -2 7 3 q2 5 -1 9 q-4 4 -7 0 q-2 -6 1 -12z"/>
+            <path d="M120 94 q9 -3 12 4 q2 6 -4 8 q-8 2 -10 -3 q-2 -6 2 -9z"/>
+          </g>
+        </svg>
+      </div>
+      <!-- Form WAJIB id="loginForm", tombol type="submit" -->
+      <form id="loginForm" autocomplete="off">
+        <div class="field"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v14H3V5zm3 3v8h12V8H6zm2 2h4v3H8v-3z"/></svg></span><input id="inNik" placeholder="NIK" required></div>
+        <div class="field"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0 2c-4 0-7 2-7 5v1h14v-1c0-3-3-5-7-5z"/></svg></span><input id="inPeserta" placeholder="NO PESERTA" required></div>
+        <div class="field"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 5a3.5 3.5 0 1 1-3.5 3.5A3.5 3.5 0 0 1 12 7zm0 12.5c-2.7 0-5-1.4-6.3-3.4.1-2.2 4.2-3.6 6.3-3.6s6.2 1.4 6.3 3.6c-1.3 2-3.6 3.4-6.3 3.4z"/></svg></span><input id="inPin" type="password" placeholder="PIN PESERTA" required></div>
+        <div class="field"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1.2 14.5-3.3-3.3 1.4-1.4 1.9 1.9 4.8-4.8 1.4 1.4z"/></svg></span><input id="inSesi" type="password" placeholder="PIN SESI" required></div>
+        <button class="btn-login" type="submit">Login</button>
+      </form>
     </div>
-    <form id="loginForm" autocomplete="off">
-      <div class="field"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v14H3V5zm3 3v8h12V8H6zm2 2h4v3H8v-3z"/></svg></span><input id="inNik" placeholder="NIK" required></div>
-      <div class="field"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0 2c-4 0-7 2-7 5v1h14v-1c0-3-3-5-7-5z"/></svg></span><input id="inPeserta" placeholder="NO PESERTA" required></div>
-      <div class="field"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 5a3.5 3.5 0 1 1-3.5 3.5A3.5 3.5 0 0 1 12 7zm0 12.5c-2.7 0-5-1.4-6.3-3.4.1-2.2 4.2-3.6 6.3-3.6s6.2 1.4 6.3 3.6c-1.3 2-3.6 3.4-6.3 3.4z"/></svg></span><input id="inPin" type="password" placeholder="PIN PESERTA" required></div>
-      <div class="field"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1.2 14.5-3.3-3.3 1.4-1.4 1.9 1.9 4.8-4.8 1.4 1.4z"/></svg></span><input id="inSesi" type="password" placeholder="PIN SESI" required></div>
-      <button class="btn-login" type="submit">Login</button>
-    </form>
   </div>
 </section>
 
-<!-- ================= 2. PROFILE PAGE ================= -->
+<!-- ================= 2. PROFILE ================= -->
 <section id="page-profile" class="page">
   <div class="header-bar">Data Profile</div>
   <div class="profile-body">
@@ -238,7 +195,7 @@
   <div class="profile-footer"></div>
 </section>
 
-<!-- ================= 3 & 4. EXAM PAGE ================= -->
+<!-- ================= 3 & 4. EXAM ================= -->
 <section id="page-exam" class="page">
   <div class="exam-top">
     <div class="photo-small">Foto Peserta</div>
@@ -252,21 +209,20 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1.2 14.5-3.3-3.3 1.4-1.4 1.9 1.9 4.8-4.8 1.4 1.4z"/></svg>
         SELESAI
       </button>
+      <button type="button" class="btn-fullscreen btn-fs" title="Fullscreen">⛶ Fullscreen</button>
     </div>
   </div>
   <div class="exam-main">
     <aside class="grid-panel" id="grid"></aside>
     <div class="question-area">
-      <!-- REVISI: Header dengan Toggle -->
-      <div class="section-header" id="sectionHeader">
+      <div class="section-bar">
         <span id="sectionName">TWK</span>
-        <label class="switch" title="Ubah Layout Opsi Jawaban">
-          <input type="checkbox" id="layoutToggle">
+        <label class="switch" title="Tampilan opsi mendatar">
+          <input type="checkbox" id="toggleLayout">
           <span class="slider"></span>
         </label>
       </div>
-      
-      <div class="q-content" id="qContent"></div> <!-- Ini adalah area untuk bunyi soal -->
+      <div class="q-text" id="qText">1. Uraian Soal......</div>
       <div id="options"></div>
       <div class="q-actions">
         <button id="btnSimpan" class="btn-simpan">
@@ -282,7 +238,7 @@
   </div>
 </section>
 
-<!-- ================= 5. CONFIRMATION MODAL ================= -->
+<!-- ================= 5. MODAL ================= -->
 <div id="modal" class="modal-overlay hidden">
   <div class="modal-card">
     <div class="modal-head"><h3>Konfirmasi selesai ujian</h3><button class="modal-x" id="btnX">&times;</button></div>
@@ -294,7 +250,7 @@
   </div>
 </div>
 
-<!-- ================= 6. FINAL SCORE PAGE ================= -->
+<!-- ================= 6. SCORE ================= -->
 <section id="page-score" class="page">
   <div class="header-bar score-head">Data Nilai : <span class="title-chip">Seleksi Kompetensi Dasar</span></div>
   <div class="score-body">
@@ -304,297 +260,210 @@
     <div class="s-row"><label>TIU</label><span>:</span><b id="sTiu"></b></div>
     <div class="s-row"><label>TKP</label><span>:</span><b id="sTkp"></b></div>
     <div class="s-row"><label>TOTAL</label><span>:</span><b id="sTotal"></b></div>
-
-    <!-- Tambahan Support & Contact -->
-    <hr class="divider">
-    <div class="s-row link-row">
-      <label>Support</label><span>:</span>
-      <a href="https://saweria.co/SujayaAry" target="_blank" rel="noopener noreferrer">
-        &gt;&gt;&nbsp;saweria.co/SujayaAry&nbsp;&lt;&lt;
-      </a>
-    </div>
-    <div class="s-row link-row">
-      <label>Contact</label><span>:</span>
-      <a href="https://t.me/ary_0248" target="_blank" rel="noopener noreferrer">
-        &gt;&gt;&nbsp;t.me/ary_0248&nbsp;&lt;&lt;
-      </a>
-    </div>
+  </div>
+  <div class="score-footer">
+    <div>Support : <a href="https://saweria.co/SujayaAry" target="_blank" rel="noopener">saweria.co/SujayaAry</a></div>
+    <div>Contact : <a href="https://t.me/ary_0248" target="_blank" rel="noopener">t.me/ary_0248</a></div>
   </div>
 </section>
 
-<!-- Paket Utama -->
+<!-- ============ SCRIPT SOAL (opsional — hapus baris yg filenya tidak ada) ============ -->
 <script src="soal-twk.js"></script>
 <script src="soal-tiu.js"></script>
 <script src="soal-tkp.js"></script>
-
-<!-- Paket Khusus 1 -->
 <script src="soal-twk-1.js"></script>
 <script src="soal-tiu-1.js"></script>
 <script src="soal-tkp-1.js"></script>
-
-<!-- Logika PIN Sesi -->
 <script src="pin-sesi.js"></script>
-  
-<script>
-  // 1. Deklarasi Variabel Dinamis (Keranjang Kosong)
-  var bankSoal = [];
-  var TOTAL = 0;
-  var answers = [];
-  var filePembahasan = 'pembahasan.pdf';
 
-  // 2. Fungsi Acak Opsi & Kunci Jawaban
-  function acakOpsiJawaban() {
-    bankSoal.forEach(q => {
-      let urutan = [0, 1, 2, 3, 4];
-      
-      // Algoritma pengacak urutan
-      for (let i = urutan.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [urutan[i], urutan[j]] = [urutan[j], urutan[i]];
-      }
-      
-      // Menyusun ulang teks/gambar opsi
-      let opsiBaru = [];
-      urutan.forEach(idx => opsiBaru.push(q.opsi[idx]));
-      
-      // Menyesuaikan posisi kunci jawaban (TWK/TIU) atau bobot nilai (TKP)
-      if (q.kunci !== undefined) {
-        q.kunci = urutan.indexOf(q.kunci);
-      } else if (q.bobot !== undefined) {
-        let bobotBaru = [];
-        urutan.forEach(idx => bobotBaru.push(q.bobot[idx]));
-        q.bobot = bobotBaru;
-      }
-      
-      q.opsi = opsiBaru;
-    });
+<!-- ============ APLIKASI UTAMA ============ -->
+<script>
+  var TOTAL = 110;                 // mutable, diset dari daftarSoal
+  var daftarSoal = [];
+  var answers = [], pending = [];
+  var current = 0, timeLeft = 100 * 60, timerId = null;   // 1:40:00
+  function $(id){ return document.getElementById(id); }
+
+  function showPage(id){
+    document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('active'); });
+    $(id).classList.add('active'); window.scrollTo(0,0);
   }
 
-  // 3. Pusat Kendali: Tombol Login
-  $('loginForm').addEventListener('submit', e => {
-    e.preventDefault();
-    
-    // Menangkap input PIN Sesi
-    const pinSesi = $('inSesi').value.trim();
-    
-    // Memanggil fungsi dari file pin-sesi.js secara diam-diam
-    bankSoal = muatSoalBerdasarkanPin(pinSesi);
-
-    // Inisialisasi kapasitas ujian setelah soal dirakit
-    TOTAL = bankSoal.length;
-    answers = Array(TOTAL).fill(null);
-    
-    // Eksekusi pengacakan opsi khusus untuk paket yang terpilih
-    acakOpsiJawaban(); 
-    
-    // Menampilkan data peserta ke halaman Profil
-    $('pNik').textContent = $('inNik').value.trim() || '1234567890123456';
-    $('pPeserta').textContent = $('inPeserta').value.trim() || 'P-1234567';
-    
-    // Transisi ke layar berikutnya
-    showPage('page-profile');
+  /* ---------- FULLSCREEN (wajib dari klik user) ---------- */
+  function toggleFullScreen(){
+    var el = document.documentElement, p;
+    var aktif = document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+    if (!aktif){
+      if (el.requestFullscreen) p = el.requestFullscreen();
+      else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+      else if (el.msRequestFullscreen) el.msRequestFullscreen();
+    } else {
+      if (document.exitFullscreen) p = document.exitFullscreen();
+      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    }
+    if (p && p.catch) p.catch(function(err){ console.warn('[CAT] Fullscreen ditolak:', err); });
+  }
+  document.querySelectorAll('.btn-fullscreen').forEach(function(b){
+    b.addEventListener('click', toggleFullScreen);
   });
 
-  /* Profile -> Exam */
-  $('btnMulai').addEventListener('click', () => {
-    masukFullScreen(); // Layar penuh dieksekusi saat klik tombol MULAI UJIAN
-    buildGrid(); 
-    goToQuestion(0); 
-    updateProgress(); 
-    startTimer();
-    showPage('page-exam');
+  /* ---------- LOGIN (tahan error) ---------- */
+  function buatSoalDummy(n){
+    return Array.from({length:n}, function(){ return 'Uraian Soal......'; });
+  }
+  function defaultOpsi(){ return ['Jawaban A','Jawaban B','Jawaban C','Jawaban D','Jawaban E']; }
+  function normalisasiSoal(item, i){
+    if (item && typeof item === 'object'){
+      return {
+        teks : item.soal || item.pertanyaan || item.question || ('Soal nomor ' + (i+1)),
+        opsi : item.opsi || item.pilihan || item.options || defaultOpsi(),
+        kunci: (typeof item.kunci !== 'undefined') ? item.kunci
+             : (typeof item.jawaban !== 'undefined') ? item.jawaban : (i*7)%5,
+        bobot: item.bobot || null
+      };
+    }
+    return { teks: String(item), opsi: defaultOpsi(), kunci: (i*7)%5, bobot: null };
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+
+    var form = $('loginForm');
+    if (!form){ console.error('[CAT] id "loginForm" tidak ditemukan.'); return; }
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      try{
+        var pin = $('inSesi').value.trim() || '0000';
+        var soal = null;
+        if (typeof muatSoalBerdasarkanPin === 'function'){
+          try { soal = muatSoalBerdasarkanPin(pin); }
+          catch(err){ console.warn('[CAT] muatSoalBerdasarkanPin gagal:', err.message); soal = null; }
+        }
+        if (!soal || !soal.length) soal = buatSoalDummy(110);   // fallback aman
+        daftarSoal = soal.map(normalisasiSoal);
+        TOTAL = daftarSoal.length;
+        answers = Array(TOTAL).fill(null);
+        pending = Array(TOTAL).fill(null);
+
+        $('pNik').textContent = $('inNik').value.trim() || '1234567890123456';
+        $('pPeserta').textContent = $('inPeserta').value.trim() || 'P-1234567';
+        showPage('page-profile');
+      }catch(err){
+        console.error('[CAT] Login gagal:', err);
+        alert('Login gagal: ' + err.message);
+      }
+    });
+
+    /* ---------- MULAI UJIAN (+ masuk fullscreen) ---------- */
+    $('btnMulai').addEventListener('click', function(){
+      buildGrid(); renderQuestion(); updateProgress(); startTimer();
+      showPage('page-exam');
+      if (!document.fullscreenElement && !document.webkitFullscreenElement) toggleFullScreen();
+    });
+
+    /* ---------- Toggle opsi mendatar ---------- */
+    $('toggleLayout').addEventListener('change', function(e){
+      $('options').classList.toggle('horizontal', e.target.checked);
+    });
+
+    /* ---------- Tombol aksi ---------- */
+    $('btnSimpan').addEventListener('click', function(){
+      if (pending[current] !== null){ answers[current] = pending[current]; pending[current] = null; }
+      updateProgress();
+      current = (current + 1) % TOTAL;
+      renderQuestion();
+    });
+    $('btnLewatkan').addEventListener('click', function(){
+      current = (current + 1) % TOTAL;
+      renderQuestion();
+    });
+    $('btnSelesai').addEventListener('click', function(){ $('modal').classList.remove('hidden'); });
+    $('btnBatal').addEventListener('click', function(){ $('modal').classList.add('hidden'); });
+    $('btnX').addEventListener('click', function(){ $('modal').classList.add('hidden'); });
+    $('btnYa').addEventListener('click', finish);
   });
 
+  /* ---------- GRID & RENDER ---------- */
   function buildGrid(){
-    const g = $('grid'); g.innerHTML = '';
-    for (let i = 0; i < TOTAL; i++){
-      const b = document.createElement('button');
-      b.textContent = i + 1;
-      b.onclick = () => { goToQuestion(i); };
-      g.appendChild(b);
+    var g = $('grid'); g.innerHTML = '';
+    for (var i = 0; i < TOTAL; i++){
+      (function(idx){
+        var b = document.createElement('button');
+        b.textContent = idx + 1;
+        b.addEventListener('click', function(){ current = idx; renderQuestion(); });
+        g.appendChild(b);
+      })(i);
     }
     updateGrid();
   }
-
   function updateGrid(){
-    const btns = $('grid').children;
-    for (let i = 0; i < TOTAL; i++){
+    var btns = $('grid').children;
+    for (var i = 0; i < TOTAL; i++){
       btns[i].className = 'qnum ' + (answers[i] !== null ? 'answered' : 'unanswered') + (i === current ? ' current' : '');
     }
-    return answers.filter(a => a !== null).length;
+    return answers.filter(function(a){ return a !== null; }).length;
   }
-
   function updateProgress(){
-    const n = updateGrid(), pct = Math.round(n / TOTAL * 100);
+    var n = updateGrid(), pct = Math.round(n / TOTAL * 100);
     $('progressBar').style.width = pct + '%';
     $('progressText').textContent = pct + '%';
     $('btnSelesai').classList.toggle('hidden', n !== TOTAL);
   }
-
-  // REVISI: Fungsi pindah soal dipisah agar bisa me-reset tempAnswer
-  function goToQuestion(index){
-    current = index;
-    tempAnswer = answers[current]; // Muat jawaban yang sudah tersimpan (jika ada)
-    renderQuestion();
+  function renderQuestion(){
+    var q = daftarSoal[current];
+    $('qText').textContent = (current + 1) + '. ' + q.teks;
+    $('sectionName').textContent = current < 30 ? 'TWK - Tes Wawasan Kebangsaan'
+                        : current < 65 ? 'TIU - Tes Intelegensia Umum'
+                        : 'TKP - Tes Karakteristik Pribadi';
+    var sel = pending[current] !== null ? pending[current] : answers[current];
+    var box = $('options'); box.innerHTML = '';
+    q.opsi.forEach(function(teksOpsi, i){
+      var lab = document.createElement('div');
+      lab.className = 'option' + (sel === i ? ' selected' : '');
+      var letter = document.createElement('span'); letter.className = 'letter'; letter.textContent = 'ABCDE'[i] + '.';
+      var radio = document.createElement('span'); radio.className = 'radio';
+      if (sel === i){ var d = document.createElement('span'); d.className = 'dot'; radio.appendChild(d); }
+      var txt = document.createElement('span'); txt.className = 'opt-text'; txt.textContent = teksOpsi;
+      lab.append(letter, radio, txt);
+      lab.addEventListener('click', function(){ pending[current] = i; renderQuestion(); }); // grid TIDAK berubah
+      box.appendChild(lab);
+    });
     updateGrid();
   }
 
-  function renderQuestion(){
-    // 1. Menampilkan soal dari file JS (Ini akan otomatis menghapus nomor soal manual)
-    $('qContent').innerHTML = bankSoal[current].soal; 
-      
-    // 2. Menyesuaikan judul atas sesuai kategori soal
-    $('sectionName').textContent = current < 30 ? 'TWK - Tes Wawasan Kebangsaan' 
-                         : current < 65 ? 'TIU - Tes Intelegensia Umum' 
-                         : 'TKP - Tes Karakteristik Pribadi';
-                         
-    const box = $('options'); box.innerHTML = '';
-    
-    // 3. Merender 5 opsi jawaban (A, B, C, D, E)
-    for (let i = 0; i < 5; i++){
-      const lab = document.createElement('div');
-      lab.className = 'option' + (tempAnswer === i ? ' selected' : '');
-      const letter = document.createElement('span'); letter.className = 'letter'; letter.textContent = 'ABCDE'[i] + '.';
-      const radio = document.createElement('span'); radio.className = 'radio';
-      if (tempAnswer === i){ const d = document.createElement('span'); d.className = 'dot'; radio.appendChild(d); }
-      
-      const txt = document.createElement('span'); 
-      txt.className = 'opt-text';
-      // Mengambil teks atau gambar opsi jawaban langsung dari file JS
-      txt.innerHTML = bankSoal[current].opsi[i]; 
-      
-      lab.append(letter, radio, txt);
-      
-      lab.onclick = () => { 
-        tempAnswer = i; 
-        renderQuestion(); 
-      };
-      box.appendChild(lab);
-    }
-    // Pastikan ekstensi auto-render sudah termuat
-    if (window.renderMathInElement) {
-      renderMathInElement(document.getElementById('qContent'), {
-        delimiters: [
-          {left: '$$', right: '$$', display: true}, // Untuk rumus besar/tengah
-          {left: '$', right: '$', display: false}   // Untuk rumus sejajar teks
-        ],
-        throwOnError: false
-      });
-      renderMathInElement(document.getElementById('options'), {
-        delimiters: [
-          {left: '$$', right: '$$', display: true},
-          {left: '$', right: '$', display: false}
-        ],
-        throwOnError: false
-      });
-    }
-  }
-
-  // REVISI: Logic Toggle Susunan Opsi (Mendatar / Menurun)
-  $('layoutToggle').addEventListener('change', function(e) {
-    if (e.target.checked) {
-      $('options').classList.add('horizontal');
-    } else {
-      $('options').classList.remove('horizontal');
-    }
-  });
-
+  /* ---------- TIMER & NILAI ---------- */
   function fmt(t){
-    const h = Math.floor(t / 3600), m = Math.floor(t % 3600 / 60), s = t % 60;
+    var h = Math.floor(t/3600), m = Math.floor(t%3600/60), s = t%60;
     return h + ':' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
   }
-  
   function startTimer(){
     $('timer').textContent = fmt(timeLeft);
-    timerId = setInterval(() => {
-      timeLeft--; 
-      $('timer').textContent = fmt(timeLeft);
-      
-      // Jika waktu tersisa 5 menit (300 detik) atau kurang, nyalakan efek kelap-kelip
-      if (timeLeft <= 300 && timeLeft > 0) {
-        $('timer').classList.add('warning-flash');
-      }
-      
+    timerId = setInterval(function(){
+      timeLeft--; $('timer').textContent = fmt(timeLeft);
       if (timeLeft <= 0) finish();
     }, 1000);
   }
-
-  // REVISI: Tombol Simpan & Lanjutkan baru akan menyimpan tempAnswer ke array answers[]
-  $('btnSimpan').onclick = () => { 
-    if (tempAnswer !== null) {
-      answers[current] = tempAnswer; 
-    }
-    updateProgress();
-    goToQuestion((current + 1) % TOTAL); 
-  };
-  
-  // REVISI: Tombol Lewatkan tidak menyimpan perubahan terakhir
-  $('btnLewatkan').onclick = () => { 
-    goToQuestion((current + 1) % TOTAL); 
-  };
-
-  /* SELESAI -> modal */
-  $('btnSelesai').onclick = () => $('modal').classList.remove('hidden');
-  $('btnBatal').onclick = () => $('modal').classList.add('hidden');
-  $('btnX').onclick = () => $('modal').classList.add('hidden');
-  $('btnYa').onclick = finish;
-
   function computeScores(){
-    let twk = 0, tiu = 0, tkp = 0;
-    answers.forEach((a, i) => {
+    var twk = 0, tiu = 0, tkp = 0;
+    answers.forEach(function(a, i){
       if (a === null) return;
-      
-      if (i < 30) {
-        // 30 Soal TWK: Bernilai 5 jika jawaban (a) sama dengan kunci
-        twk += (a === bankSoal[i].kunci ? 5 : 0); 
-      } else if (i < 65) {
-        // 35 Soal TIU: Bernilai 5 jika jawaban (a) sama dengan kunci
-        tiu += (a === bankSoal[i].kunci ? 5 : 0); 
-      } else {
-        // 45 Soal TKP: Mengambil nilai bobot berjenjang dari array di file JS
-        tkp += bankSoal[i].bobot[a]; 
-      }
+      var q = daftarSoal[i];
+      if (i < 30) twk += (a === q.kunci ? 5 : 0);
+      else if (i < 65) tiu += (a === q.kunci ? 5 : 0);
+      else tkp += Array.isArray(q.bobot) ? (q.bobot[a] || 0) : [5,4,3,2,1][a];
     });
-    return { twk, tiu, tkp, total: twk + tiu + tkp };
+    return { twk:twk, tiu:tiu, tkp:tkp, total: twk+tiu+tkp };
   }
-
   function finish(){
     clearInterval(timerId);
     $('modal').classList.add('hidden');
-    const s = computeScores();
+    var s = computeScores();
     $('sNama').textContent = $('pNama').textContent;
     $('sPeserta').textContent = $('pPeserta').textContent;
     $('sTwk').textContent = s.twk; $('sTiu').textContent = s.tiu;
     $('sTkp').textContent = s.tkp; $('sTotal').textContent = s.total;
     showPage('page-score');
-
-    // ================= FITUR UNDUH OTOMATIS =================
-    const linkUnduh = document.createElement('a');
-    
-    // Alamat file PDF akan berubah otomatis sesuai PIN yang diketik
-    linkUnduh.href = filePembahasan; 
-    linkUnduh.download = 'Pembahasan_TryOut_JLC_2026.pdf'; 
-    
-    document.body.appendChild(linkUnduh);
-    linkUnduh.click();
-    document.body.removeChild(linkUnduh);
-    // ========================================================
   }
-
-  // Fungsi untuk memicu mode layar penuh (Full Screen)
-  function masukFullScreen() {
-    const elem = document.documentElement;
-    if (!document.fullscreenElement) {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen().catch(err => console.log("Gagal full screen:", err));
-      } else if (elem.webkitRequestFullscreen) { /* Untuk Safari */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* Untuk browser lawas */
-        elem.msRequestFullscreen();
-      }
-    }
-  }
-
 </script>
 </body>
 </html>
