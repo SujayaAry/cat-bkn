@@ -136,6 +136,16 @@
   .s-row label{width:180px;font-weight:600;color:#333}
   .s-row span{width:20px;color:#333}
   .s-row b{font-weight:700}
+
+  /* ============ TAMBAHAN CSS TABEL MATEMATIKA ============ */
+  .question-area table {
+    margin: 15px 0 !important;
+  }
+  .question-area table th, .question-area table td {
+    padding: 16px 24px !important; /* Memberikan jarak atas-bawah 16px dan kiri-kanan 24px */
+    line-height: 1.8; /* Memberikan ruang napas tambahan untuk rumus KaTeX yang bertumpuk */
+  }
+  
   /* ============ PENGATURAN LAYAR HP (MOBILE RESPONSIVE) ============ */
   @media (max-width:760px) {
     .exam-main { flex-direction: column; }
