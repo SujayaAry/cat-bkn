@@ -1,4 +1,4 @@
-const soalTIU_0001 = [
+const soalTIU_1 = [
   {
     soal: "Berlian : Karat = …",
     opsi: [
