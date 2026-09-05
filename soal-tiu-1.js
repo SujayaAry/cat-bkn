@@ -275,112 +275,112 @@ const soalTIU_1 = [
     kunci: 3
   },
   {
-    soal: "<img src='gambar/no56_soal_paket1.png' style='max-width: 400px; width: 100%; height: auto;'>",
+    soal: "<img src='gambar/no56_soal_paket1.png' style='max-width: 550px; width: 100%; height: auto;'>",
     opsi: [
-      "<img src='gambar/no56_opsiA_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no56_opsiB_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no56_opsiC_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no56_opsiD_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no56_opsiE_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>"
+      "<img src='gambar/no56_opsiA_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no56_opsiB_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no56_opsiC_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no56_opsiD_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no56_opsiE_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 0
   },
   {
-    soal: "<img src='gambar/no57_soal_paket1.png' style='max-width: 400px; width: 100%; height: auto;'>",
+    soal: "<img src='gambar/no57_soal_paket1.png' style='max-width: 550px; width: 100%; height: auto;'>",
     opsi: [
-      "<img src='gambar/no57_opsiA_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no57_opsiB_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no57_opsiC_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no57_opsiD_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no57_opsiE_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>"
+      "<img src='gambar/no57_opsiA_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no57_opsiB_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no57_opsiC_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no57_opsiD_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no57_opsiE_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 1
   },
   {
-    soal: "<img src='gambar/no58_soal_paket1.png' style='max-width: 400px; width: 100%; height: auto;'>",
+    soal: "<img src='gambar/no58_soal_paket1.png' style='max-width: 550px; width: 100%; height: auto;'>",
     opsi: [
-      "<img src='gambar/no58_opsiA_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no58_opsiB_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no58_opsiC_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no58_opsiD_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no58_opsiE_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>"
+      "<img src='gambar/no58_opsiA_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no58_opsiB_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no58_opsiC_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no58_opsiD_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no58_opsiE_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 2
   },
   {
     soal: "",
     opsi: [
-      "<img src='gambar/no59_opsiA_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no59_opsiB_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no59_opsiC_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no59_opsiD_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no59_opsiE_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>"
+      "<img src='gambar/no59_opsiA_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no59_opsiB_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no59_opsiC_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no59_opsiD_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no59_opsiE_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 3
   },
   {
     soal: "",
     opsi: [
-      "<img src='gambar/no60_opsiA_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no60_opsiB_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no60_opsiC_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no60_opsiD_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no60_opsiE_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>"
+      "<img src='gambar/no60_opsiA_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no60_opsiB_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no60_opsiC_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no60_opsiD_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no60_opsiE_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 4
   },
   {
     soal: "",
     opsi: [
-      "<img src='gambar/no61_opsiA_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no61_opsiB_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no61_opsiC_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no61_opsiD_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no61_opsiE_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>"
+      "<img src='gambar/no61_opsiA_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no61_opsiB_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no61_opsiC_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no61_opsiD_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no61_opsiE_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 0
   },
   {
-    soal: "<img src='gambar/no62_soal_paket1.png' style='max-width: 400px; width: 100%; height: auto;'>",
+    soal: "<img src='gambar/no62_soal_paket1.png' style='max-width: 550px; width: 100%; height: auto;'>",
     opsi: [
-      "<img src='gambar/no62_opsiA_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no62_opsiB_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no62_opsiC_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no62_opsiD_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no62_opsiE_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>"
+      "<img src='gambar/no62_opsiA_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no62_opsiB_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no62_opsiC_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no62_opsiD_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no62_opsiE_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 1
   },
   {
-    soal: "<img src='gambar/no63_soal_paket1.png' style='max-width: 400px; width: 100%; height: auto;'>",
+    soal: "<img src='gambar/no63_soal_paket1.png' style='max-width: 550px; width: 100%; height: auto;'>",
     opsi: [
-      "<img src='gambar/no63_opsiA_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no63_opsiB_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no63_opsiC_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no63_opsiD_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no63_opsiE_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>"
+      "<img src='gambar/no63_opsiA_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no63_opsiB_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no63_opsiC_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no63_opsiD_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no63_opsiE_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 2
   },
   {
-    soal: "<img src='gambar/no64_soal_paket1.png' style='max-width: 400px; width: 100%; height: auto;'>",
+    soal: "<img src='gambar/no64_soal_paket1.png' style='max-width: 550px; width: 100%; height: auto;'>",
     opsi: [
-      "<img src='gambar/no64_opsiA_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no64_opsiB_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no64_opsiC_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no64_opsiD_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no64_opsiE_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>"
+      "<img src='gambar/no64_opsiA_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no64_opsiB_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no64_opsiC_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no64_opsiD_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no64_opsiE_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 3
   },
   {
-    soal: "<img src='gambar/no65_soal_paket1.png' style='max-width: 400px; width: 100%; height: auto;'>",
+    soal: "<img src='gambar/no65_soal_paket1.png' style='max-width: 550px; width: 100%; height: auto;'>",
     opsi: [
-      "<img src='gambar/no65_opsiA_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no65_opsiB_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no65_opsiC_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no65_opsiD_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>",
-      "<img src='gambar/no65_opsiE_paket1.png' style='height: 80px; width: auto; vertical-align: middle;'>"
+      "<img src='gambar/no65_opsiA_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no65_opsiB_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no65_opsiC_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no65_opsiD_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>",
+      "<img src='gambar/no65_opsiE_paket1.png' style='height: 130px; width: auto; vertical-align: middle;'>"
     ],
     kunci: 4
   }
