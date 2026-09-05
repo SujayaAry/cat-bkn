@@ -336,10 +336,11 @@
 <script src="pin-sesi.js"></script>
   
 <script>
-// 1. Deklarasi Variabel Dinamis (Keranjang Kosong)
+  // 1. Deklarasi Variabel Dinamis (Keranjang Kosong)
   let bankSoal = [];
   let TOTAL = 0;
   let answers = [];
+  let filePembahasan = 'pembahasan.pdf'; // TAMBAHKAN BARIS INI
 
   // 2. Fungsi Acak Opsi & Kunci Jawaban
   function acakOpsiJawaban() {
@@ -385,9 +386,6 @@
     
     // Eksekusi pengacakan opsi khusus untuk paket yang terpilih
     acakOpsiJawaban(); 
-
-    // Fitur layar penuh (Full Screen)
-    masukFullScreen(); 
     
     // Menampilkan data peserta ke halaman Profil
     $('pNik').textContent = $('inNik').value.trim() || '1234567890123456';
@@ -399,6 +397,7 @@
 
   /* Profile -> Exam */
   $('btnMulai').addEventListener('click', () => {
+    masukFullScreen(); // Layar penuh dieksekusi saat klik tombol MULAI UJIAN
     buildGrid(); 
     goToQuestion(0); 
     updateProgress(); 
@@ -570,16 +569,12 @@
     showPage('page-score');
 
     // ================= FITUR UNDUH OTOMATIS =================
-    // Membuat elemen link tersembunyi
     const linkUnduh = document.createElement('a');
     
-    // Alamat file PDF di GitHub Anda (sesuaikan jika namanya berbeda)
-    linkUnduh.href = 'pembahasan.pdf'; 
-    
-    // Nama file yang akan muncul saat tersimpan di HP/Laptop peserta
+    // Alamat file PDF akan berubah otomatis sesuai PIN yang diketik
+    linkUnduh.href = filePembahasan; 
     linkUnduh.download = 'Pembahasan_TryOut_JLC_2026.pdf'; 
     
-    // Memerintahkan sistem untuk mengklik link tersebut secara otomatis
     document.body.appendChild(linkUnduh);
     linkUnduh.click();
     document.body.removeChild(linkUnduh);
@@ -600,13 +595,6 @@
     }
   }
 
-  // Trik: Memicu Full Screen pada klik/sentuhan PERTAMA di mana saja pada layar
-  document.body.addEventListener('click', function triggerFullScreen() {
-    masukFullScreen();
-    // Setelah berhasil full screen pada klik pertama, hapus event listener ini
-    // agar tidak terus-terusan memanggil fungsi di setiap klik peserta
-    document.body.removeEventListener('click', triggerFullScreen);
-  }, { once: true });
 </script>
 </body>
 </html>
