@@ -1,4 +1,4 @@
-const soalTKP_0001 = [
+const soalTKP_1 = [
   {
     soal: "Anda bertugas sebagai kepala dinas tata kota yang sedang menghadapi krisis polusi udara dan penyusutan ruang terbuka hijau. Sebuah lembaga swadaya masyarakat (LSM) secara masif mengampanyekan penanaman pohon pada satu-satunya lahan kosong yang tersisa. Di sisi lain, lahan tersebut sangat strategis dan telah direncanakan untuk proyek pembangunan infrastruktur publik. Mengingat kedua hal tersebut sama-sama ditujukan untuk kepentingan masyarakat, sikap Anda adalah ....",
     opsi: [
