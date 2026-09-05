@@ -166,6 +166,14 @@
     text-decoration: underline; 
   }
 </style>
+
+<!-- Memuat CSS KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<!-- Memuat JS KaTeX -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<!-- Memuat ekstensi Auto-Render (Agar otomatis mengubah teks jadi rumus) -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
 </head>
 <body>
 
@@ -314,15 +322,18 @@
   </div>
 </section>
 
-<!-- Paket Utama (Untuk Publik / PIN Bebas) -->
+<!-- Paket Utama -->
 <script src="soal-twk.js"></script>
 <script src="soal-tiu.js"></script>
 <script src="soal-tkp.js"></script>
 
-<!-- Paket Khusus 1 (Hanya aktif jika PIN: 0001) -->
+<!-- Paket Khusus 1 -->
 <script src="soal-twk-0001.js"></script>
 <script src="soal-tiu-0001.js"></script>
 <script src="soal-tkp-0001.js"></script>
+
+<!-- Logika PIN Sesi -->
+<script src="pin-sesi.js"></script>
   
 <script>
 // 1. Deklarasi Variabel Dinamis (Keranjang Kosong)
@@ -365,19 +376,8 @@
     // Menangkap input PIN Sesi
     const pinSesi = $('inSesi').value.trim();
     
-    // PENENTUAN PAKET SOAL:
-    if (pinSesi === "0001") {
-      // Jika PIN 0001, muat Paket Khusus 1
-      bankSoal = [...soalTWK_0001, ...soalTIU_0001, ...soalTKP_0001];
-    } 
-    else if (pinSesi === "0002") {
-      // Disiapkan untuk Paket Khusus 2 di masa depan
-      // bankSoal = [...soalTWK_0002, ...soalTIU_0002, ...soalTKP_0002];
-    } 
-    else {
-      // DEFAULT / PUBLIK: Jika PIN bebas (apapun selain di atas), muat Paket Utama
-      bankSoal = [...soalTWK, ...soalTIU, ...soalTKP];
-    }
+    // Memanggil fungsi dari file pin-sesi.js secara diam-diam
+    bankSoal = muatSoalBerdasarkanPin(pinSesi);
 
     // Inisialisasi kapasitas ujian setelah soal dirakit
     TOTAL = bankSoal.length;
@@ -471,6 +471,23 @@
         renderQuestion(); 
       };
       box.appendChild(lab);
+    }
+    // Pastikan ekstensi auto-render sudah termuat
+    if (window.renderMathInElement) {
+      renderMathInElement(document.getElementById('qContent'), {
+        delimiters: [
+          {left: '$$', right: '$$', display: true}, // Untuk rumus besar/tengah
+          {left: '$', right: '$', display: false}   // Untuk rumus sejajar teks
+        ],
+        throwOnError: false
+      });
+      renderMathInElement(document.getElementById('options'), {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false}
+        ],
+        throwOnError: false
+      });
     }
   }
 
