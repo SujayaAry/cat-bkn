@@ -209,7 +209,7 @@ const soalTIU_1 = [
     kunci: 1
   },
   {
-    soal: "Diketahui<br><br><table border='1' cellpadding='8' cellspacing='0' style='border-collapse: collapse; text-align: center; margin: 10px 0; background: #fff;'><tr><th style='min-width: 150px;'>$X$</th><th style='min-width: 150px;'>$Y$</th></tr><tr><td>$\\frac{1}{6} : \\frac{1}{2} \\times 125$</td><td>$12\\frac{1}{2} + 48 \\times 1\\frac{1}{2} - 3\\frac{1}{2}$</td></tr></table><br>Manakah hubungan yang benar antara kuantitas $X$ dan $Y$ berikut berdasarkan informasi yang diberikan?",
+    soal: "Diketahui<br><br><table border='1' cellpadding='8' cellspacing='0' style='border-collapse: collapse; text-align: center; margin: 10px 0; background: #fff;'><tr><th style='min-width: 150px;'>$X$</th><th style='min-width: 150px;'>$Y$</th></tr><tr><td>$16 : \\frac{1}{2} \\times 1\\frac{2}{5}$</td><td>$12\\frac{1}{2} + 48 \\times 1\\frac{1}{2} - 3\\frac{1}{2}$</td></tr></table><br>Manakah hubungan yang benar antara kuantitas $X$ dan $Y$ berikut berdasarkan informasi yang diberikan?",
     opsi: [
       "$X > Y$",
       "$3X < Y$",
