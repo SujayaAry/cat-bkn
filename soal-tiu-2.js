@@ -154,7 +154,7 @@ const soalTIU_2 = [
     kunci: 0
   },
   {
-    soal: "Hasil operasi $-\\frac{21}{45} - 3 \\div \\left(-26\\frac{3}{27}\\right) + 0,111\\dots \\times \\left(-\\frac{3}{4}\\right) - 0,25 = \\dots$",
+    soal: "Hasil operasi $\\left(-\\frac{21}{45} - 3\\right) \\div \\left(-26\\frac{3}{27} + 0,111\\dots\\right) \\times \\left(-\\frac{3}{4} - 0,25\\right) = \\dots$",
     opsi: [
       "$-\\frac{8}{60}$",
       "$0,133\\dots$",
@@ -189,9 +189,9 @@ const soalTIU_2 = [
   {
     soal: "$8, 12, 18, 27, \\frac{81}{2}, \\dots, \\dots$",
     opsi: [
-      "$42, 18\\frac{1}{2}$",
-      "$\\frac{42}{2}, 18\\frac{1}{2}$",
-      "$\\frac{42}{2}, 18\\frac{1}{4}$",
+      "$42, \\frac{181}{2}$",
+      "$\\frac{42}{2}, \\frac{181}{2}$",
+      "$\\frac{42}{2}, \\frac{181}{4}$",
       "$\\frac{243}{3}, \\frac{729}{4}$",
       "$\\frac{243}{4}, \\frac{729}{8}$"
     ],
