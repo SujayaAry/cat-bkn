@@ -11,13 +11,13 @@ const soalTKP_2 = [
     bobot: [1, 2, 5, 4, 3]
   },
   {
-    soal: "Sebagai aparatur sipil negara yang baru saja menerima surat keputusan mutasi lintas provinsi, Anda ditugaskan ke sebuah daerah pelosok yang memiliki adat istiadat dan tradisi yang sangat kental dan berbeda jauh dari kultur daerah asal Anda. Guna memastikan kelancaran tugas pelayanan publik sekaligus merawat keharmonisan di lingkungan baru tersebut, langkah strategis yang Anda ambil adalah ....",
+    soal: "Sebagai aparatur yang baru menerima surat keputusan mutasi lintas provinsi, Anda ditempatkan di wilayah pelosok dengan struktur adat istiadat yang mengakar kuat dan jauh berbeda dari kultur daerah asal Anda. Guna memastikan program pelayanan publik dapat berjalan beriringan dengan dinamika sosial masyarakat setempat, langkah operasional yang Anda ambil adalah ....",
     opsi: [
-      "Berinisiatif untuk perlahan-lahan mengedukasi masyarakat setempat agar bersedia menanggalkan tradisi kedaerahan mereka yang terkesan kuno, dengan landasan pemikiran bahwa tugas moral utama seorang abdi negara adalah membawa modernisasi serta rasionalitas birokrasi ke daerah pelosok",
-      "Meluangkan waktu untuk mengamati kebiasaan kultural warga sekitar secara saksama, kemudian berusaha menyesuaikan diri secara bertahap seiring dengan berjalannya masa penugasan",
-      "Secara proaktif mempelajari nilai kearifan lokal setempat dan mengadaptasinya ke dalam pola interaksi sosial sehari-hari sebagai wujud penghormatan yang tulus",
-      "Memilih untuk bersikap netral dan membatasi interaksi sosial kemasyarakatan murni hanya pada urusan operasional kedinasan guna meminimalkan risiko terjadinya gegar budaya (culture shock)",
-      "Tetap mempertahankan dan mempraktikkan standar etika pergaulan dari daerah asal saya secara kaku, karena aparatur pemerintah pusat seharusnya menjadi representasi keseragaman nasional yang tidak boleh mudah larut oleh asimilasi budaya daerah mana pun"
+      "Menyisipkan teguran rasional di sela-sela pelayanan untuk mengarahkan warga agar mulai menanggalkan praktik tradisi lokal yang tidak saintifik, mengingat tugas krusial seorang aparatur di daerah terpencil adalah meruntuhkan pola pikir terbelakang dan membawa modernisasi sistem birokrasi secara menyeluruh",
+      "Mengamati pola interaksi warga sekitar selama jam kerja dan mencoba mengikuti tata krama pergaulan tersebut secara perlahan sambil memantau tingkat penerimaan dari lingkungan sekitar",
+      "Menemui tokoh masyarakat setempat untuk memetakan batasan norma adat yang berlaku, lalu menyesuaikan tata bahasa serta gestur tubuh saat memberikan pelayanan maupun saat bersosialisasi di luar jam dinas",
+      "Menyelesaikan kewajiban pelayanan publik sesuai standar operasional yang berlaku di kantor, lalu segera kembali ke kediaman setelah jam kerja usai guna mencegah terjadinya gesekan budaya dengan warga akibat perbedaan kebiasaan",
+      "Mempertahankan gaya komunikasi dan standar etika dari daerah asal secara konsisten dalam setiap interaksi, dengan landasan pemikiran bahwa aparatur negara merupakan perpanjangan tangan birokrasi pusat yang bertugas menjaga keseragaman identitas nasional tanpa perlu larut ke dalam asimilasi budaya kedaerahan"
     ],
     bobot: [1, 4, 5, 3, 2]
   },
@@ -72,18 +72,18 @@ const soalTKP_2 = [
       "Memberikan penjelasan teknis secara terperinci mengenai lambatnya sinkronisasi pangkalan data pusat guna mencari pembenaran logis atas kekeliruan cetak tersebut, dengan harapan warga itu dapat memaklumi kelalaian teknis instansi dan meredakan emosinya",
       "Memohon maaf atas ketidaknyamanan tersebut, menenangkan warga agar tidak membuat kegaduhan, dan memintanya untuk mengambil nomor antrean di loket revisi agar dapat diproses ulang sesuai prosedur",
       "Mendengarkan keluhannya secara saksama, menyampaikan permohonan maaf, lalu segera berkoordinasi dengan petugas bagian dalam (back office) untuk mengecek akar masalahnya",
-      "Tetap tenang menyimak komplainnya, memohon maaf secara tulus, dan langsung mengambil alih dokumen tersebut untuk memproses perbaikannya saat itu juga"
+      "Tetap tenang menyimak komplainnya, memohon maaf, dan langsung mengambil alih dokumen tersebut untuk memproses perbaikannya saat itu juga"
     ],
     bobot: [1, 2, 3, 4, 5]
   },
   {
-    soal: "Sebagai aparatur yang tergabung dalam tim satuan tugas nasional, Anda dituntut untuk berkoordinasi secara intensif melalui grup komunikasi digital dengan rekan-rekan dari berbagai zona waktu (WIB, WITA, dan WIT). Perbedaan waktu ini kerap mengakibatkan masuknya notifikasi pesan maupun instruksi pada larut malam di zona waktu Anda, yang secara perlahan mulai merusak ritme istirahat harian Anda. Sikap Anda dalam merespons situasi ini adalah ....",
+    soal: "Sebagai aparatur yang tergabung dalam satuan kerja lintas daerah, Anda diwajibkan tergabung dalam grup komunikasi digital yang beranggotakan pegawai dari zona waktu WIB, WITA, dan WIT. Dinamika perbedaan geografis ini kerap memicu masuknya deretan instruksi dan notifikasi pekerjaan pada jam-jam larut di wilayah Anda, yang mulai menginterupsi siklus istirahat harian secara signifikan. Merespons kendala komunikasi zona waktu tersebut, tindakan operasional yang Anda ambil adalah ....",
     opsi: [
-      "Memaksakan diri untuk terus bersiaga dan langsung membalas setiap pesan yang masuk pada dini hari, dengan keyakinan penuh bahwa dedikasi tanpa batas waktu di era digital adalah satu-satunya indikator valid untuk membuktikan loyalitas abdi negara terhadap instansi",
-      "Menegur rekan-rekan dari zona waktu lain secara terbuka di dalam grup tersebut dengan kalimat yang tajam, guna memberikan edukasi paksa bahwa mengganggu jam istirahat kolega adalah sebuah pelanggaran etika birokrasi yang sangat tidak beradab",
-      "Membaca pesan yang masuk di malam hari sekadar untuk memantau tingkat urgensinya, lalu membalasnya secara profesional pada saat jam kerja resmi di keesokan harinya",
-      "Memanfaatkan fitur mode senyap (do not disturb) pada gawai secara mandiri selama jam istirahat malam untuk memblokir seluruh notifikasi dari aplikasi komunikasi tersebut",
-      "Menginisiasi diskusi tim untuk merumuskan dan menyepakati protokol komunikasi digital lintas zona waktu yang efektif"
+      "Membiarkan gawai tetap menyala dengan volume penuh di samping tempat tidur dan merespons setiap instruksi yang masuk pada dini hari, dengan landasan pemikiran bahwa di era keterhubungan digital, kesiagaan tanpa batas waktu adalah satu-satunya instrumen mutlak untuk membuktikan loyalitas seorang abdi negara terhadap agenda nasional",
+      "Mengetikkan peringatan tegas di ruang obrolan grup tersebut agar rekan dari zona waktu lain menahan diri, dengan rasionalisasi bahwa mendisiplinkan kolega yang mengirim pesan di luar jam kantor adalah keharusan birokrasi demi menjaga garis batas etika komunikasi antarpegawai",
+      "Membuka pratinjau pesan di layar gawai hanya untuk menyaring instruksi yang bersifat darurat (force majeure), kemudian menyusun draf balasan untuk dikirimkan secara serentak sesaat setelah jam kerja resmi di wilayah Anda dimulai pada keesokan paginya",
+      "Mengaktifkan pembatasan notifikasi secara otomatis melalui fitur mode senyap (do not disturb) pada pengaturan gawai saat memasuki jam tidur untuk memblokir suara aplikasi perpesanan, lalu memeriksanya kembali saat Anda bangun",
+      "Mengajukan usulan draf jadwal operasional grup pada rapat evaluasi tim, yang memuat batasan jam pengiriman pesan reguler serta format penandaan khusus (tagging) untuk instruksi yang bersifat sangat darurat lintas wilayah"
     ],
     bobot: [1, 2, 4, 3, 5]
   },
@@ -132,24 +132,24 @@ const soalTKP_2 = [
     bobot: [1, 2, 3, 4, 5]
   },
   {
-    soal: "Sebagai aparatur yang bertugas di garda terdepan loket pelayanan publik, Anda didatangi oleh seorang wajib pajak penyandang disabilitas yang sedang mengantre dan tiba-tiba sangat membutuhkan akses ke toilet. Sayangnya, gedung instansi Anda merupakan bangunan lama yang belum dilengkapi dengan fasilitas toilet khusus difabel. Menghadapi situasi yang mendesak dan menyangkut hajat hidup warga rentan tersebut, tindakan pelayanan prima yang Anda berikan adalah ....",
+    soal: "Sebagai aparatur yang bertugas di garda terdepan loket pelayanan publik, Anda didatangi oleh seorang wajib pajak penyandang disabilitas yang sedang mengantre dan tiba-tiba sangat membutuhkan akses ke toilet. Sayangnya, gedung instansi Anda merupakan bangunan lama yang belum dilengkapi dengan fasilitas toilet khusus difabel. Menghadapi situasi yang mendesak dan menyangkut kebutuhan dasar warga rentan tersebut, tindakan operasional yang Anda ambil adalah ....",
     opsi: [
-      "Memberikan penjelasan secara tegas bahwa mengingat bangunan instansi ini belum direnovasi, warga dengan kebutuhan khusus seharusnya membawa pendamping dari rumah untuk mengurus kebutuhan personal mereka agar tidak merepotkan petugas yang sedang sibuk mengejar target penyelesaian antrean",
-      "Menyampaikan permohonan maaf yang sebesar-besarnya sembari menjelaskan secara terperinci bahwa pengadaan fasilitas inklusif tersebut masih terhambat oleh proses persetujuan anggaran dari pusat, sehingga ia diharapkan dapat memaklumi birokrasi ini dan menahan diri atau menggunakan fasilitas seadanya",
-      "Meminta maaf atas kondisi tersebut dan memintanya untuk menuliskan kendala ini ke dalam kotak saran, sembari berjanji akan menjadikannya bahan laporan prioritas kepada pimpinan agar segera dibangun tahun depan",
-      "Memohon maaf atas keterbatasan instansi, kemudian dengan sigap mengarahkan dan memandunya menuju gedung perkantoran sebelah yang sudah memiliki fasilitas toilet khusus difabel yang memadai",
-      "Memohon maaf dengan tulus atas keterbatasan fasilitas tersebut, lalu secara proaktif mendampinginya ke toilet reguler terdekat guna memastikan keamanan dan kemudahannya"
+      "Menyampaikan bahwa standar operasional pelayanan tidak mewajibkan petugas untuk menangani urusan personal pengunjung, lalu memintanya untuk menahan diri atau mencari pendamping dari luar agar target penyelesaian dokumen warga lain di loket tidak terhambat oleh urusan non-administratif",
+      "Menjabarkan kendala pengajuan anggaran renovasi fasilitas inklusif yang masih tertahan di tingkat pusat, lalu menyarankannya untuk memakai toilet standar yang ada secara mandiri karena pengadaan infrastruktur berada di luar ruang lingkup kewenangan petugas loket",
+      "Mengarahkan warga tersebut untuk menggunakan toilet reguler yang tersedia, kemudian mencatat ketiadaan fasilitas inklusif tersebut ke dalam buku laporan harian untuk dibahas pada rapat evaluasi bulanan pimpinan",
+      "Memberitahukan ketiadaan fasilitas khusus di dalam gedung instansi, lalu berjalan menemaninya menuju gedung perkantoran terdekat di sebelah yang telah dilengkapi dengan toilet khusus penyandang disabilitas",
+      "Menyampaikan permohonan maaf atas ketiadaan fasilitas tersebut, lalu beranjak dari loket untuk menuntun dan mendampinginya menggunakan toilet reguler terdekat guna memastikan keselamatannya secara fisik"
     ],
     bobot: [1, 2, 3, 4, 5]
   },
   {
-    soal: "Mulai pekan depan, instansi Anda akan menerapkan digitalisasi penuh pada sistem pelaporan kinerja mingguan. Kebijakan ini mewajibkan seluruh aparatur untuk mengunggah hasil kerja melalui sebuah aplikasi terintegrasi agar dapat dipantau langsung secara seketika (real-time) oleh pimpinan. Masalahnya, Anda menyadari bahwa Anda belum terlalu mahir dan masih kebingungan dalam mengoperasikan antarmuka sistem baru tersebut. Sikap Anda adalah ....",
+    soal: "Sebagai aparatur di instansi pemerintah, Anda menerima edaran bahwa mulai pekan depan seluruh pelaporan rekapitulasi kinerja mingguan wajib diunggah melalui aplikasi terintegrasi. Kebijakan digitalisasi ini ditujukan agar pimpinan dapat melakukan pemantauan capaian aparatur secara seketika (real-time). Kendalanya, Anda sama sekali belum familier dengan tata letak antarmuka (user interface) sistem baru tersebut dan masih sering tersesat saat mencoba menavigasi menu-menunya. Menjelang tenggat waktu pelaporan perdana, tindakan operasional yang Anda ambil adalah ....",
     opsi: [
-      "Mengajukan keberatan formal kepada bagian kepegawaian agar implementasi sistem tersebut ditunda, dengan dalih bahwa instansi tidak seharusnya memaksakan percepatan digitalisasi tanpa terlebih dahulu menyelenggarakan bimbingan teknis yang komprehensif bagi seluruh aparatur",
-      "Memilih untuk tetap menyetorkan rekapitulasi laporan kinerja dalam format cetak manual kepada pimpinan untuk sementara waktu, dengan alasan bahwa memaksakan penggunaan sistem yang belum dikuasai berisiko tinggi memunculkan galat (error) yang dapat merugikan penilaian rekam jejak kedisiplinan saya",
-      "Mematuhi kewajiban pelaporan menggunakan aplikasi baru tersebut sembari beradaptasi secara perlahan dengan mengikuti ritme pemahaman rekan kerja yang lain",
-      "Mendukung penuh transisi digitalisasi tersebut dengan bertekad untuk terus mencoba memasukkan data secara mandiri, meskipun pada fase awal ini saya harus menghabiskan lebih banyak waktu karena sering mengalami kebingungan",
-      "Segera mempelajari buku panduan teknis yang tersedia dan proaktif meminta bimbingan dari rekan sejawat yang lebih mahir agar dapat mengoperasikan aplikasi tersebut dengan tepat"
+      "Mengirimkan nota penangguhan pelaporan digital kepada bagian kepegawaian dengan berlandaskan pada argumen bahwa institusi tidak semestinya memaksakan transisi teknologi secara radikal kepada aparatur tanpa terlebih dahulu menyediakan alokasi waktu untuk bimbingan teknis yang komprehensif",
+      "Menyusun draf laporan kinerja ke dalam format dokumen fisik seperti biasa dan menyerahkannya langsung ke meja pimpinan, dengan rasionalisasi bahwa memaksakan pengoperasian antarmuka digital yang belum dikuasai berpotensi memicu galat sistem yang akan merugikan validitas rekam jejak kedisiplinan administratif saya",
+      "Mengunduh aplikasi tersebut ke dalam gawai dan menunggu hingga ada rekan kerja di subbagian yang bersedia meluangkan waktu untuk memandu tata cara pengisian laporannya",
+      "Membuka aplikasi tersebut dan mencoba memasukkan draf data secara berulang kali hingga berhasil tersimpan, meski harus menyita sebagian waktu istirahat karena masih meraba-raba fungsi dari setiap menu yang ada",
+      "Membaca modul panduan penggunaan sistem yang telah dibagikan instansi, kemudian meminta rekan kerja di subbagian untuk mempraktikkan alur pengisian laporannya bersama-sama pada gawai saya"
     ],
     bobot: [1, 2, 3, 4, 5]
   },
@@ -187,13 +187,13 @@ const soalTKP_2 = [
     bobot: [5, 1, 4, 3, 2]
   },
   {
-    soal: "Sebagai aparatur muda yang baru merintis karier di pemerintahan, Anda menyadari bahwa kelompok radikal kini semakin gencar menargetkan generasi milenial dan Gen Z. Mereka kerap menyusup melalui propaganda digital yang halus maupun forum kajian eksklusif yang berkedok peningkatan kapasitas diri. Guna membentengi ketahanan ideologi Anda agar tidak terpapar paham ekstremisme tersebut, langkah strategis yang Anda ambil adalah ....",
+    soal: "Sebagai aparatur muda yang baru merintis karier di pemerintahan, Anda menyadari masifnya penyebaran propaganda radikalisme yang menyasar generasi milenial melalui paparan konten digital dan undangan kajian tertutup. Menyadari tingginya risiko paparan ekstremisme yang sering berkedok peningkatan kapasitas diri maupun kajian spiritual tersebut, tindakan operasional yang Anda ambil untuk memperkuat benteng ideologi adalah ...",
     opsi: [
-      "Sengaja menyusup dan mempelajari secara mendalam berbagai literatur maupun video propaganda dari kelompok ekstremis tersebut, dengan keyakinan penuh bahwa seorang aparatur harus menyelami pola pikir radikal secara langsung agar kelak memiliki argumentasi intelektual yang tak terbantahkan saat harus melawannya",
-      "Menarik diri secara mutlak dari segala bentuk komunitas sosial dan pergaulan di luar struktur kedinasan resmi, dengan landasan pemikiran bahwa mengisolasi diri di lingkungan rumah adalah satu-satunya metode paling kedap untuk memastikan aparatur muda tidak terjerumus ke dalam lingkaran pergaulan yang sesat",
-      "Membatasi durasi penggunaan media sosial sehari-hari dan lebih memilih untuk mengisi waktu luang dengan rutinitas internal bersama keluarga inti guna menghindari paparan konten negatif",
-      "Membangun jejaring pergaulan yang inklusif dengan rekan-rekan kerja dari berbagai latar belakang budaya dan agama untuk merawat cara pandang yang toleran serta terbuka",
-      "Secara proaktif memperkuat literasi digital yang kritis dan selalu berpartisipasi aktif dalam setiap program pembinaan wawasan kebangsaan resmi dari instansi"
+      "Mencari dan membedah berbagai literatur serta video propaganda dari kelompok ekstremis tersebut pada waktu luang, dengan landasan pemikiran bahwa aparatur negara harus menguasai materi doktrin radikal secara komprehensif agar memiliki kapasitas intelektual mutlak untuk mematahkan argumen mereka dalam diskusi publik",
+      "Menutup seluruh akses komunikasi dan memutus interaksi dengan kelompok pergaulan di luar struktur kedinasan resmi, dengan rasionalisasi bahwa mengisolasi diri dari dinamika sosial adalah satu-satunya metode paling steril untuk menjamin pikiran seorang aparatur muda tidak terkontaminasi oleh pengaruh ajaran sesat",
+      "Mengurangi alokasi waktu untuk mengakses linimasa media sosial harian dan mengalihkan rutinitas di luar jam kerja dengan berdiam diri bersama anggota keluarga inti guna meminimalkan risiko membaca atau menonton konten yang mencurigakan",
+      "Memperluas interaksi sosial pada waktu istirahat dan di luar jam dinas dengan berbaur bersama rekan-rekan kerja lintas divisi yang memiliki latar belakang daerah, budaya, maupun keyakinan yang berbeda-beda",
+      "Melakukan penyaringan ganda (double-check) atas referensi dari setiap informasi digital yang diterima, serta mendaftarkan diri pada program bimbingan pemantapan wawasan kebangsaan yang diselenggarakan oleh unit kepegawaian instansi"
     ],
     bobot: [1, 2, 3, 4, 5]
   },
@@ -248,7 +248,7 @@ const soalTKP_2 = [
       "Menolak permintaannya secara tegas seraya memberikan edukasi panjang lebar bahwa di era transformasi digital ini, masyarakat wajib memaksakan diri untuk mandiri secara teknologi agar tidak terus-menerus membebani waktu produktif aparatur dengan urusan administratif yang semestinya bisa dikerjakan dari rumah",
       "Menyampaikan permohonan maaf karena prosedur saat ini menuntut kemandirian pengguna, lalu memberikannya brosur cetak panduan resmi penggunaan aplikasi agar ia dapat mempelajarinya secara perlahan",
       "Merasa iba dengan kondisi fisiknya yang baru melahirkan, sehingga memilih untuk langsung mengetikkan seluruh data ke dalam gawainya agar urusan administrasinya pada hari itu dapat segera tuntas tanpa membuang banyak waktu antrean",
-      "Memberikan pendampingan teknis secara empatik dengan memandunya langkah demi langkah menggunakan gawainya sendiri hingga proses pendaftaran daring tersebut berhasil ia kuasai"
+      "Memberikan pendampingan teknis dengan memandunya langkah demi langkah menggunakan gawainya sendiri hingga proses pendaftaran daring tersebut berhasil ia kuasai"
     ],
     bobot: [1, 2, 3, 4, 5]
   },
@@ -275,15 +275,15 @@ const soalTKP_2 = [
     bobot: [1, 2, 3, 4, 5]
   },
   {
-    soal: "Sebagai aparatur yang bertugas di Subbagian Tata Usaha, Anda memiliki target pengembangan karier untuk dapat menduduki jabatan fungsional tingkat Ahli Muda pada beberapa tahun mendatang. Jabatan tersebut menuntut peningkatan kapasitas manajerial, kepemimpinan, dan analisis strategis yang mumpuni. Untuk mewujudkan target profesional tersebut, langkah proaktif yang Anda ambil sejak dini adalah ....",
+    soal: "Sebagai pemangku jabatan fungsional tingkat Ahli Pertama di Subbagian Tata Usaha, Anda menetapkan target lintasan karier untuk naik ke jenjang Ahli Muda dalam beberapa tahun ke depan. Anda menyadari bahwa formasi tersebut menuntut peningkatan kapasitas manajerial, kepemimpinan, dan analisis strategis tingkat lanjut yang melampaui beban kerja Anda saat ini. Untuk merealisasikan proyeksi profesional tersebut, tindakan operasional yang Anda susun mulai saat ini adalah ....",
     opsi: [
-      "Menyusun peta jalan (roadmap) pengembangan diri secara mandiri dan proaktif mendaftar pada berbagai program pelatihan atau sertifikasi kepemimpinan yang relevan",
-      "Berkonsultasi secara intensif dengan atasan atau pejabat yang lebih senior di instansi guna meminta bimbingan dan rujukan terkait praktik manajemen strategis",
-      "Mengamati dan mereplikasi taktik manajemen dari para pejabat struktural yang terbukti sukses memimpin unit kerja di lingkungan instansi saat ini",
-      "Menunda upaya pengembangan diri hingga instansi menerbitkan surat tugas resmi dan menyediakan alokasi anggaran khusus bagi saya untuk mengikuti bimbingan teknis kepemimpinan, dengan landasan pemikiran bahwa peningkatan kompetensi pegawai adalah tanggung jawab mutlak negara yang tidak semestinya membebani inisiatif serta pengeluaran personal",
-      "Menjalankan rutinitas kerja harian seperti biasa dan meyakini bahwa lamanya masa kerja serta senioritas pada akhirnya akan secara otomatis membentuk insting manajerial saya secara alamiah, tanpa perlu membuang energi ekstra untuk mencari atau mempelajari teori kepemimpinan yang baru"
+      "Merumuskan matriks kompetensi jenjang Ahli Muda ke dalam jadwal target tahunan pribadi, lalu menggunakan alokasi waktu dan sumber daya finansial sendiri untuk mendaftarkan diri pada program sertifikasi kepemimpinan manajerial",
+      "Menjadwalkan pertemuan secara berkala dengan pejabat struktural yang lebih senior untuk meminta arahan kerja dan mendiskusikan rujukan literatur terkait implementasi manajemen strategis di lingkungan birokrasi",
+      "Memperhatikan pola komunikasi dan gaya pengambilan keputusan dari para pejabat yang sedang memimpin rapat, kemudian mencoba meniru gaya tersebut saat diberikan kewenangan mengelola kegiatan kecil di subbagian",
+      "Berfokus semata-mata pada penyelesaian tumpukan dokumen administratif harian, dengan keyakinan bahwa akumulasi masa kerja dan pergerakan hierarki senioritas pada akhirnya akan secara otomatis mematangkan insting manajerial tanpa perlu menguras energi untuk mempelajari teori baru",
+      "Menangguhkan segala bentuk rencana pemutakhiran kompetensi hingga instansi menerbitkan surat tugas resmi beserta alokasi anggarannya, dengan rasionalisasi bahwa pengembangan sumber daya manusia merupakan kewajiban mutlak negara yang tidak semestinya membebani kantong pribadi aparatur"
     ],
-    bobot: [5, 4, 3, 1, 2]
+    bobot: [5, 4, 3, 2, 1]
   },
   {
     soal: "Berkat prestasi kerja yang cemerlang, Anda baru saja dipromosikan menjadi Kepala Subbagian (pimpinan divisi) termuda di instansi Anda. Konsekuensinya, sebagian besar aparatur di unit kerja Anda kini berusia jauh lebih tua dengan rekam jejak masa kerja belasan tahun. Belakangan, Anda mendapati bahwa capaian kinerja unit kerja Anda kurang memuaskan akibat kuatnya ego senioritas; para staf senior tersebut kerap meremehkan arahan Anda dan bekerja dengan ritme mereka sendiri. Menghadapi dinamika ini, tindakan manajerial yang Anda ambil adalah ....",
@@ -291,7 +291,7 @@ const soalTKP_2 = [
       "Menggunakan otoritas struktural secara mutlak untuk merombak paksa pembagian tugas mereka tanpa memberikan ruang diskusi, dengan keyakinan bahwa ketegasan radikal adalah satu-satunya cara yang valid untuk membungkam ego senioritas dan menegakkan wibawa kepemimpinan aparatur muda",
       "Menghindari konfrontasi dengan membiarkan mereka terus bekerja menggunakan ritme serta metode usang mereka, dengan asumsi bahwa menjaga etika kesopanan ketimuran terhadap pegawai yang jauh lebih tua adalah sebuah keharusan mutlak yang melampaui urgensi pencapaian target instansi",
       "Menginisiasi forum rapat internal guna mengevaluasi hambatan kinerja secara umum dan menggalakkan kembali kolaborasi partisipatif seluruh anggota tim tanpa memandang rentang usia",
-      "Menghargai kapabilitas serta rekam jejak pengalaman mereka secara tulus, lalu secara asertif merangkul mereka untuk menyelaraskan kembali langkah guna mencapai sasaran unit kerja",
+      "Menghargai kapabilitas serta rekam jejak pengalaman mereka, lalu secara asertif merangkul mereka untuk menyelaraskan kembali langkah guna mencapai sasaran unit kerja",
       "Melakukan pendekatan komunikasi persuasif secara personal agar gaya kepemimpinan dan arahan strategis dari pimpinan muda lebih mudah untuk mereka terima"
     ],
     bobot: [1, 2, 3, 5, 4]
@@ -330,35 +330,35 @@ const soalTKP_2 = [
     bobot: [1, 2, 3, 5, 4]
   },
   {
-    soal: "Sebagai aparatur sipil negara di era transformasi digital, Anda tentu tidak dapat lepas dari penggunaan media sosial dan platform daring dalam keseharian. Di tengah masifnya arus informasi dan ragam distraksi hiburan yang ditawarkan oleh algoritma platform tersebut, sikap paling bijak yang mencerminkan profesionalisme Anda dalam memanfaatkannya adalah ....",
+    soal: "Sebagai aparatur sipil negara, perangkat gawai dan akses internet telah menjadi bagian tidak terpisahkan dari ritme kerja harian Anda. Mengingat linimasa media sosial secara algoritmik terus menyajikan aliran konten hiburan yang memicu distraksi di tengah pelaksanaan tugas birokrasi, tindakan operasional yang Anda terapkan dalam mengelola akses digital tersebut adalah ....",
     opsi: [
-      "Mengalokasikan sebagian besar waktu luang di sela-sela jam kantor untuk berselancar mencari konten hiburan visual dan hal-hal yang menjadi kesenangan pribadi, dengan landasan pemikiran bahwa melepaskan penat dari rutinitas administrasi yang kaku adalah kunci utama untuk menjaga kewarasan mental dan mencegah burnout (kelelahan bekerja) pada pegawai",
-      "Memanfaatkan fasilitas jaringan internet kantor dan jam kerja yang sedang melonggar untuk mengelola akun media sosial bisnis sampingan demi memperoleh pendapatan tambahan, dengan rasionalisasi bahwa aparatur modern dituntut untuk memiliki kemandirian finansial agar tidak mudah tergoda oleh praktik gratifikasi di instansi",
-      "Memanfaatkannya secara wajar untuk menjaga silaturahmi dan memperluas jejaring komunikasi dengan rekan sejawat atau kolega dari berbagai instansi lain guna mempermudah koordinasi informal",
-      "Menjadikannya sebagai instrumen utama untuk menyaring dan mendapatkan pembaruan informasi terkini mengenai kebijakan publik, regulasi pemerintah, dan peristiwa penting berskala nasional maupun global",
-      "Secara proaktif memanfaatkannya sebagai sarana untuk memperluas wawasan birokrasi, mengikuti kanal-kanal resmi kementerian, dan memperoleh pengetahuan baru guna meningkatkan keterampilan teknis penyelesaian tugas"
+      "Mengakses platform penyedia video pendek dan hiburan visual di sela-sela pengetikan dokumen kantor, dengan landasan pemikiran bahwa melepaskan penat dari rigiditas administrasi melalui distraksi digital adalah metode paling mutlak untuk mencegah sindrom kelelahan mental (burnout) dan menjaga kewarasan psikologis aparatur",
+      "Menggunakan akses jaringan nirkabel instansi pada saat volume pelayanan sedang menurun untuk memantau linimasa akun bisnis komersial pribadi, dengan rasionalisasi bahwa negara menuntut aparaturnya memiliki kemandirian finansial ekstrem agar tidak mudah terjerumus ke dalam praktik gratifikasi atau korupsi",
+      "Membuka platform perpesanan sosial pada saat jeda istirahat siang untuk bertukar kabar dan merawat jalur komunikasi informal dengan beberapa rekan sejawat yang bertugas di instansi daerah lain",
+      "Membuka aplikasi agregator berita dan media sosial instansi untuk menelusuri pembaruan informasi makro seputar regulasi pemerintah dan pergerakan kebijakan publik berskala nasional sebelum memulai rutinitas administratif harian",
+      "Mengaktifkan notifikasi pada kanal resmi pemerintah, mendaftar pada buletin elektronik kementerian terkait, dan mengalokasikan waktu spesifik untuk meninjau literatur digital yang menunjang penyelesaian teknis pekerjaan di meja Anda"
     ],
     bobot: [1, 2, 3, 4, 5]
   },
   {
-    soal: "Sebagai pimpinan tim di instansi pemerintah, Anda dituntut untuk mengawal transisi besar-besaran menuju digitalisasi birokrasi. Banyak tugas perekapan dan analisis dokumen yang selama bertahun-tahun dikerjakan secara manual oleh tim Anda, kini dapat dieksekusi dalam hitungan detik oleh perangkat lunak terintegrasi. Perubahan signifikan ini mulai menimbulkan kecemasan di kalangan anggota tim mengenai relevansi peran mereka ke depannya. Menghadapi dampak transformasi ini terhadap jejaring kerja Anda, tindakan strategis yang Anda ambil adalah ....",
+    soal: "Sebagai pimpinan tim di instansi pemerintah, Anda ditugaskan untuk mengawal masa transisi penerapan sistem birokrasi digital. Sebagian besar tugas perekapan dan analisis dokumen yang selama bertahun-tahun dikerjakan secara manual oleh tim Anda, kini secara otomatis dieksekusi oleh perangkat lunak terintegrasi dalam hitungan detik. Transformasi drastis ini mulai menimbulkan keresahan di kalangan anggota tim mengenai relevansi keberadaan mereka di struktur unit kerja ke depannya. Merespons dampak disrupsi teknologi terhadap dinamika tim tersebut, tindakan operasional yang Anda ambil adalah ....",
     opsi: [
-      "Memboikot penggunaan perangkat lunak baru tersebut dan mempertahankan metode kerja manual secara sembunyi-sembunyi, dengan landasan pemikiran bahwa menjaga keharmonisan dan mengamankan posisi rekan sejawat dari ancaman otomatisasi adalah bentuk solidaritas dan loyalitas tertinggi dalam sebuah tim kerja",
-      "Membiarkan dinamika tersebut mengalir secara alamiah tanpa perlu melakukan intervensi khusus, sembari sekadar meyakinkan anggota tim secara lisan bahwa secanggih apa pun sebuah sistem, peran manusia di birokrasi tidak akan pernah bisa dihilangkan",
-      "Menginisiasi program pelatihan berkelanjutan untuk melakukan pemutakhiran keterampilan (upskilling) bagi seluruh anggota tim, sehingga mereka dapat bertransformasi dari sekadar tenaga entri data manual menjadi analis pengelola sistem digital",
-      "Mengajukan usulan peremajaan infrastruktur teknologi kepada pimpinan untuk memperkuat efisiensi kerja, lalu mendelegasikan tugas pengoperasiannya secara khusus kepada anggota tim muda yang dinilai lebih cepat beradaptasi",
-      "Mengajukan usulan perampingan anggota tim dengan merekomendasikan mutasi bagi para pegawai senior yang gagap teknologi, dengan dalih bahwa instansi pemerintah modern harus bertindak pragmatis demi menghemat anggaran negara dan tidak boleh tersandera oleh sentimen belas kasihan terhadap aparatur yang lambat belajar"
+      "Menolak penerapan perangkat lunak baru tersebut dan menginstruksikan tim untuk tetap menggunakan metode manual secara tertutup, dengan landasan pemikiran bahwa menjaga stabilitas psikologis dan mengamankan posisi rekan sejawat dari ancaman otomatisasi merupakan wujud solidaritas tertinggi dalam sebuah institusi",
+      "Membiarkan dinamika keresahan tersebut mengalir tanpa intervensi prosedural apa pun, sembari menyampaikan secara lisan di sela-sela jam istirahat bahwa secanggih apa pun sebuah sistem kecerdasan buatan, keberadaan manusia di instansi pemerintah tidak akan pernah tergantikan",
+      "Merumuskan jadwal bimbingan teknis internal secara berkala dan menugaskan anggota tim secara bergantian untuk mempraktikkan alur kerja pada sistem baru tersebut agar mereka memiliki kompetensi tambahan sebagai analis pengelola data",
+      "Menyiapkan nota usulan peremajaan infrastruktur teknologi kepada pimpinan pusat untuk mempercepat efisiensi, kemudian mendelegasikan tugas pengoperasian sistem baru tersebut secara khusus kepada staf-staf muda yang memiliki literasi digital lebih cepat",
+      "Menyusun rekomendasi perampingan struktur tim dengan mengajukan mutasi ke unit lain bagi para pegawai senior yang lambat beradaptasi, dengan rasionalisasi bahwa birokrasi modern dituntut untuk bertindak pragmatis demi efisiensi anggaran negara tanpa perlu tersandera oleh sentimen belas kasihan"
     ],
     bobot: [1, 3, 5, 4, 2]
   },
   {
-    soal: "Sebagai aparatur baru yang baru saja bergabung di dalam Tim Kerja Pengelola Data instansi, Anda langsung diserahi tanggung jawab untuk merampungkan sebuah proyek pemetaan institusi berskala daerah. Anda menyadari bahwa kerumitan validasi data di lapangan tidak mungkin diselesaikan secara sepihak dari balik meja tata usaha. Untuk memastikan kelancaran proyek tersebut, Anda membutuhkan dukungan dan saran dari berbagai praktisi yang berpengalaman. Tindakan paling strategis yang Anda lakukan adalah ....",
+    soal: "Sebagai aparatur pengelola data statistik yang baru bergabung di Subbagian Tata Usaha, Anda ditugaskan untuk mengeksekusi proyek pemetaan profil institusi pendidikan berskala daerah yang mencakup berbagai wilayah kecamatan. Mengingat tingginya variasi demografi dan lokasi di lapangan, Anda menyadari bahwa validasi titik koordinat dan kelengkapan dokumen lembaga tersebut tidak dapat dirampungkan secara sepihak dari balik meja kantor. Guna memastikan akurasi data proyek tersebut, tindakan operasional yang Anda ambil adalah ....",
     opsi: [
-      "Membatasi komunikasi hanya pada lingkaran internal dan menolak melibatkan pihak eksternal dalam proyek pemetaan tersebut, dengan asumsi bahwa berkolaborasi dengan lembaga di luar instansi hanya akan memicu kebocoran data strategis dan meruntuhkan muruah serta wibawa birokrasi di mata publik",
-      "Mengalihkan fokus dengan mendaftar pada berbagai program mentoring dan konferensi berskala internasional, dengan landasan pemikiran bahwa membangun prestise jejaring di tingkat global jauh lebih bergengsi dan krusial untuk percepatan karier seorang aparatur baru dibandingkan sekadar berjejaring dengan praktisi di daerah",
-      "Menghadap pimpinan untuk meminta rekomendasi tertulis serta pengenalan formal kepada beberapa pakar senior di bidang tersebut agar saya dapat berkonsultasi secara aman sesuai dengan hierarki birokrasi",
-      "Memanfaatkan setiap kesempatan untuk hadir dalam forum-forum rapat koordinasi sektoral di tingkat daerah guna berinteraksi langsung dan bertukar informasi teknis dengan para praktisi lapangan",
-      "Menginisiasi pembentukan forum komunikasi atau kelompok kerja lintas sektor yang melibatkan perwakilan institusi terkait, praktisi lapangan, dan tokoh masyarakat guna mengawal keberhasilan proyek tersebut secara kolaboratif"
+      "Mengunci akses pergerakan data pemetaan khusus untuk sirkulasi internal Subbagian Tata Usaha dan memutus jalur validasi silang dengan lembaga eksternal, dengan dalih bahwa membuka ruang operasional bagi pihak luar hanya akan membuka celah kebocoran arsip strategis dan mendegradasi kewibawaan instansi",
+      "Menggunakan waktu kerja untuk menyusun makalah dan mendaftar pada simposium tata kelola data tingkat internasional, dengan rasionalisasi bahwa membangun portofolio jejaring global merupakan instrumen esensial untuk percepatan jenjang karier fungsional dibandingkan sekadar berkutat memetakan lembaga di wilayah pelosok",
+      "Menyusun nota dinas permohonan kepada pimpinan untuk menerbitkan surat pengantar resmi agar Anda dapat menemui beberapa praktisi senior di instansi lain untuk meminta petunjuk validasi tanpa menyalahi rantai komando birokrasi",
+      "Membawa draf instrumen pemetaan tersebut ke setiap jadwal rapat koordinasi lintas sektoral yang diadakan oleh pemerintah daerah guna memverifikasi temuan lapangan dengan para petugas instansi lain yang kebetulan hadir",
+      "Menyusun kerangka acuan kerja (Term of Reference) untuk membentuk wadah komunikasi gabungan, lalu mengirimkan undangan resmi kepada perwakilan pengelola lembaga tingkat kecamatan dan tokoh masyarakat setempat guna menyelaraskan metode pengumpulan data di lapangan"
     ],
     bobot: [1, 2, 3, 4, 5]
   },
@@ -385,13 +385,13 @@ const soalTKP_2 = [
     bobot: [4, 2, 5, 1, 3]
   },
   {
-    soal: "Sebagai aparatur pengelola data dan informasi di instansi, Anda dituntut untuk terus beradaptasi dengan percepatan transformasi digital pemerintah. Anda menyadari bahwa kompetensi teknis yang Anda miliki saat ini sudah mulai tertinggal dibandingkan dengan pembaruan sistem yang akan segera diterapkan oleh pusat. Guna memastikan profesionalisme dan peningkatan kapasitas diri Anda tetap relevan dengan arah kebijakan instansi, langkah strategis yang Anda ambil adalah ....",
+    soal: "Sebagai aparatur pengelola data dan informasi, Anda mendapati bahwa pembaruan sistem digital yang segera diluncurkan oleh pusat membutuhkan penguasaan teknis yang melampaui kapasitas Anda saat ini. Untuk memastikan kinerja Anda tetap sejajar dengan arah transformasi instansi, tindakan operasional yang Anda ambil adalah ....",
     opsi: [
-      "Secara proaktif menginvestasikan waktu dan sumber daya mandiri untuk mengikuti program sertifikasi atau kursus teknis yang paling selaras dengan uraian tugas pokok saya di instansi",
-      "Menunda segala bentuk pemutakhiran keterampilan hingga instansi memberikan surat tugas dan alokasi dana resmi, dengan rasionalisasi bahwa memaksakan diri belajar teknologi baru sebelum negara menyediakan fasilitas anggaran yang paripurna hanya akan menguras energi personal secara sia-sia",
-      "Membatasi upaya pengembangan diri hanya pada membaca literatur digital atau panduan teknis dasar yang dibagikan secara gratis di grup perpesanan kantor, dengan landasan pemikiran bahwa efisiensi energi adalah prioritas utama dan aparatur tidak perlu bersusah payah berinovasi jika tidak ada insentif tambahan",
-      "Bergabung secara aktif ke dalam wadah forum komunikasi aparatur pengelola data lintas instansi guna bertukar wawasan, memperbarui informasi, dan mempelajari praktik terbaik dari rekan sejawat",
-      "Melakukan evaluasi komprehensif terhadap kesenjangan antara kompetensi teknis saya saat ini dengan tuntutan sistem terbaru, lalu menyusun prioritas pengembangan keterampilan yang paling krusial bagi kinerja instansi"
+      "Menyisihkan alokasi dana dan waktu pribadi di luar jam kerja untuk mendaftar pada kelas sertifikasi teknis yang memuat kurikulum sesuai dengan uraian tugas pokok di instansi",
+      "Menunggu terbitnya surat tugas dan pencairan alokasi anggaran bimbingan teknis secara resmi dari instansi, dengan rasionalisasi bahwa mendahului belajar secara otodidak tanpa fasilitas negara yang paripurna berisiko menguras energi aparatur untuk hal yang belum tentu selaras dengan standar pusat",
+      "Mengandalkan dokumen panduan dasar dan tautan literatur gratis yang disebarkan melalui grup perpesanan kantor, dengan landasan pemikiran bahwa menjaga efisiensi ritme kerja harian jauh lebih prioritas daripada membebani diri dengan beban belajar yang tidak menjanjikan insentif tambahan",
+      "Mengikuti wadah forum komunikasi aparatur pengelola data lintas daerah untuk membaca studi kasus, menyimak diskusi teknis, dan mereplikasi langkah penanganan sistem dari rekan sejawat",
+      "Membedah daftar spesifikasi teknis dari sistem terbaru tersebut untuk memetakan titik kelemahan kompetensi saya saat ini, lalu merumuskan jadwal belajar mandiri yang difokuskan pada pemenuhan keterampilan operasional yang paling mendesak bagi unit kerja"
     ],
     bobot: [4, 1, 2, 3, 5]
   },
@@ -407,13 +407,13 @@ const soalTKP_2 = [
     bobot: [2, 5, 1, 4, 3]
   },
   {
-    soal: "Sebagai aparatur di bidang komunikasi dan informasi publik, Anda mendapati tingginya fenomena masyarakat di wilayah kerja Anda yang dengan mudahnya termakan dan ikut menyebarkan berita bohong (hoaks) terkait kebijakan pemerintah di media sosial. Anda menyadari bahwa penyebaran disinformasi ini dapat memicu kerancuan, kepanikan, hingga instabilitas sosial. Dalam upaya mendongkrak kecakapan literasi digital dan kemampuan warga dalam memverifikasi informasi, tindakan strategis yang Anda ambil adalah ....",
+    soal: "Sebagai aparatur yang ditugaskan di unit hubungan masyarakat, Anda menerima laporan mengenai lonjakan peredaran informasi palsu (hoaks) terkait kebijakan instansi di berbagai grup perpesanan warga. Menyadari bahwa disinformasi tersebut mulai memicu penolakan dan kerancuan di tingkat akar rumput, tindakan operasional yang Anda susun untuk meredam penyebaran konten tersebut adalah ....",
     opsi: [
-      "Mengesampingkan upaya edukasi literasi dan langsung berfokus pada penerbitan ancaman jerat pidana Undang-Undang ITE di berbagai kanal publik, dengan landasan pemikiran bahwa masyarakat di tingkat akar rumput hanya akan berhenti menyebarkan berita bohong jika birokrasi secara mutlak menerapkan instrumen ketakutan dan intimidasi hukum",
-      "Menolak penggunaan instrumen kampanye digital dan bersikeras hanya mencetak ribuan lembar brosur konvensional untuk dibagikan secara manual dari pintu ke pintu, dengan asumsi bahwa masyarakat awam memiliki tingkat kecerdasan teknologi yang terlampau rendah sehingga segala bentuk edukasi berbasis daring dipastikan akan berakhir sia-sia",
-      "Menginisiasi program kolaborasi lintas sektoral dengan menggandeng tokoh masyarakat, lembaga pendidikan, maupun komunitas pemuda lokal untuk merancang serta mengeksekusi edukasi literasi informasi digital yang sistematis dan berkelanjutan di tengah masyarakat",
-      "Merancang kampanye literasi digital yang masif dan interaktif menggunakan infografis menarik serta tagar khusus di berbagai platform media sosial resmi instansi guna mengedukasi warga tentang tata cara memverifikasi kebenaran sebuah informasi",
-      "Menyusun draf materi panduan dasar mengenai cara mengidentifikasi berita palsu untuk kemudian dipublikasikan secara satu arah melalui papan pengumuman instansi dan beranda situs web resmi pemerintah daerah"
+      "Menerbitkan siaran pers resmi yang difokuskan sepenuhnya pada pencantuman ancaman sanksi pidana kurungan berdasarkan Undang-Undang ITE, dengan landasan pemikiran bahwa penyebaran informasi palsu di tingkat akar rumput hanya dapat dihentikan jika birokrasi mendemonstrasikan instrumen intimidasi hukum secara mutlak tanpa perlu membuang waktu untuk edukasi",
+      "Mencetak dan mendistribusikan bantahan secara fisik dalam bentuk lembaran kertas dari pintu ke pintu, dengan asumsi bahwa masyarakat awam di wilayah tersebut memiliki kapasitas literasi teknologi yang terlampau rendah sehingga penayangan klarifikasi berbasis daring dipastikan hanya akan berakhir sia-sia",
+      "Menyusun silabus ringkas tentang pedoman identifikasi berita palsu, kemudian menjadwalkan pertemuan koordinasi untuk menyerahkan materi tersebut kepada para ketua rukun tetangga, tenaga pendidik, dan pengurus karang taruna agar dapat disosialisasikan secara estafet dalam forum warga setempat",
+      "Menyusun desain infografis yang menjabarkan tautan resmi pemerintah untuk memverifikasi fakta, lalu menjadwalkan penayangannya secara berkala di seluruh lini masa akun media sosial resmi yang dikelola oleh instansi",
+      "Menyisipkan beberapa paragraf panduan dasar pengecekan fakta ke dalam kolom artikel berita pada situs web resmi pemerintah daerah agar dapat dibaca oleh masyarakat yang sedang mengakses domain tersebut"
     ],
     bobot: [1, 2, 5, 4, 3]
   },
@@ -422,20 +422,20 @@ const soalTKP_2 = [
     opsi: [
       "Menguraikan seluruh tahapan klinis dan birokratis secara komprehensif menggunakan terminologi teknis yang presisi dan sesuai dengan Standar Operasional Prosedur (SOP), dengan landasan pemikiran bahwa aparatur faskes wajib menjaga integritas keilmuan dan tidak boleh mendistorsi fakta medis hanya demi menyesuaikan tingkat intelektualitas warga",
       "Memanfaatkan alat bantu berupa pamflet atau bagan ilustrasi visual standar milik instansi untuk membantunya merangkai pemahaman mengenai tahapan prosedural perawatan yang akan dilewati",
-      "Memberikan penjelasan secara empatik menggunakan bahasa yang membumi dan mudah dicerna, serta secara sadar menghindari penggunaan jargon medis maupun istilah birokrasi yang rumit agar ia benar-benar memahami esensi perawatannya",
+      "Memberikan penjelasan dengan menggunakan bahasa yang membumi, serta secara sadar menghindari penggunaan jargon medis maupun istilah birokrasi yang rumit agar ia benar-benar memahami esensi perawatannya",
       "Mengarahkan warga tersebut secara diplomatis untuk melakukan riset mandiri melalui mesin pencari di internet atau membaca literatur kesehatan daring, dengan rasionalisasi bahwa edukasi mandiri di era digital akan jauh lebih efektif dalam membangun kemandirian warga dibandingkan penjelasan lisan petugas yang berpotensi memicu antrean panjang di loket",
       "Menyampaikan garis besar alur penanganan secara ringkas dan lugas agar tidak semakin membebani pikirannya, kemudian secara proaktif memberikan ruang baginya untuk mengajukan pertanyaan pada bagian yang belum ia pahami"
     ],
     bobot: [2, 3, 5, 1, 4]
   },
   {
-    soal: "Sebagai aparatur sipil negara yang baru saja ditempatkan di garda terdepan unit pelayanan terpadu, Anda dihadapkan pada seorang warga yang mengeluhkan kerumitan persyaratan administrasi. Kasus yang dialami warga ini cukup spesifik, di luar kebiasaan, dan belum pernah Anda pelajari secara mendalam pada masa orientasi. Di sisi lain, warga tersebut tampak kelelahan dan sangat membutuhkan kepastian layanan dengan segera. Menghadapi situasi ini, tindakan pelayanan prima yang Anda ambil adalah ....",
+    soal: "Sebagai aparatur yang baru ditugaskan di loket unit pelayanan terpadu, Anda menerima berkas permohonan dari seorang warga yang memiliki riwayat kendala administratif sangat spesifik. Skema penyelesaian dokumen semacam ini berada di luar modul dasar yang Anda pelajari pada masa orientasi. Di hadapan Anda, warga tersebut terlihat kelelahan secara fisik dan mendesak agar dokumennya segera diproses hari itu juga. Merespons tekanan situasi tersebut, tindakan operasional yang Anda ambil adalah ....",
     opsi: [
-      "Memberikan warga tersebut formulir standar dan memintanya untuk mengisi bagian yang ia pahami saja terlebih dahulu, sembari Anda menyusun rencana untuk berdiskusi dengan supervisor mengenai langkah penanganan selanjutnya",
-      "Mengurangi interaksi konsultatif dengan supervisor dan memilih untuk bereksperimen menangani keluhan tersebut murni berdasarkan insting pelayanan, dengan asumsi bahwa pengalaman langsung secara mandiri—meski berisiko keliru—akan lebih cepat membentuk mental pelayan publik yang tangguh",
-      "Berusaha menyelesaikan keluhan warga tersebut secara mandiri berbekal pemahaman teoritis dasar demi menjamin kecepatan layanan, lalu meminta umpan balik dan evaluasi terperinci dari supervisor setelah warga tersebut pulang",
-      "Menolak secara halus untuk memproses dokumen warga tersebut dan menyerahkannya secara penuh kepada pegawai senior, dengan rasionalisasi bahwa aparatur baru harus berfokus pada penguasaan modul pelatihan teoritis terlebih dahulu demi menjaga muruah instansi dari potensi malapraktik administrasi publik",
-      "Menyampaikan permohonan maaf atas waktu tunggu sejenak, lalu secara proaktif mendampingi warga tersebut berkonsultasi ke meja supervisor agar Anda dapat memberikan solusi yang akurat sekaligus menyerap ilmu penanganan kasus spesifik secara langsung"
+      "Menyodorkan lembar isian standar dan mengarahkan warga tersebut untuk melengkapi kolom data diri dasar terlebih dahulu, guna memberikan Anda jeda waktu untuk menanyakan alur teknis kasus tersebut kepada supervisor di ruangan belakang",
+      "Mengesampingkan opsi untuk bertanya kepada supervisor dan langsung memproses dokumen tersebut berdasarkan perkiraan insting Anda, dengan rasionalisasi bahwa keberanian mengambil keputusan secara mandiri—meskipun berpotensi memunculkan cacat administrasi—merupakan metode paling efektif untuk membentuk mentalitas aparatur yang tangguh",
+      "Memproses keluhan dan dokumen warga tersebut hingga tuntas menggunakan interpretasi pemahaman teori dasar yang Anda miliki demi memastikan kecepatan durasi layanan, kemudian menyerahkan salinan berkasnya kepada supervisor untuk dievaluasi setelah urusan warga tersebut selesai",
+      "Mengembalikan berkas tersebut kepada warga dan memintanya untuk mengambil nomor antrean baru menuju loket pegawai senior, dengan landasan pemikiran bahwa aparatur baru wajib membatasi diri pada penanganan kasus standar demi melindungi instansi dari ancaman gugatan hukum akibat malapraktik tata usaha",
+      "Menyampaikan pemberitahuan mengenai perlunya verifikasi penyelesaian khusus, lalu berjalan mengantarkan warga beserta dokumennya menuju meja supervisor agar Anda dapat mencatat langsung tahapan teknis penyelesaian kasus tersebut dari atasan"
     ],
     bobot: [3, 2, 4, 1, 5]
   },
@@ -451,46 +451,46 @@ const soalTKP_2 = [
     bobot: [1, 5, 3, 4, 2]
   },
   {
-    soal: "Anda mendapat amanah sebagai ketua pelaksana sebuah agenda strategis tahunan di instansi. Tingginya beban kerja administratif dan padatnya mobilitas membuat Anda belakangan ini sering kewalahan, bahkan beberapa kali melewatkan rapat koordinasi yang krusial. Mengamati kelalaian tersebut, seorang rekan sejawat menegur dan menyarankan Anda untuk mulai mengintegrasikan aplikasi manajemen waktu dan pengingat digital di gawai Anda. Merespons masukan dan situasi tersebut, sikap profesional yang Anda tunjukkan adalah ....",
+    soal: "Sebagai ketua pelaksana kepanitiaan agenda tahunan di instansi, beban kerja administratif dan mobilitas lapangan Anda meningkat tajam. Kondisi ini menyebabkan Anda beberapa kali absen dari rapat koordinasi krusial karena lupa akan jadwal yang bertabrakan. Mengetahui kelalaian berulang ini, seorang rekan kerja menegur dan menyarankan agar Anda mulai mengintegrasikan aplikasi manajemen waktu dan pengingat digital pada perangkat kerja Anda. Merespons situasi dan teguran tersebut, tindakan operasional yang Anda ambil adalah ....",
     opsi: [
-      "Menolak saran tersebut secara halus dengan argumen bahwa kelalaian menghadiri satu atau dua rapat adalah sebuah kewajaran mutlak bagi seorang ketua pelaksana yang memikul beban kerja struktural yang masif, sehingga tidak perlu didramatisasi dengan keharusan menggunakan aplikasi",
-      "Merespons saran tersebut secara terbuka dengan mulai mengeksplorasi fitur-fitur pada aplikasi pengingat di gawai agar dapat membantu mengingatkan jadwal harian Anda secara bertahap",
-      "Secara proaktif mengunduh dan mengintegrasikan aplikasi tersebut ke dalam gawai kerja Anda untuk merinci, menjadwalkan, serta mengawal seluruh tahapan agenda kepanitiaan secara sistematis dan presisi",
-      "Mengapresiasi saran tersebut, namun memutuskan untuk tetap memprioritaskan pencatatan manual pada buku agenda fisik karena merasa metode konvensional tersebut jauh lebih nyaman dan minim distraksi",
-      "Menunda niat untuk menggunakan aplikasi pengingat digital tersebut hingga puncak kesibukan mereda, dengan rasionalisasi bahwa mempelajari antarmuka teknologi baru di tengah fase kritis kepanitiaan justru akan memecah fokus dan membuang waktu produktif yang semestinya digunakan untuk eksekusi lapangan"
+      "Menepis teguran tersebut dengan argumen bahwa absen dalam satu atau dua rapat adalah konsekuensi logis yang mutlak wajar bagi seorang ketua pelaksana yang memikul beban kerja struktural masif, sehingga tidak semestinya direspons berlebihan dengan keharusan mengunduh aplikasi",
+      "Memasang aplikasi pengingat tersebut pada perangkat kerja dan memasukkan satu atau dua jadwal terdekat terlebih dahulu untuk menguji efektivitas fitur notifikasinya di tengah mobilitas lapangan",
+      "Mengunduh aplikasi yang disarankan, menginput seluruh tenggat waktu dan jadwal rapat kepanitiaan ke dalam kalender digital, serta mengatur alarm otomatis pada perangkat kerja Anda",
+      "Menyalin ulang rentetan jadwal rapat dari grup perpesanan ke dalam buku agenda fisik harian yang selalu dibawa, guna meminimalkan risiko distraksi lanjutan dari notifikasi perangkat digital",
+      "Menangguhkan instalasi aplikasi tersebut hingga puncak acara selesai, dengan rasionalisasi bahwa mempelajari tata letak antarmuka perangkat lunak baru di tengah fase kritis kepanitiaan justru akan menyita jam kerja produktif yang seharusnya digunakan untuk eksekusi lapangan"
     ],
     bobot: [1, 4, 5, 3, 2]
   },
   {
-    soal: "Sebagai aparatur yang bertugas memproses dokumen di Subbagian Tata Usaha, Anda berhadapan dengan terbitnya regulasi baru yang sangat kompleks mengenai standar pelayanan administrasi publik. Anda menyadari bahwa kekeliruan dalam menafsirkan pasal-pasal tersebut dapat berujung pada malapraktik birokrasi, sementara masyarakat menuntut kecepatan layanan agar urusan mereka segera tuntas. Guna memastikan Anda dapat memberikan pelayanan yang tetap responsif namun berlandaskan hukum yang presisi, langkah strategis yang Anda ambil adalah ....",
+    soal: "Sebagai aparatur pengelola dokumen di Subbagian Tata Usaha, Anda dihadapkan pada turunan regulasi baru dari pusat terkait standar pelayanan administrasi yang memuat banyak klausul teknis berlapis. Di satu sisi, Anda menyadari bahwa kesalahan interpretasi atas pasal-pasal tersebut dapat berujung pada gugatan maladministrasi. Akan tetapi, antrean warga di loket terus menuntut penyelesaian dokumen yang cepat. Untuk memastikan keabsahan hukum dari layanan Anda tanpa harus melumpuhkan roda pelayanan harian, tindakan operasional yang Anda ambil adalah ....",
     opsi: [
-      "Mengajukan nota keberatan untuk menghentikan sementara seluruh layanan administratif yang terdampak aturan tersebut hingga instansi memfasilitasi program bimbingan teknis secara eksklusif, dengan dalih bahwa aparatur tidak semestinya menanggung beban risiko hukum akibat regulasi pusat yang diterbitkan mendadak tanpa sosialisasi yang memadai",
-      "Menunda penerapan regulasi baru tersebut secara sepihak dan tetap menggunakan standar operasional yang lama, dengan rasionalisasi bahwa masyarakat pada dasarnya hanya peduli pada kecepatan penyelesaian dokumen sehingga membuang waktu untuk menganalisis regulasi baru justru akan menghambat kelancaran pelayanan harian instansi",
-      "Membaca sekilas ringkasan kebijakan tersebut melalui edaran resmi, lalu secara proaktif mendaftar pada berbagai forum diskusi atau seminar daring terbuka untuk mendengarkan interpretasi praktis dari para pakar hukum administrasi negara",
-      "Membedah regulasi tersebut secara mandiri untuk memetakan poin perubahannya, lalu menginisiasi diskusi terpumpun dengan pimpinan dan rekan sejawat guna merumuskan petunjuk teknis turunan yang mudah diaplikasikan pada loket layanan",
-      "Mempelajari poin-poin krusial dalam regulasi tersebut secara saksama, serta proaktif berkonsultasi dengan atasan apabila terdapat klausul yang multitafsir sebelum menerapkannya secara langsung kepada warga"
+      "Menyusun nota penghentian sementara untuk seluruh layanan administratif yang terdampak oleh aturan tersebut hingga pihak kementerian memfasilitasi program bimbingan teknis secara eksklusif, dengan landasan pemikiran bahwa aparatur daerah tidak semestinya menanggung beban risiko gugatan hukum akibat regulasi pusat yang diturunkan tanpa masa sosialisasi yang memadai",
+      "Mengesampingkan pemberlakuan regulasi baru tersebut untuk sementara waktu dan tetap mengeksekusi dokumen warga menggunakan standar operasional lama, dengan rasionalisasi bahwa masyarakat pada dasarnya hanya memprioritaskan kecepatan durasi layanan sehingga memaksakan analisis hukum di tengah jam sibuk justru akan menciptakan penumpukan antrean",
+      "Membaca poin-poin ringkasan pada lampiran edaran resmi, lalu mendaftarkan diri pada berbagai forum diskusi daring terbuka yang diisi oleh akademisi hukum tata negara untuk mendengarkan opini praktis mereka mengenai aturan baru tersebut",
+      "Menguraikan butir-butir perubahan regulasi tersebut ke dalam sebuah matriks perbandingan, kemudian menyusun draf petunjuk teknis turunan untuk dibahas dan disahkan bersama pimpinan dan rekan sejawat sebelum diterapkan secara seragam pada meja layanan",
+      "Menandai beberapa klausul yang memuat frasa bermakna ganda pada dokumen regulasi tersebut, lalu membawa catatan tersebut ke ruang pimpinan untuk meminta penegasan interpretasi sebelum memproses dokumen warga yang bersangkutan"
     ],
     bobot: [1, 2, 3, 5, 4]
   },
   {
-    soal: "Sebagai pimpinan tim kerja lintas bidang di instansi pemerintah, Anda mendapati adanya konflik interpersonal yang cukup tajam antara dua anggota tim kunci yang berasal dari subbagian berbeda. Gesekan yang dipicu oleh ego sektoral ini perlahan mulai memengaruhi ritme koordinasi dan mengancam tenggat waktu penyelesaian program kerja instansi secara keseluruhan. Guna memulihkan iklim kolaborasi dalam jejaring kerja tersebut, tindakan strategis yang Anda ambil adalah ....",
+    soal: "Sebagai aparatur yang ditunjuk menjadi Ketua Tim Kerja lintas bidang di instansi pemerintah, Anda mendapati adanya kebuntuan koordinasi yang cukup tajam antara dua anggota tim kunci yang berasal dari subbagian berbeda. Gesekan yang dipicu oleh ego sektoral ini mulai mengakibatkan tertundanya penyerahan beberapa dokumen penting, yang pada akhirnya mengancam tenggat waktu penyelesaian program kerja instansi secara keseluruhan. Guna memulihkan iklim kolaborasi dalam jejaring kerja tersebut, tindakan operasional yang Anda ambil adalah ....",
     opsi: [
-      "Membiarkan dinamika perselisihan tersebut mengalir tanpa intervensi struktural apa pun, dengan landasan pemikiran bahwa aparatur sipil negara adalah individu-individu dewasa yang semestinya memiliki kesadaran mandiri untuk menyelesaikan gesekan interpersonal mereka secara personal tanpa harus selalu merepotkan waktu pimpinan",
-      "Melakukan pendekatan secara terpisah kepada masing-masing pegawai untuk mendengarkan akar keluhan mereka, kemudian memberikan arahan spesifik agar mereka dapat menahan ego sektoral selama jam kerja berlangsung",
-      "Menginisiasi pertemuan mediasi tertutup secara netral untuk membedah akar permasalahan secara objektif, lalu memfasilitasi kedua belah pihak guna merumuskan titik temu yang konstruktif demi pemulihan sinergi kerja",
-      "Menjatuhkan sanksi teguran tertulis dan ancaman mutasi secara instan kepada pihak yang dinilai paling vokal memicu perdebatan, dengan rasionalisasi bahwa ketegasan radikal dari seorang pimpinan adalah satu-satunya instrumen mutlak untuk membungkam konflik dan menegakkan wibawa hierarki birokrasi",
-      "Memisahkan pembagian tugas dan mendelegasikan mereka pada zona kerja yang tidak saling bersinggungan untuk sementara waktu, guna mencegah eskalasi konflik sembari menunggu tensi emosional keduanya mereda"
+      "Memutuskan untuk tidak mengambil tindakan administratif apa pun terhadap dinamika tersebut, dengan landasan pemikiran bahwa aparatur negara merupakan individu dewasa yang semestinya mampu mengelola gesekan psikologis mereka secara mandiri tanpa harus membebani pikiran pimpinan yang sedang berfokus mengejar target kinerja",
+      "Memanggil kedua pegawai tersebut ke meja Anda secara bergantian pada waktu yang berbeda untuk mencatat poin keberatan masing-masing, lalu mengeluarkan instruksi lisan agar mereka menunda perdebatan tersebut selama jam dinas berlangsung",
+      "Memanggil kedua pegawai tersebut secara bersamaan ke dalam satu ruang pertemuan, lalu menetapkan aturan agar masing-masing memaparkan kendala teknis mereka secara bergantian tanpa saling memotong pembicaraan untuk kemudian merumuskan satu kesepakatan pembagian tugas",
+      "Menerbitkan draf teguran tertulis dan melampirkan ancaman rekomendasi mutasi kepada pegawai yang secara vokal mendominasi perdebatan, dengan rasionalisasi bahwa penegakan disiplin hierarki secara radikal oleh seorang pimpinan merupakan instrumen mutlak untuk memberantas bibit insubordinasi",
+      "Mengubah rincian alur kerja pada dokumen matriks tim agar deskripsi pekerjaan kedua pegawai tersebut tidak lagi saling membutuhkan proses serah terima dokumen secara langsung untuk sementara waktu"
     ],
     bobot: [1, 4, 5, 2, 3]
   },
   {
-    soal: "Sebagai aparatur sipil negara yang baru saja dimutasi ke instansi di wilayah dengan demografi yang sangat heterogen, Anda mendapati fenomena yang kurang sehat di lingkungan kantor. Para pegawai cenderung membentuk kelompok-kelompok sosial eksklusif pada saat jam istirahat berdasarkan kesamaan suku dan agama. Pemisahan sosial ini mulai menciptakan kesenjangan komunikasi dan rawan memicu bibit intoleransi struktural. Tindakan terbaik yang Anda lakukan untuk membangun ekosistem kerja yang toleran dan saling menghargai adalah ....",
+    soal: "Sebagai aparatur sipil negara yang baru saja menerima surat keputusan mutasi ke wilayah dengan demografi masyarakat yang sangat heterogen, Anda mendapati pola interaksi yang kaku di lingkungan kantor. Pada jam istirahat, para pegawai secara konsisten memisahkan diri ke dalam meja-meja kantin atau sudut ruangan yang eksklusif berdasarkan kesamaan latar belakang primordial (suku dan agama). Menyadari bahwa segregasi ruang sosial ini mulai menghambat laju koordinasi lintas bidang, tindakan operasional yang Anda ambil adalah ....",
     opsi: [
-      "Membuka diri secara proaktif untuk berbaur dengan seluruh kelompok secara bergantian, serta menjadikan keberagaman tersebut sebagai sarana untuk saling belajar dan memperkaya wawasan kebangsaan di lingkungan instansi",
-      "Menunjukkan sikap saling menghargai dalam setiap interaksi harian dengan seluruh rekan kerja tanpa memandang latar belakang mereka, demi menjaga keharmonisan dan ritme kerja di subbagian tersebut",
-      "Bersikap profesional dengan membatasi interaksi sosial murni pada urusan teknis pekerjaan saja, serta secara sadar menghindari perbincangan di luar jam dinas agar tidak terseret ke dalam konflik perdebatan prinsip",
-      "Membiarkan pengelompokan eksklusif tersebut tetap berjalan secara alamiah tanpa perlu melakukan intervensi, dengan landasan pemikiran bahwa memaksa pegawai dari berbagai latar belakang keyakinan untuk membaur secara artifisial justru merupakan bentuk pelanggaran terhadap hak asasi privasi mereka dalam memilih pergaulan",
-      "Memutuskan untuk bergabung secara eksklusif dengan kelompok pegawai yang memiliki kesamaan identitas kultural dan keyakinan dengan saya, dengan rasionalisasi bahwa menjaga kesamaan frekuensi spiritual dan zona nyaman sosial adalah kunci utama untuk mencegah terjadinya gesekan antarpegawai di tempat kerja"
+      "Mengambil tempat duduk secara bergantian di meja kelompok yang berbeda-beda setiap kali jam istirahat tiba, serta memancing pembicaraan mengenai tradisi atau kebiasaan lokal dari masing-masing kelompok tersebut",
+      "Menyelesaikan seluruh urusan koordinasi lintas bidang menggunakan standar bahasa yang sama kepada setiap pegawai tanpa pengecualian, guna menjaga kelancaran ritme kerja harian di subbagian tersebut",
+      "Membatasi topik pembicaraan dengan seluruh rekan kerja murni pada penyelesaian dokumen dan tata usaha, serta segera kembali ke meja kerja saat jam istirahat untuk menghindari diskusi yang berpotensi menyentuh ranah keyakinan",
+      "Membiarkan pola pemisahan meja dan ruang berkumpul tersebut berjalan apa adanya tanpa intervensi, dengan landasan pemikiran bahwa memaksa aparatur untuk meleburkan batas-batas demografi dalam ranah sosial justru melanggar hak asasi privasi mereka dalam menentukan kenyamanan pergaulan",
+      "Mengidentifikasi dan merapat secara eksklusif ke meja perkumpulan pegawai yang memiliki kesamaan asal usul daerah dan keyakinan dengan saya, dengan rasionalisasi bahwa menjaga kesamaan frekuensi kultural adalah metode paling aman untuk menekan risiko terjadinya ketersinggungan di tempat kerja baru"
     ],
     bobot: [5, 4, 3, 2, 1]
   }
