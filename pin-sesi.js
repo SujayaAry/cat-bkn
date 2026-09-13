@@ -15,7 +15,7 @@ function muatSoalBerdasarkanPin(pin) {
     filePembahasan = 'pembahasan-1.pdf'; 
     return [...soalTWK_1, ...soalTIU_1, ...soalTKP_1]; 
   } 
-  else if (pinRahasia === "=Q0STN1TM9ET") { 
+  else if (pinRahasia === "==gNyAjM") { 
     // === JALUR PIN: PAKET 2 ===
     if (typeof soalTWK_2 === 'undefined' || typeof soalTIU_2 === 'undefined' || typeof soalTKP_2 === 'undefined') {
       alert("Sistem Macet: Variabel paket soal 2 tidak ditemukan! Pastikan Anda sudah mendaftarkan soal-twk-2.js dkk di index.html dan menamai variabel di dalamnya dengan benar.");
