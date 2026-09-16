@@ -75,7 +75,7 @@ window.simpanKeDatabaseBackground = async function(hasilSkor) {
     // -------------------------------------------------------------
     // GANTI URL DI BAWAH INI DENGAN URL APLIKASI WEB DARI GOOGLE APPS SCRIPT ANDA
     // Pastikan URL tetap berada di dalam tanda petik dua (" ")
-    const GOOGLE_SHEETS_URL = "URL_APPS_SCRIPT_ANDA_DI_SINI";
+    const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbwP5hAyCkHD_mvZil7vswdf3ZUWb7pBfhEqjOzS-MvGqfxHr687Uiz_j5uNE99UhkWHMw/exec";
     
     const dataKeSheets = {
       nama: namaPeserta,
