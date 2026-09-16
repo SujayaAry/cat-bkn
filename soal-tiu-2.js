@@ -121,7 +121,7 @@ const soalTIU_2 = [
     kunci: 0
   },
   {
-    soal: "Hasil operasi $3\\frac{1}{3} \\div 0,833\\dots + 0,45 \\times 40 - 1\\frac{5}{10} \\times 8 = \\dots$",
+    soal: "Hasil operasi $3\\frac{1}{3} \\div 0,833... + 0,45 \\times 40 - 1\\frac{5}{10} \\times 8 = \\dots$",
     opsi: [
       "$14$",
       "$13$",
@@ -132,7 +132,7 @@ const soalTIU_2 = [
     kunci: 4
   },
   {
-    soal: "Hasil operasi $2,33\\dots - 0,4 \\times \\frac{20}{16} + 0,5 \\div 75\\% = \\dots$",
+    soal: "Hasil operasi $2,33... - 0,4 \\times \\frac{20}{16} + 0,5 \\div 75\\% = \\dots$",
     opsi: [
       "$2,166\\dots$",
       "$233\\frac{1}{3}\\%$",
@@ -154,7 +154,7 @@ const soalTIU_2 = [
     kunci: 0
   },
   {
-    soal: "Hasil operasi $\\left(-\\frac{21}{45} - 3\\right) \\div \\left(-26\\frac{3}{27} + 0,111\\dots\\right) \\times \\left(-\\frac{3}{4} - 0,25\\right) = \\dots$",
+    soal: "Hasil operasi $\\left(-\\frac{21}{45} - 3\\right) \\div \\left(-26\\frac{3}{27} + 0,111...\\right) \\times \\left(-\\frac{3}{4} - 0,25\\right) = \\dots$",
     opsi: [
       "$-\\frac{8}{60}$",
       "$0,133\\dots$",
@@ -209,7 +209,7 @@ const soalTIU_2 = [
     kunci: 4
   },
   {
-    soal: "Diketahui<br><br><table border='1' cellpadding='8' cellspacing='0' style='border-collapse: collapse; text-align: center; margin: 10px 0; background: #fff;'><tr><th style='min-width: 150px;'>$X$</th><th style='min-width: 150px;'>$Y$</th></tr><tr><td>$15 \\div 0,66\\dots \\times 1\\frac{3}{5}$</td><td>$15,5 + 18 \\times 150\\% - 6\\frac{2}{4}$</td></tr></table><br>Manakah hubungan yang benar antara kuantitas $X$ dan $Y$ berikut berdasarkan informasi yang diberikan?",
+    soal: "Diketahui<br><br><table border='1' cellpadding='8' cellspacing='0' style='border-collapse: collapse; text-align: center; margin: 10px 0; background: #fff;'><tr><th style='min-width: 150px;'>$X$</th><th style='min-width: 150px;'>$Y$</th></tr><tr><td>$15 \\div 0,66... \\times 1\\frac{3}{5}$</td><td>$15,5 + 18 \\times 150\\% - 6\\frac{2}{4}$</td></tr></table><br>Manakah hubungan yang benar antara kuantitas $X$ dan $Y$ berikut berdasarkan informasi yang diberikan?",
     opsi: [
       "$2X + 3Y = 0$",
       "$2X < 3Y$",
