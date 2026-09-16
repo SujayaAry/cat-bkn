@@ -121,7 +121,7 @@ const soalTIU_2 = [
     kunci: 0
   },
   {
-    soal: "Hasil operasi $3\\frac{1}{3} \\div 0,833... + 0,45 \\times 40 - 1\\frac{5}{10} \\times 8 = \\dots$",
+    soal: "Hasil operasi $3\\frac{1}{3} \\div 0,833... + 0,45 \\times 40 - 1\\frac{5}{10} \\times 8 = ...$",
     opsi: [
       "$14$",
       "$13$",
@@ -132,18 +132,18 @@ const soalTIU_2 = [
     kunci: 4
   },
   {
-    soal: "Hasil operasi $2,33... - 0,4 \\times \\frac{20}{16} + 0,5 \\div 75\\% = \\dots$",
+    soal: "Hasil operasi $2,33... - 0,4 \\times \\frac{20}{16} + 0,5 \\div 75\\% = ...$",
     opsi: [
-      "$2,166\\dots$",
+      "$2,166...$",
       "$233\\frac{1}{3}\\%$",
       "$2\\frac{4}{8}$",
       "$2\\frac{6}{9}$",
-      "$2,833\\dots$"
+      "$2,833...$"
     ],
     kunci: 2
   },
   {
-    soal: "Hasil operasi $0,75 + 83\\frac{1}{3}\\% \\times \\frac{9}{15} - \\frac{13}{26} \\div 25\\% = \\dots$",
+    soal: "Hasil operasi $0,75 + 83\\frac{1}{3}\\% \\times \\frac{9}{15} - \\frac{13}{26} \\div 25\\% = ...$",
     opsi: [
       "$-0,75$",
       "$-\\frac{7}{14}$",
@@ -154,18 +154,18 @@ const soalTIU_2 = [
     kunci: 0
   },
   {
-    soal: "Hasil operasi $\\left(-\\frac{21}{45} - 3\\right) \\div \\left(-26\\frac{3}{27} + 0,111...\\right) \\times \\left(-\\frac{3}{4} - 0,25\\right) = \\dots$",
+    soal: "Hasil operasi $\\left(-\\frac{21}{45} - 3\\right) \\div \\left(-26\\frac{3}{27} + 0,111...\\right) \\times \\left(-\\frac{3}{4} - 0,25\\right) = ...$",
     opsi: [
       "$-\\frac{8}{60}$",
-      "$0,133\\dots$",
+      "$0,133...$",
       "$13\\frac{1}{3}\\%$",
       "$\\frac{2}{15}$",
-      "$-0,066\\dots$"
+      "$-0,066...$"
     ],
     kunci: 0
   },
   {
-    soal: "$4, 12, 1, 7, -6, \\dots, \\dots$",
+    soal: "$4, 12, 1, 7, -6, ..., ...$",
     opsi: [
       "$-2, 17$",
       "$2, -17$",
@@ -176,7 +176,7 @@ const soalTIU_2 = [
     kunci: 4
   },
   {
-    soal: "$6, 7, 6, 9, 9, 9, \\dots, \\dots$",
+    soal: "$6, 7, 6, 9, 9, 9, ..., ...$",
     opsi: [
       "$4, -1$",
       "$-4, -1$",
@@ -187,7 +187,7 @@ const soalTIU_2 = [
     kunci: 4
   },
   {
-    soal: "$8, 12, 18, 27, \\frac{81}{2}, \\dots, \\dots$",
+    soal: "$8, 12, 18, 27, \\frac{81}{2}, ..., ...$",
     opsi: [
       "$42, \\frac{181}{2}$",
       "$\\frac{42}{2}, \\frac{181}{2}$",
@@ -198,7 +198,7 @@ const soalTIU_2 = [
     kunci: 4
   },
   {
-    soal: "$\\frac{1}{3}, -1, 1, 2, 14, \\dots, \\dots$",
+    soal: "$\\frac{1}{3}, -1, 1, 2, 14, ..., ...$",
     opsi: [
       "$210, 4200$",
       "$210, 5040$",
