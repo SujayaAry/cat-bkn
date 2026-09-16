@@ -37,13 +37,16 @@ function getDeviceID() {
 // =====================================================================
 window.simpanKeDatabaseBackground = async function(hasilSkor) {
   try {
-    // Menarik data identitas peserta dari layar
+    // Menarik data identitas dan sisa waktu dari layar
     const deviceId = getDeviceID();
     const namaPeserta = document.getElementById('pNama').textContent;
     const noPeserta = document.getElementById('pPeserta').textContent;
     const pinSesi = document.getElementById('inSesi').value.toUpperCase() || 'DEFAULT';
+    
+    // Mengambil sisa waktu pengerjaan dari elemen timer
+    const sisaWaktu = document.getElementById('timer').textContent;
 
-    // Mengecek riwayat pengerjaan di Firebase untuk Device ID ini
+    // Mengecek riwayat pengerjaan di Firebase
     const q = query(
       collection(db, "hasil_ujian"), 
       where("device_id", "==", deviceId),
@@ -51,7 +54,7 @@ window.simpanKeDatabaseBackground = async function(hasilSkor) {
     );
     
     const querySnapshot = await getDocs(q);
-    const percobaanKe = querySnapshot.size + 1; // Menghitung ini percobaan ke berapa
+    const percobaanKe = querySnapshot.size + 1; 
 
     // -------------------------------------------------------------
     // TAHAP A: MENGIRIM KE FIREBASE
@@ -66,6 +69,7 @@ window.simpanKeDatabaseBackground = async function(hasilSkor) {
       skor_tkp: hasilSkor.tkp,
       total_skor: hasilSkor.total,
       percobaan_ke: percobaanKe,
+      sisa_waktu: sisaWaktu, 
       waktu_selesai: serverTimestamp()
     });
     console.log("Data berhasil masuk Firebase! Percobaan ke-" + percobaanKe);
@@ -73,9 +77,8 @@ window.simpanKeDatabaseBackground = async function(hasilSkor) {
     // -------------------------------------------------------------
     // TAHAP B: MENGIRIM GANDA KE GOOGLE SHEETS
     // -------------------------------------------------------------
-    // GANTI URL DI BAWAH INI DENGAN URL APLIKASI WEB DARI GOOGLE APPS SCRIPT ANDA
-    // Pastikan URL tetap berada di dalam tanda petik dua (" ")
-    const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbwP5hAyCkHD_mvZil7vswdf3ZUWb7pBfhEqjOzS-MvGqfxHr687Uiz_j5uNE99UhkWHMw/exec";
+
+    const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbwP5hAyCkHD_mvZil7vswdf3ZUWb7pBfhEqjOzS-MvGqfxHr687Uiz_j5uNE99UhkWHMw/exec"; 
     
     const dataKeSheets = {
       nama: namaPeserta,
@@ -86,10 +89,10 @@ window.simpanKeDatabaseBackground = async function(hasilSkor) {
       skor_tiu: hasilSkor.tiu,
       skor_tkp: hasilSkor.tkp,
       total_skor: hasilSkor.total,
-      percobaan_ke: percobaanKe
+      percobaan_ke: percobaanKe,
+      sisa_waktu: sisaWaktu 
     };
 
-    // Mengirim data ke Sheets tanpa memblokir layar aplikasi
     fetch(GOOGLE_SHEETS_URL, {
       method: 'POST',
       body: JSON.stringify(dataKeSheets)
