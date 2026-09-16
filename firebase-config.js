@@ -65,6 +65,55 @@
         percobaan_ke: percobaanKe,
         waktu_selesai: serverTimestamp()
       });
+
+      // [KODE SEBELUMNYA TETAP SAMA HINGGA BAGIAN INI]
+      const querySnapshot = await getDocs(q);
+      const percobaanKe = querySnapshot.size + 1;
+  
+      // 1. MENGIRIM KE FIREBASE (Sistem yang sudah Anda miliki)
+      await addDoc(collection(db, "hasil_ujian"), {
+        nama: namaPeserta,
+        no_peserta: noPeserta,
+        paket_soal: pinSesi,
+        device_id: deviceId,
+        skor_twk: hasilSkor.twk,
+        skor_tiu: hasilSkor.tiu,
+        skor_tkp: hasilSkor.tkp,
+        total_skor: hasilSkor.total,
+        percobaan_ke: percobaanKe,
+        waktu_selesai: serverTimestamp()
+      });
+      console.log("Data berhasil masuk Firebase! Percobaan ke-" + percobaanKe);
+  
+      // =========================================================
+      // 2. MENGIRIM GANDA KE GOOGLE SHEETS (REAL-TIME)
+      // Ganti URL di bawah dengan URL Aplikasi Web dari Tahap 2
+      const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbwP5hAyCkHD_mvZil7vswdf3ZUWb7pBfhEqjOzS-MvGqfxHr687Uiz_j5uNE99UhkWHMw/exec";
+      
+      // Membungkus data untuk dikirim ke Excel
+      const dataKeSheets = {
+        nama: namaPeserta,
+        no_peserta: noPeserta,
+        paket_soal: pinSesi,
+        device_id: deviceId,
+        skor_twk: hasilSkor.twk,
+        skor_tiu: hasilSkor.tiu,
+        skor_tkp: hasilSkor.tkp,
+        total_skor: hasilSkor.total,
+        percobaan_ke: percobaanKe
+      };
+  
+      // Mengirim ke Sheets tanpa menunggu balasan (Asinkron)
+      fetch(GOOGLE_SHEETS_URL, {
+        method: 'POST',
+        body: JSON.stringify(dataKeSheets)
+      }).catch(error => console.error("Gagal mengirim ke Sheets:", error));
+      // =========================================================
+  
+    } catch (e) {
+      console.error("Gagal mengirim data: ", e);
+    }
+  };
       
       console.log("Data rahasia berhasil disimpan! Ini percobaan ke-" + percobaanKe);
     } catch (e) {
