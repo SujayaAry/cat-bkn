@@ -237,7 +237,7 @@ const soalTIU_2 = [
       "$A > 3B$",
       "$A = 3B$",
       "$A + 3B = 0$",
-      "Hubungan $X$ dan $Y$ tidak dapat ditentukan"
+      "Hubungan $A$ dan $B$ tidak dapat ditentukan"
     ],
     kunci: 2
   },
